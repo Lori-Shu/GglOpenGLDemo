@@ -1,0 +1,5 @@
+/home/lori/cppprojects/OpenGLDemo/build/CMakeFiles/edit_cache.dir
+/home/lori/cppprojects/OpenGLDemo/build/CMakeFiles/rebuild_cache.dir
+/home/lori/cppprojects/OpenGLDemo/build/src/CMakeFiles/demo.dir
+/home/lori/cppprojects/OpenGLDemo/build/src/CMakeFiles/edit_cache.dir
+/home/lori/cppprojects/OpenGLDemo/build/src/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/lori/cppprojects/OpenGLDemo/build/src",
+  "command": "/usr/bin/c++  -I/home/lori/cppprojects/OpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/app.cpp.o -c /home/lori/cppprojects/OpenGLDemo/src/app.cpp",
+  "file": "/home/lori/cppprojects/OpenGLDemo/src/app.cpp"
+},
+{
+  "directory": "/home/lori/cppprojects/OpenGLDemo/build/src",
+  "command": "/usr/bin/c++  -I/home/lori/cppprojects/OpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglShader.cpp.o -c /home/lori/cppprojects/OpenGLDemo/src/class/GglShader.cpp",
+  "file": "/home/lori/cppprojects/OpenGLDemo/src/class/GglShader.cpp"
+}
+]
