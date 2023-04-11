@@ -1,8 +1,12 @@
 #pragma once
-#include<string>
-#include<iostream>
-#include<fstream>
-#include<sstream>
+#include <GL/glew.h>
+
+#include <fstream>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include<cstdlib>
+#include<unistd.h>
 namespace mystd{
     class GglShader{
         public:
@@ -13,12 +17,10 @@ namespace mystd{
          uint32_t program;
 
         private:
-        std::string readVertexShader();
-        std::string readFragShader();
-        std::string readFile(std::string &path);
-        void createShader(std::string vertexShader, std::string fragShader);
-        uint32_t compileShader(uint32_t type,std::string &shader);
-        const std::string shaderFolder =
-            "/home/lori/cppprojects/OpenGLDemo/src/shader/";
+         void getProgramDir(std::string &path);
+         void readShaderFile(
+             std::string &vertexShader, std::string &fragmentShader);
+         void createShader();
+         uint32_t compileShader(uint32_t type, std::string &shader);
     };
 }

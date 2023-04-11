@@ -1,35 +1,64 @@
 #include"GglShader.h"
-#include<GL/glew.h>
+
 namespace mystd{
     using namespace std;
     GglShader::GglShader(){
-        createShader(readVertexShader(),readFragShader());
+        createShader();
     }
     GglShader::~GglShader(){
         glDeleteProgram(program);
     }
-    std::string GglShader::readVertexShader() {
-        string path =
-            shaderFolder + string("VertexShader.txt");
-        return readFile(path);
+    void GglShader::getProgramDir(std::string &path) {
+      char proDir[1024];
+      int32_t size = readlink("/proc/self/exe", proDir, 1024);
+      string tp= string(proDir);
+      int32_t lastIndex=tp.find_last_of('/');
+      string dir=tp.substr(0,lastIndex+1-0);
+      cout << "proDir==" << dir << endl;
+      path = dir + string("shader/MyShader.shader");
     }
-    std::string GglShader::readFragShader() {
-        string path =
-            shaderFolder + string("FragmentShader.txt");
-     return readFile(path);
+    void GglShader::readShaderFile(std::string &vertexShader,
+                                          std::string &fragmentShader) {
+        string path;
+        getProgramDir(path);
+        ifstream ifs{path, ios::in};
+        stringstream ssVertex;
+        stringstream ssFrag;
+        string line;
+        int32_t writeType=-1;
+        for(;;){
+        getline(ifs,line);
+        if(line.find("#shader vertex")!=string::npos){
+            writeType=0;
+            continue;
+        }
+        if (line.find("#shader fragment") != string::npos) {
+            writeType = 1;
+            continue;
+        }
+        if(writeType==0){
+            ssVertex<<line;
+            ssVertex << "\n";
+        }
+        if (writeType == 1) {
+            ssFrag << line;
+            ssFrag<<"\n";
+        }
+        if (ifs.eof()) {
+            break;
+        }
+        }
+        ifs.close();
+        vertexShader=ssVertex.str();
+        fragmentShader = ssFrag.str();
     }
-    std::string GglShader::readFile(std::string &path) {
-     ifstream ifs{path, ios::in};
-     stringstream ss{ios::out};
-     ss << ifs.rdbuf();
-     string shaderStr = ss.str();
-     ifs.close();
-     return shaderStr;
-    }
-    void GglShader::createShader(std::string vertexShader,std::string fragShader){
+    void GglShader::createShader(){
+        string vertexShader;
+        string fragmentShader;
+        readShaderFile(vertexShader,fragmentShader);
         program= glCreateProgram();
         uint32_t vs=  compileShader(GL_VERTEX_SHADER,vertexShader);
-        uint32_t fs = compileShader(GL_FRAGMENT_SHADER,fragShader);
+        uint32_t fs = compileShader(GL_FRAGMENT_SHADER, fragmentShader);
         glAttachShader(program,vs);
         glAttachShader(program,fs);
         glLinkProgram(program);
@@ -49,8 +78,8 @@ namespace mystd{
         if(result==GL_FALSE){
             int32_t length;
             glGetShaderiv(id,GL_INFO_LOG_LENGTH,&length);
-            char  buffer[length];
-            glGetShaderInfoLog(id,length,&length,buffer);
+            char  buffer[length+1];
+            glGetShaderInfoLog(id,length+1,&length,buffer);
             cout<<"err compile shader =="<<(type==GL_VERTEX_SHADER?"vertexShader":"fragShader")<<endl;
             cout<<buffer<<endl;
         }

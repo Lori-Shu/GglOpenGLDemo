@@ -25,19 +25,29 @@ int main(void) {
   
   cout<<glGetString(GL_VERSION)<<endl;
   
-  double positions[6]={
-    0.5,0.5,
-    -0.5,0.5,
-    0.0,-0.5
+  double positions[8]={
+    0.0,-0.5,
+    0.5,0.0,
+    0.0,0.5,
+    -0.5,0.0
+  };
+  uint32_t indices[6]={
+    0,1,3,
+    1,2,3
   };
   uint32_t buffer;
   glGenBuffers(1,&buffer);
   glBindBuffer(GL_ARRAY_BUFFER,buffer);
-  glBufferData(GL_ARRAY_BUFFER,6*sizeof(double),positions,GL_STATIC_DRAW);
+  glBufferData(GL_ARRAY_BUFFER,8*sizeof(double),positions,GL_STATIC_DRAW);
 
   glEnableVertexAttribArray(0);
   glVertexAttribPointer(0,2,GL_DOUBLE,GL_FALSE,2*sizeof(double),0);
-  
+
+  uint32_t indexBuffer;
+  glGenBuffers(1, &indexBuffer);
+  glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
+  glBufferData(GL_ELEMENT_ARRAY_BUFFER, 6 * sizeof(uint32_t), indices,
+               GL_STATIC_DRAW);
   mystd::GglShader gglShader{};
   
   /* Loop until the user closes the window */
@@ -45,9 +55,10 @@ int main(void) {
     /* Render here */
     glClear(GL_COLOR_BUFFER_BIT);
 
-// draw
-
-    glDrawArrays(GL_TRIANGLES,0,3);
+    // draw
+    // glDrawArrays(GL_TRIANGLES,0,3);
+    // draw with indexBuffer
+    glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,nullptr);
     /* Swap front and back buffers */
     glfwSwapBuffers(window);
 
