@@ -8,10 +8,12 @@ void main(){
 }
 
 #shader fragment
-#version 440 core
+#version 440 core 
 
 layout(location=0) out vec4 color;
 
+layout(location=1) uniform vec4 uColor;
+
 void main(){
-    color=vec4(0.0,0.5,0.0,1.0);
+    color=uColor;
 }

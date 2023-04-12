@@ -35,6 +35,10 @@ int main(void) {
     0,1,3,
     1,2,3
   };
+  // 使用vertex array 可以在切换绑定时自动绑定vertexbuffer
+  uint32_t vao;
+  glGenBuffers(1,&vao);
+  glBindVertexArray(vao);
   uint32_t buffer;
   glGenBuffers(1,&buffer);
   glBindBuffer(GL_ARRAY_BUFFER,buffer);
@@ -42,14 +46,17 @@ int main(void) {
 
   glEnableVertexAttribArray(0);
   glVertexAttribPointer(0,2,GL_DOUBLE,GL_FALSE,2*sizeof(double),0);
-
+  
   uint32_t indexBuffer;
   glGenBuffers(1, &indexBuffer);
   glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
   glBufferData(GL_ELEMENT_ARRAY_BUFFER, 6 * sizeof(uint32_t), indices,
                GL_STATIC_DRAW);
   mystd::GglShader gglShader{};
-  
+  // unbind 测试能否自动绑定vertexbuffer
+  glUseProgram(0);
+  glBindBuffer(GL_ARRAY_BUFFER, 0);
+  glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
   /* Loop until the user closes the window */
   while (!glfwWindowShouldClose(window)) {
     /* Render here */
@@ -58,7 +65,11 @@ int main(void) {
     // draw
     // glDrawArrays(GL_TRIANGLES,0,3);
     // draw with indexBuffer
-    glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,nullptr);
+    glUseProgram(gglShader.program);
+    gglShader.setUniform();
+    glBindVertexArray(vao);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
+      glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
     /* Swap front and back buffers */
     glfwSwapBuffers(window);
 

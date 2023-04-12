@@ -10,7 +10,10 @@ namespace mystd{
     }
     void GglShader::getProgramDir(std::string &path) {
       char proDir[1024];
+    //   只能在Linux环境有效
+    #ifdef Linux
       int32_t size = readlink("/proc/self/exe", proDir, 1024);
+    #endif
       string tp= string(proDir);
       int32_t lastIndex=tp.find_last_of('/');
       string dir=tp.substr(0,lastIndex+1-0);
@@ -67,6 +70,7 @@ namespace mystd{
         glDeleteShader(vs);
         glDeleteShader(fs);
         glUseProgram(program);
+        setUniform();
     }
     uint32_t GglShader::compileShader(uint32_t type, std::string &shader) {
         uint32_t id=glCreateShader(type);
@@ -85,5 +89,9 @@ namespace mystd{
         }
         return id;
 
+    }
+    void GglShader:: setUniform(){
+        // do not support double glUniform4d is not ok
+        glUniform4f(1, 0.0f, 0.0f, 0.5f, 1.0f);
     }
 }
