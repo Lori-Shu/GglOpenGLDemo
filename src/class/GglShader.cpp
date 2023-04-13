@@ -92,6 +92,8 @@ namespace mystd{
     }
     void GglShader:: setUniform(){
         // do not support double glUniform4d is not ok
+
+        // must use float
         glUniform4f(1, 0.0f, 0.0f, 0.5f, 1.0f);
     }
 }

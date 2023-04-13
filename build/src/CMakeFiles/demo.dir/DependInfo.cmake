@@ -9,7 +9,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lori/cppprojects/OpenGLDemo/src/app.cpp" "src/CMakeFiles/demo.dir/app.cpp.o" "gcc" "src/CMakeFiles/demo.dir/app.cpp.o.d"
+  "/home/lori/cppprojects/OpenGLDemo/src/class/GglIndexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o.d"
   "/home/lori/cppprojects/OpenGLDemo/src/class/GglShader.cpp" "src/CMakeFiles/demo.dir/class/GglShader.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglShader.cpp.o.d"
+  "/home/lori/cppprojects/OpenGLDemo/src/class/GglVertexArray.cpp" "src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o.d"
+  "/home/lori/cppprojects/OpenGLDemo/src/class/GglVertexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o.d"
+  "/home/lori/cppprojects/OpenGLDemo/src/class/VertexBufferLayout.cpp" "src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o.d"
   )
 
 # Targets to which this target links.

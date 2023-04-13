@@ -154,6 +154,30 @@ app.cpp.s:
 	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/app.cpp.s
 .PHONY : app.cpp.s
 
+class/GglIndexBuffer.o: class/GglIndexBuffer.cpp.o
+.PHONY : class/GglIndexBuffer.o
+
+# target to build an object file
+class/GglIndexBuffer.cpp.o:
+	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o
+.PHONY : class/GglIndexBuffer.cpp.o
+
+class/GglIndexBuffer.i: class/GglIndexBuffer.cpp.i
+.PHONY : class/GglIndexBuffer.i
+
+# target to preprocess a source file
+class/GglIndexBuffer.cpp.i:
+	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.i
+.PHONY : class/GglIndexBuffer.cpp.i
+
+class/GglIndexBuffer.s: class/GglIndexBuffer.cpp.s
+.PHONY : class/GglIndexBuffer.s
+
+# target to generate assembly for a file
+class/GglIndexBuffer.cpp.s:
+	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.s
+.PHONY : class/GglIndexBuffer.cpp.s
+
 class/GglShader.o: class/GglShader.cpp.o
 .PHONY : class/GglShader.o
 
@@ -178,6 +202,78 @@ class/GglShader.cpp.s:
 	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglShader.cpp.s
 .PHONY : class/GglShader.cpp.s
 
+class/GglVertexArray.o: class/GglVertexArray.cpp.o
+.PHONY : class/GglVertexArray.o
+
+# target to build an object file
+class/GglVertexArray.cpp.o:
+	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o
+.PHONY : class/GglVertexArray.cpp.o
+
+class/GglVertexArray.i: class/GglVertexArray.cpp.i
+.PHONY : class/GglVertexArray.i
+
+# target to preprocess a source file
+class/GglVertexArray.cpp.i:
+	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.i
+.PHONY : class/GglVertexArray.cpp.i
+
+class/GglVertexArray.s: class/GglVertexArray.cpp.s
+.PHONY : class/GglVertexArray.s
+
+# target to generate assembly for a file
+class/GglVertexArray.cpp.s:
+	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.s
+.PHONY : class/GglVertexArray.cpp.s
+
+class/GglVertexBuffer.o: class/GglVertexBuffer.cpp.o
+.PHONY : class/GglVertexBuffer.o
+
+# target to build an object file
+class/GglVertexBuffer.cpp.o:
+	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o
+.PHONY : class/GglVertexBuffer.cpp.o
+
+class/GglVertexBuffer.i: class/GglVertexBuffer.cpp.i
+.PHONY : class/GglVertexBuffer.i
+
+# target to preprocess a source file
+class/GglVertexBuffer.cpp.i:
+	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.i
+.PHONY : class/GglVertexBuffer.cpp.i
+
+class/GglVertexBuffer.s: class/GglVertexBuffer.cpp.s
+.PHONY : class/GglVertexBuffer.s
+
+# target to generate assembly for a file
+class/GglVertexBuffer.cpp.s:
+	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.s
+.PHONY : class/GglVertexBuffer.cpp.s
+
+class/VertexBufferLayout.o: class/VertexBufferLayout.cpp.o
+.PHONY : class/VertexBufferLayout.o
+
+# target to build an object file
+class/VertexBufferLayout.cpp.o:
+	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o
+.PHONY : class/VertexBufferLayout.cpp.o
+
+class/VertexBufferLayout.i: class/VertexBufferLayout.cpp.i
+.PHONY : class/VertexBufferLayout.i
+
+# target to preprocess a source file
+class/VertexBufferLayout.cpp.i:
+	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.i
+.PHONY : class/VertexBufferLayout.cpp.i
+
+class/VertexBufferLayout.s: class/VertexBufferLayout.cpp.s
+.PHONY : class/VertexBufferLayout.s
+
+# target to generate assembly for a file
+class/VertexBufferLayout.cpp.s:
+	cd /home/lori/cppprojects/OpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.s
+.PHONY : class/VertexBufferLayout.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -190,9 +286,21 @@ help:
 	@echo "... app.o"
 	@echo "... app.i"
 	@echo "... app.s"
+	@echo "... class/GglIndexBuffer.o"
+	@echo "... class/GglIndexBuffer.i"
+	@echo "... class/GglIndexBuffer.s"
 	@echo "... class/GglShader.o"
 	@echo "... class/GglShader.i"
 	@echo "... class/GglShader.s"
+	@echo "... class/GglVertexArray.o"
+	@echo "... class/GglVertexArray.i"
+	@echo "... class/GglVertexArray.s"
+	@echo "... class/GglVertexBuffer.o"
+	@echo "... class/GglVertexBuffer.i"
+	@echo "... class/GglVertexBuffer.s"
+	@echo "... class/VertexBufferLayout.o"
+	@echo "... class/VertexBufferLayout.i"
+	@echo "... class/VertexBufferLayout.s"
 .PHONY : help
 
 

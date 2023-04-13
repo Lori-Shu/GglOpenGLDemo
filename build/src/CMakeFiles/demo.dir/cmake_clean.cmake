@@ -3,8 +3,16 @@ file(REMOVE_RECURSE
   "../../bin/demo.pdb"
   "CMakeFiles/demo.dir/app.cpp.o"
   "CMakeFiles/demo.dir/app.cpp.o.d"
+  "CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o"
+  "CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o.d"
   "CMakeFiles/demo.dir/class/GglShader.cpp.o"
   "CMakeFiles/demo.dir/class/GglShader.cpp.o.d"
+  "CMakeFiles/demo.dir/class/GglVertexArray.cpp.o"
+  "CMakeFiles/demo.dir/class/GglVertexArray.cpp.o.d"
+  "CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o"
+  "CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o.d"
+  "CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o"
+  "CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.
