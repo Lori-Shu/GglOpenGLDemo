@@ -69,8 +69,7 @@ namespace mystd{
 
         glDeleteShader(vs);
         glDeleteShader(fs);
-        glUseProgram(program);
-        setUniform();
+        
     }
     uint32_t GglShader::compileShader(uint32_t type, std::string &shader) {
         uint32_t id=glCreateShader(type);
@@ -90,10 +89,23 @@ namespace mystd{
         return id;
 
     }
-    void GglShader:: setUniform(){
+    void GglShader:: setUniform(string uniformName,float v0,float v1,float v2,float v3){
         // do not support double glUniform4d is not ok
-
         // must use float
-        glUniform4f(1, 0.0f, 0.0f, 0.5f, 1.0f);
+        int32_t location;
+        if (locationCache.find(uniformName) !=
+                             locationCache.end()) {
+            location= locationCache[uniformName];
+        }else if (locationCache.find(uniformName) ==
+                             locationCache.end()){
+        location=glGetUniformLocation(program,uniformName.c_str());
+        locationCache[uniformName]=location;
+        }
+        
+        glUniform4f(location, v0, v1, v2, v3);
     }
+    void GglShader::useProgram(){
+        glUseProgram(program);
+    }
+    void GglShader::unUseProgram() { glUseProgram(0); }
 }

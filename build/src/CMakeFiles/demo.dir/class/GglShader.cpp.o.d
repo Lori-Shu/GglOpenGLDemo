@@ -1,7 +1,7 @@
 src/CMakeFiles/demo.dir/class/GglShader.cpp.o: \
- /home/lori/cppprojects/OpenGLDemo/src/class/GglShader.cpp \
+ /home/lori/CppProjects/GglOpenGLDemo/src/class/GglShader.cpp \
  /usr/include/stdc-predef.h \
- /home/lori/cppprojects/OpenGLDemo/include/GglShader.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglShader.h \
  /usr/include/GL/glew.h /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -170,4 +170,14 @@ src/CMakeFiles/demo.dir/class/GglShader.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h
+ /usr/include/linux/close_range.h /usr/include/c++/11/unordered_map \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h

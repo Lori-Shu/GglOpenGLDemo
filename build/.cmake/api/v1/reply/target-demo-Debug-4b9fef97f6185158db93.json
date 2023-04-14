@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/lori/cppprojects/OpenGLDemo/bin/demo"
+			"path" : "/home/lori/CppProjects/GglOpenGLDemo/bin/demo"
 		}
 	],
 	"backtrace" : 1,
@@ -59,7 +59,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/lori/cppprojects/OpenGLDemo/include"
+					"path" : "/home/lori/CppProjects/GglOpenGLDemo/include"
 				}
 			],
 			"language" : "CXX",

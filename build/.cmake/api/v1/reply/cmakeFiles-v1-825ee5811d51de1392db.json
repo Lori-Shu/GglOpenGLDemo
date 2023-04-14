@@ -159,8 +159,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/lori/cppprojects/OpenGLDemo/build",
-		"source" : "/home/lori/cppprojects/OpenGLDemo"
+		"build" : "/home/lori/CppProjects/GglOpenGLDemo/build",
+		"source" : "/home/lori/CppProjects/GglOpenGLDemo"
 	},
 	"version" : 
 	{

@@ -1,7 +1,7 @@
 src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o: \
- /home/lori/cppprojects/OpenGLDemo/src/class/GglIndexBuffer.cpp \
+ /home/lori/CppProjects/GglOpenGLDemo/src/class/GglIndexBuffer.cpp \
  /usr/include/stdc-predef.h \
- /home/lori/cppprojects/OpenGLDemo/include/GglIndexBuffer.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglIndexBuffer.h \
  /usr/include/c++/11/cstdint \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

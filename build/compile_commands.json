@@ -1,32 +1,32 @@
 [
 {
-  "directory": "/home/lori/cppprojects/OpenGLDemo/build/src",
-  "command": "/usr/bin/c++  -I/home/lori/cppprojects/OpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/app.cpp.o -c /home/lori/cppprojects/OpenGLDemo/src/app.cpp",
-  "file": "/home/lori/cppprojects/OpenGLDemo/src/app.cpp"
+  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/app.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/app.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/app.cpp"
 },
 {
-  "directory": "/home/lori/cppprojects/OpenGLDemo/build/src",
-  "command": "/usr/bin/c++  -I/home/lori/cppprojects/OpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o -c /home/lori/cppprojects/OpenGLDemo/src/class/GglIndexBuffer.cpp",
-  "file": "/home/lori/cppprojects/OpenGLDemo/src/class/GglIndexBuffer.cpp"
+  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglIndexBuffer.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglIndexBuffer.cpp"
 },
 {
-  "directory": "/home/lori/cppprojects/OpenGLDemo/build/src",
-  "command": "/usr/bin/c++  -I/home/lori/cppprojects/OpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglShader.cpp.o -c /home/lori/cppprojects/OpenGLDemo/src/class/GglShader.cpp",
-  "file": "/home/lori/cppprojects/OpenGLDemo/src/class/GglShader.cpp"
+  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglShader.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglShader.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglShader.cpp"
 },
 {
-  "directory": "/home/lori/cppprojects/OpenGLDemo/build/src",
-  "command": "/usr/bin/c++  -I/home/lori/cppprojects/OpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglVertexArray.cpp.o -c /home/lori/cppprojects/OpenGLDemo/src/class/GglVertexArray.cpp",
-  "file": "/home/lori/cppprojects/OpenGLDemo/src/class/GglVertexArray.cpp"
+  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglVertexArray.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexArray.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexArray.cpp"
 },
 {
-  "directory": "/home/lori/cppprojects/OpenGLDemo/build/src",
-  "command": "/usr/bin/c++  -I/home/lori/cppprojects/OpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o -c /home/lori/cppprojects/OpenGLDemo/src/class/GglVertexBuffer.cpp",
-  "file": "/home/lori/cppprojects/OpenGLDemo/src/class/GglVertexBuffer.cpp"
+  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexBuffer.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexBuffer.cpp"
 },
 {
-  "directory": "/home/lori/cppprojects/OpenGLDemo/build/src",
-  "command": "/usr/bin/c++  -I/home/lori/cppprojects/OpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o -c /home/lori/cppprojects/OpenGLDemo/src/class/VertexBufferLayout.cpp",
-  "file": "/home/lori/cppprojects/OpenGLDemo/src/class/VertexBufferLayout.cpp"
+  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp"
 }
 ]

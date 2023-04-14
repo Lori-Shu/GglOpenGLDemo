@@ -1,7 +1,7 @@
 src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o: \
- /home/lori/cppprojects/OpenGLDemo/src/class/VertexBufferLayout.cpp \
+ /home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp \
  /usr/include/stdc-predef.h \
- /home/lori/cppprojects/OpenGLDemo/include/VertexBufferLayout.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/VertexBufferLayout.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

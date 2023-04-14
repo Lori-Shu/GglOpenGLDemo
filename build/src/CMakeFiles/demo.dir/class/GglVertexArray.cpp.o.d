@@ -1,7 +1,7 @@
 src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o: \
- /home/lori/cppprojects/OpenGLDemo/src/class/GglVertexArray.cpp \
+ /home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexArray.cpp \
  /usr/include/stdc-predef.h \
- /home/lori/cppprojects/OpenGLDemo/include/GglVertexArray.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglVertexArray.h \
  /usr/include/c++/11/cstdint \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -22,11 +22,11 @@ src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/lori/cppprojects/OpenGLDemo/include/GglVertexBuffer.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglVertexBuffer.h \
  /usr/include/GL/glew.h /usr/include/c++/11/cstddef \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/GL/glu.h \
  /usr/include/GL/gl.h \
- /home/lori/cppprojects/OpenGLDemo/include/VertexBufferLayout.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/VertexBufferLayout.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/exception_defines.h \

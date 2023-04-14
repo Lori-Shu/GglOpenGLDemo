@@ -55,7 +55,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "demo::@145eef247bfb46b6828c",
-					"jsonFile" : "target-demo-Debug-fd360f37c339665e6c19.json",
+					"jsonFile" : "target-demo-Debug-4b9fef97f6185158db93.json",
 					"name" : "demo",
 					"projectIndex" : 0
 				}
@@ -65,8 +65,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/lori/cppprojects/OpenGLDemo/build",
-		"source" : "/home/lori/cppprojects/OpenGLDemo"
+		"build" : "/home/lori/CppProjects/GglOpenGLDemo/build",
+		"source" : "/home/lori/CppProjects/GglOpenGLDemo"
 	},
 	"version" : 
 	{

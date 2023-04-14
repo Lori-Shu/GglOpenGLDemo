@@ -1,7 +1,7 @@
 src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o: \
- /home/lori/cppprojects/OpenGLDemo/src/class/GglVertexBuffer.cpp \
+ /home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexBuffer.cpp \
  /usr/include/stdc-predef.h \
- /home/lori/cppprojects/OpenGLDemo/include/GglVertexBuffer.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglVertexBuffer.h \
  /usr/include/c++/11/cstdint \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
