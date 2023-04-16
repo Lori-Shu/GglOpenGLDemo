@@ -1,6 +1,6 @@
 #include"GglVertexBuffer.h"
 namespace mystd{
-GglVertexBuffer::GglVertexBuffer(double *positions,int32_t size){
+GglVertexBuffer::GglVertexBuffer(float *positions,int32_t size){
     createVertexBuffer(positions,size);
 }
 GglVertexBuffer::~GglVertexBuffer() {
@@ -12,10 +12,10 @@ void GglVertexBuffer::unBindVertexBuffer(){
 void GglVertexBuffer::bindVertexBuffer(){
     glBindBuffer(GL_ARRAY_BUFFER, id);
 }
-void GglVertexBuffer::createVertexBuffer(double *positions, int32_t size){
+void GglVertexBuffer::createVertexBuffer(float *positions, int32_t size){
     glGenBuffers(1, &id);
     glBindBuffer(GL_ARRAY_BUFFER, id);
-    glBufferData(GL_ARRAY_BUFFER, size * sizeof(double), positions,
+    glBufferData(GL_ARRAY_BUFFER, size, positions,
                  GL_STATIC_DRAW);
 
 

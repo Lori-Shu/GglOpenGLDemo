@@ -10,20 +10,20 @@ namespace mystd{
     }
     void GglShader::getProgramDir(std::string &path) {
       char proDir[1024];
-    //   只能在Linux环境有效
+    //   只在Linux环境有效
     #ifdef Linux
       int32_t size = readlink("/proc/self/exe", proDir, 1024);
     #endif
       string tp= string(proDir);
       int32_t lastIndex=tp.find_last_of('/');
-      string dir=tp.substr(0,lastIndex+1-0);
-      cout << "proDir==" << dir << endl;
-      path = dir + string("shader/MyShader.shader");
+      path=tp.substr(0,lastIndex+1-0);
+      cout << "proDir==" << path << endl;
     }
     void GglShader::readShaderFile(std::string &vertexShader,
                                           std::string &fragmentShader) {
         string path;
         getProgramDir(path);
+        path = path + string("shader/MyShader.shader");
         ifstream ifs{path, ios::in};
         stringstream ssVertex;
         stringstream ssFrag;
@@ -66,10 +66,18 @@ namespace mystd{
         glAttachShader(program,fs);
         glLinkProgram(program);
         glValidateProgram(program);
-
+        int32_t result;
+        glGetProgramiv(program, GL_LINK_STATUS, &result);
+        if (result == GL_FALSE) {
+        int32_t length;
+        glGetProgramiv(program, GL_INFO_LOG_LENGTH, &length);
+        char buffer[length + 1];
+        glGetProgramInfoLog(program, length + 1, &length, buffer);
+        cout << "err link shader =="<< endl;
+        cout << buffer << endl;
+        }
         glDeleteShader(vs);
         glDeleteShader(fs);
-        
     }
     uint32_t GglShader::compileShader(uint32_t type, std::string &shader) {
         uint32_t id=glCreateShader(type);
@@ -89,20 +97,27 @@ namespace mystd{
         return id;
 
     }
-    void GglShader:: setUniform(string uniformName,float v0,float v1,float v2,float v3){
+    int32_t GglShader::getUniformLocation(std::string name) {
+        return glGetUniformLocation(program, name.c_str());
+    }
+    void GglShader:: setUniform4f(string uniformName,float v0,float v1,float v2,float v3){
         // do not support double glUniform4d is not ok
         // must use float
         int32_t location;
         if (locationCache.find(uniformName) !=
                              locationCache.end()) {
             location= locationCache[uniformName];
-        }else if (locationCache.find(uniformName) ==
+        }
+        if (locationCache.find(uniformName) ==
                              locationCache.end()){
-        location=glGetUniformLocation(program,uniformName.c_str());
+        location=getUniformLocation(uniformName);
         locationCache[uniformName]=location;
         }
         
         glUniform4f(location, v0, v1, v2, v3);
+    }
+    void GglShader::setUniform1i(std::string uniformName, int32_t i){
+        glUniform1i(getUniformLocation(uniformName),i);
     }
     void GglShader::useProgram(){
         glUseProgram(program);
