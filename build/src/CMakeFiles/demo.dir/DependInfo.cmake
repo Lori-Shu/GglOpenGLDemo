@@ -8,14 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lori/CppProjects/GglOpenGLDemo/src/app.cpp" "src/CMakeFiles/demo.dir/app.cpp.o" "gcc" "src/CMakeFiles/demo.dir/app.cpp.o.d"
-  "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglIndexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o.d"
-  "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglRenderer.cpp" "src/CMakeFiles/demo.dir/class/GglRenderer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglRenderer.cpp.o.d"
-  "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglShader.cpp" "src/CMakeFiles/demo.dir/class/GglShader.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglShader.cpp.o.d"
-  "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglTexture.cpp" "src/CMakeFiles/demo.dir/class/GglTexture.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglTexture.cpp.o.d"
-  "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexArray.cpp" "src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o.d"
-  "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o.d"
-  "/home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp" "src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o.d"
+  "D:/cppproject/GglOpenGLDemo/src/glad.c" "src/CMakeFiles/demo.dir/glad.c.obj" "gcc" "src/CMakeFiles/demo.dir/glad.c.obj.d"
+  "D:/cppproject/GglOpenGLDemo/src/app.cpp" "src/CMakeFiles/demo.dir/app.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/app.cpp.obj.d"
+  "D:/cppproject/GglOpenGLDemo/src/class/GglIndexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.obj.d"
+  "D:/cppproject/GglOpenGLDemo/src/class/GglRenderer.cpp" "src/CMakeFiles/demo.dir/class/GglRenderer.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglRenderer.cpp.obj.d"
+  "D:/cppproject/GglOpenGLDemo/src/class/GglShader.cpp" "src/CMakeFiles/demo.dir/class/GglShader.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglShader.cpp.obj.d"
+  "D:/cppproject/GglOpenGLDemo/src/class/GglTexture.cpp" "src/CMakeFiles/demo.dir/class/GglTexture.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglTexture.cpp.obj.d"
+  "D:/cppproject/GglOpenGLDemo/src/class/GglVertexArray.cpp" "src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.obj.d"
+  "D:/cppproject/GglOpenGLDemo/src/class/GglVertexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.obj.d"
+  "D:/cppproject/GglOpenGLDemo/src/class/VertexBufferLayout.cpp" "src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.obj.d"
   )
 
 # Targets to which this target links.

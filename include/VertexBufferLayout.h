@@ -1,8 +1,9 @@
 #pragma once
-#include<vector>
-#include<cstdint>
-#include<GL/glew.h>
-#include<cassert>
+#include <glad/glad.h>
+
+#include <cassert>
+#include <cstdint>
+#include <vector>
 namespace mystd{
 struct VertexBufferLayoutElement{
     int32_t count;
@@ -15,9 +16,7 @@ class VertexBufferLayout {
   VertexBufferLayout();
   ~VertexBufferLayout();
     template<typename T>
-    void push(int32_t count){
-        assert(false && "you should not call this primitive method!");
-    } 
+    void push(int32_t count);
     std::vector<VertexBufferLayoutElement> & getElements();
     uint32_t stride = 0;
 

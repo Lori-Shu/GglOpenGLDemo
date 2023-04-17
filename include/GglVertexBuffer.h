@@ -1,6 +1,7 @@
 #pragma once
-#include<cstdint>
-#include<GL/glew.h>
+#include <glad/glad.h>
+
+#include <cstdint>
 namespace mystd{
     class GglVertexBuffer{
         public:

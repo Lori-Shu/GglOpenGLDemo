@@ -1,1 +1,3 @@
-/usr/bin/g++ -g CMakeFiles/demo.dir/app.cpp.o CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o CMakeFiles/demo.dir/class/GglRenderer.cpp.o CMakeFiles/demo.dir/class/GglShader.cpp.o CMakeFiles/demo.dir/class/GglTexture.cpp.o CMakeFiles/demo.dir/class/GglVertexArray.cpp.o CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o -o ../../bin/demo  -lGL -lglfw3 -lGLEW -lGLU -lX11 
+D:\program\cmake\bin\cmake.exe -E rm -f CMakeFiles\demo.dir/objects.a
+D:\program\MinGWDevKit\mingw64\bin\ar.exe qc CMakeFiles\demo.dir/objects.a @CMakeFiles\demo.dir\objects1
+D:\program\MinGWDevKit\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\demo.dir/objects.a -Wl,--no-whole-archive -o D:\cppproject\GglOpenGLDemo\bin\demo.exe -Wl,--out-implib,D:\cppproject\GglOpenGLDemo\bin\libdemo.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\demo.dir\linkLibs.rsp

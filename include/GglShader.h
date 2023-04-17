@@ -1,14 +1,17 @@
 #pragma once
-#include <GL/glew.h>
+#include <glad/glad.h>
+#include <unistd.h>
 
+#include <cstdlib>
 #include <fstream>
 #include <iostream>
 #include <sstream>
 #include <string>
-#include<cstdlib>
-#include<unistd.h>
-#include<unordered_map>
-#define Linux
+#include <unordered_map>
+#define Windows
+#ifdef Windows
+#include<windows.h>
+#endif
 namespace mystd{
     class GglShader{
         public:

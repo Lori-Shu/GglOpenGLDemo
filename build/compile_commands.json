@@ -1,42 +1,47 @@
 [
 {
-  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
-  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/app.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/app.cpp",
-  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/app.cpp"
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\app.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\app.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/app.cpp"
 },
 {
-  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
-  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglIndexBuffer.cpp",
-  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglIndexBuffer.cpp"
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglIndexBuffer.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglIndexBuffer.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglIndexBuffer.cpp"
 },
 {
-  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
-  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglRenderer.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglRenderer.cpp",
-  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglRenderer.cpp"
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglRenderer.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglRenderer.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglRenderer.cpp"
 },
 {
-  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
-  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglShader.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglShader.cpp",
-  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglShader.cpp"
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglShader.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglShader.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglShader.cpp"
 },
 {
-  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
-  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglTexture.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTexture.cpp",
-  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglTexture.cpp"
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglTexture.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglTexture.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglTexture.cpp"
 },
 {
-  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
-  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglVertexArray.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexArray.cpp",
-  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexArray.cpp"
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglVertexArray.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglVertexArray.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglVertexArray.cpp"
 },
 {
-  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
-  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexBuffer.cpp",
-  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexBuffer.cpp"
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglVertexBuffer.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglVertexBuffer.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglVertexBuffer.cpp"
 },
 {
-  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
-  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp",
-  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp"
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\VertexBufferLayout.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\VertexBufferLayout.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/VertexBufferLayout.cpp"
+},
+{
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\gcc.exe  @CMakeFiles/demo.dir/includes_C.rsp -g -o CMakeFiles\\demo.dir\\glad.c.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\glad.c",
+  "file": "D:/cppproject/GglOpenGLDemo/src/glad.c"
 }
 ]

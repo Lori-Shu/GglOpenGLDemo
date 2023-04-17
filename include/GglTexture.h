@@ -1,8 +1,9 @@
 #pragma once
 
-#include<string>
-#include<GL/glew.h>
-#include<iostream>
+#include <glad/glad.h>
+
+#include <iostream>
+#include <string>
 namespace mystd{
     class GglTexture{
         public:

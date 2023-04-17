@@ -1,6 +1,6 @@
 #include"GglTexture.h"
 #define STB_IMAGE_IMPLEMENTATION
-#include <stb/std_image.h>
+#include <stb/stb_image.h>
 namespace mystd{
     using namespace std;
     GglTexture::GglTexture(std::string path):filePath(path){
@@ -21,7 +21,7 @@ namespace mystd{
         glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
         
 
-        glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA8,width,height,0,GL_RGBA,GL_UNSIGNED_BYTE,localBuffer);
+        glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,width,height,0,GL_RGBA,GL_UNSIGNED_BYTE,localBuffer);
         
     }
 

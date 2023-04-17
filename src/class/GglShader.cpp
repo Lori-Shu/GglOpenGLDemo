@@ -14,10 +14,20 @@ namespace mystd{
     #ifdef Linux
       int32_t size = readlink("/proc/self/exe", proDir, 1024);
     #endif
+#ifdef Windows
+      GetModuleFileName(nullptr,proDir,1024);
+      for(int32_t index=0;proDir [index]!='\0';){
+        if(proDir[index]=='\\'){
+            proDir[index]='/';
+        }
+        ++index;
+      }
+#endif
+      cout << "prodir==" << proDir << endl;
       string tp= string(proDir);
       int32_t lastIndex=tp.find_last_of('/');
       path=tp.substr(0,lastIndex+1-0);
-      cout << "proDir==" << path << endl;
+    //   cout << "proDir==" << path << endl;
     }
     void GglShader::readShaderFile(std::string &vertexShader,
                                           std::string &fragmentShader) {
