@@ -38,5 +38,10 @@
   "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
   "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp",
   "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp"
+},
+{
+  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -g -std=gnu++20 -o CMakeFiles/demo.dir/class/stb_image_impl.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/stb_image_impl.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/stb_image_impl.cpp"
 }
 ]

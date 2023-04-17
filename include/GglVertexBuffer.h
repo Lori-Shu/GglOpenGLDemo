@@ -10,6 +10,6 @@ namespace mystd{
          void bindVertexBuffer();
          uint32_t id;
          private:
-          void createVertexBuffer(float *positions, int32_t size);
-    };
+          void createVertexBuffer(float *positions, int32_t size);    
+        };
 }

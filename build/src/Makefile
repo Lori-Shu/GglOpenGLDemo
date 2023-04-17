@@ -322,6 +322,30 @@ class/VertexBufferLayout.cpp.s:
 	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.s
 .PHONY : class/VertexBufferLayout.cpp.s
 
+class/stb_image_impl.o: class/stb_image_impl.cpp.o
+.PHONY : class/stb_image_impl.o
+
+# target to build an object file
+class/stb_image_impl.cpp.o:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o
+.PHONY : class/stb_image_impl.cpp.o
+
+class/stb_image_impl.i: class/stb_image_impl.cpp.i
+.PHONY : class/stb_image_impl.i
+
+# target to preprocess a source file
+class/stb_image_impl.cpp.i:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.i
+.PHONY : class/stb_image_impl.cpp.i
+
+class/stb_image_impl.s: class/stb_image_impl.cpp.s
+.PHONY : class/stb_image_impl.s
+
+# target to generate assembly for a file
+class/stb_image_impl.cpp.s:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.s
+.PHONY : class/stb_image_impl.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -355,6 +379,9 @@ help:
 	@echo "... class/VertexBufferLayout.o"
 	@echo "... class/VertexBufferLayout.i"
 	@echo "... class/VertexBufferLayout.s"
+	@echo "... class/stb_image_impl.o"
+	@echo "... class/stb_image_impl.i"
+	@echo "... class/stb_image_impl.s"
 .PHONY : help
 
 

@@ -1,19 +1,19 @@
 #shader vertex
-#version 440 core
+#version 440 
 
 layout(location=0) in vec4 positions;
 layout(location=1) in vec2 texCoord;
 
 out vec2 outTexCoord;
 void main(){
-    gl_Position=positions;
+    gl_Position=vec4(positions.x,positions.y,positions.z,1.0);
     outTexCoord=texCoord;
 }
 
 #shader fragment
-#version 440 core 
+#version 440  
 
-layout(location=0) out vec4 color;
+out vec4 outPutColor;
 
 uniform vec4 uColor;
 
@@ -22,6 +22,5 @@ uniform sampler2D uTexture;
 in vec2 outTexCoord;
 
 void main(){
-    vec4 texColor=texture(uTexture,outTexCoord);
-    color=texColor;
+    outPutColor=texture(uTexture,outTexCoord);
 }

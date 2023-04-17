@@ -17,10 +17,11 @@ namespace mystd{
           layout.getElements();
          for (int32_t index = 0; index <elements .size();) {
         VertexBufferLayoutElement& e = elements[index];
-        glEnableVertexAttribArray(index);
+        // 这个函数的最后一个参数指的是vertebuffer对象“每一份”buffer中“每个元素”（由几个float组成）在它所在的buffer中距离buffer初始位置的偏移量
         glVertexAttribPointer(index, e.count, e.type, e.normalized,
                               layout.stride,reinterpret_cast<const void*>( offset));
-        offset += layout.stride;
+        glEnableVertexAttribArray(index);
+        offset += e.count*sizeof(float);
         ++index;
       }
     }

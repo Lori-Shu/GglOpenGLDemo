@@ -7,7 +7,7 @@ namespace mystd{
 struct VertexBufferLayoutElement{
     int32_t count;
     uint32_t type;
-    unsigned char normalized;
+    uint8_t normalized;
 
 };
 class VertexBufferLayout {
@@ -19,7 +19,7 @@ class VertexBufferLayout {
         assert(false && "you should not call this primitive method!");
     } 
     std::vector<VertexBufferLayoutElement> & getElements();
-    uint32_t stride = 0;
+    int32_t stride = 0;
 
    private:
     std::vector<VertexBufferLayoutElement> elements;

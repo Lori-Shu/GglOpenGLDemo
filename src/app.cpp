@@ -30,31 +30,29 @@ int main(void) {
   if(em!=GLEW_OK) cout<<"init glew err"<<endl;
   
   cout<<glGetString(GL_VERSION)<<endl;
-  
-  float positions[16]={
-    -1.0f,-1.0f,0.0f,0.0f,
-    1.0f,-1.0f,1.0f,0.0f,
-    1.0f,1.0f,1.0f,1.0f,
-    -1.0f,1.0f,0.0f,1.0f,
-    
-    
-    
+
+  float positions[5 * 4] = {
+      -0.5f, -0.5f, 0.0f, 0.0f, 0.0f,  // bottom left
+      0.5f,  -0.5f, 0.0f, 1.0f, 0.0f,  // bottom right
+      0.5f,  0.5f,  0.0f, 1.0f, 1.0f,  // top right
+      -0.5f, 0.5f,  0.0f, 0.0f, 1.0f  // top left
   };
   uint32_t indices[6]={
-    3,0,1,
-    3,2,1
+    0,1,2,
+    2,3,0
   };
   glEnable(GL_BLEND);
   glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
   // 使用vertex array 可以在切换绑定时自动绑定vertexbuffer
 
     mystd::GglVertexArray va{};
-    mystd::GglVertexBuffer vb{positions,16*sizeof(float)};
+    mystd::GglVertexBuffer vb{positions,5*4*sizeof(float)};
+    mystd::GglIndexBuffer ib{indices, 6};
     mystd::VertexBufferLayout layout;
-layout.push<float>(2);
-layout.push<float>(2);
-va.addVertexBuffer(vb,layout);
-  mystd::GglIndexBuffer ib{indices,6};
+    layout.push<float>(3);
+    layout.push<float>(2);
+    va.addVertexBuffer(vb,layout);
+  
 
   mystd::GglShader gglShader{};
  
@@ -63,14 +61,14 @@ va.addVertexBuffer(vb,layout);
   gglShader.setUniform4f("uColor", 0.5f, 0.0f, 0.2f, 0.75f);
   std::string programPath;
   gglShader.getProgramDir(programPath);
-  mystd::GglTexture tx{programPath + string("image/image1.png")};
+  mystd::GglTexture tx{programPath + string("image/image0.png")};
   tx.bind(0);
   gglShader.setUniform1i("uTexture", 0);
   // unbind 测试能否自动绑定vertexbuffer
     
-    vb.unBindVertexBuffer();
-    ib.unBindIndexBuffer();
-    gglShader.unUseProgram();
+    // vb.unBindVertexBuffer();
+    // ib.unBindIndexBuffer();
+    // gglShader.unUseProgram();
     mystd::GglRenderer rderer{va,ib,gglShader};
     for (;;) {
     GLenum em = glGetError();
@@ -87,6 +85,7 @@ va.addVertexBuffer(vb,layout);
     // draw
     // glDrawArrays(GL_TRIANGLES,0,3);
     // draw with indexBuffer
+    tx.bind(0);
     rderer.draw();
     /* Swap front and back buffers */
     glfwSwapBuffers(window);
