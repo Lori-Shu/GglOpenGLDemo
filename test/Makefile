@@ -1,0 +1,1 @@
+g++ -Wall -o text.exe .\text.cpp ..\src\glad.c ..\src\class\stb_image_impl.cpp -I ..\include\ -ID:\cppproject\GglOpenGLDemo\dependencies\glfw-3.3.8.bin.WIN64\include -LD:\cppproject\GglOpenGLDemo\dependencies\glfw-3.3.8.bin.WIN64\lib-mingw-w64 -l glfw3 -l gdi32
