@@ -148,30 +148,4 @@ src/CMakeFiles/demo.dir/class/GglTexture.cpp.obj: \
  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ostream.tcc \
  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/istream \
  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/istream.tcc \
- D:/cppproject/GglOpenGLDemo/include/stb/stb_image.h \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
- D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/stdarg.h \
- D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
- D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/string.h \
- D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/math.h \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cmath \
- D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/math.h \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/specfun.h \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/limits \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/gamma.tcc \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/special_function_util.h \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/bessel_function.tcc \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/beta_function.tcc \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/ell_integral.tcc \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/exp_integral.tcc \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/hypergeometric.tcc \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/legendre_function.tcc \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/modified_bessel_func.tcc \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/poly_hermite.tcc \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/poly_laguerre.tcc \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/riemann_zeta.tcc \
- D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/assert.h \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/emmintrin.h \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/xmmintrin.h \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/mmintrin.h
+ D:/cppproject/GglOpenGLDemo/include/stb/stb_image.h

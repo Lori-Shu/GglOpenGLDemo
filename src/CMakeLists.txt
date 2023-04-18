@@ -10,7 +10,6 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 link_directories(${PROJECT_SOURCE_DIR}/dependencies/glfw-3.3.8.bin.WIN64/lib-mingw-w64)
 
-
 add_executable(demo ${cppFiles})
 
 target_link_libraries(demo glfw3)

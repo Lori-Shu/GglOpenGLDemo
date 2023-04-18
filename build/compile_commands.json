@@ -41,6 +41,11 @@
 },
 {
   "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\stb_image_impl.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\stb_image_impl.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/stb_image_impl.cpp"
+},
+{
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
   "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\gcc.exe  @CMakeFiles/demo.dir/includes_C.rsp -g -o CMakeFiles\\demo.dir\\glad.c.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\glad.c",
   "file": "D:/cppproject/GglOpenGLDemo/src/glad.c"
 }

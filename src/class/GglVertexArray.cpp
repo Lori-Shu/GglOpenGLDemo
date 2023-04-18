@@ -20,7 +20,7 @@ namespace mystd{
         glEnableVertexAttribArray(index);
         glVertexAttribPointer(index, e.count, e.type, e.normalized,
                               layout.stride,reinterpret_cast<const void*>( offset));
-        offset += layout.stride;
+        offset += e.count*sizeof(float);
         ++index;
       }
     }

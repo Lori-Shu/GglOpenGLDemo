@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/cppproject/GglOpenGLDemo/src/class/GglVertexArray.cpp" "src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.obj.d"
   "D:/cppproject/GglOpenGLDemo/src/class/GglVertexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.obj.d"
   "D:/cppproject/GglOpenGLDemo/src/class/VertexBufferLayout.cpp" "src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.obj.d"
+  "D:/cppproject/GglOpenGLDemo/src/class/stb_image_impl.cpp" "src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.obj.d"
   )
 
 # Targets to which this target links.

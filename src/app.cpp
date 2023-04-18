@@ -44,8 +44,8 @@ int main(void) {
     0,1,2,
     2,3,0
   };
-//   glEnable(GL_BLEND);
-//   glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
+  glEnable(GL_BLEND);
+  glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
   // 使用vertex array 可以在切换绑定时自动绑定vertexbuffer
 
     mystd::GglVertexArray va{};
@@ -63,7 +63,7 @@ va.addVertexBuffer(vb,layout);
   gglShader.setUniform4f("uColor", 0.5f, 0.0f, 0.2f, 0.75f);
   std::string programPath;
   gglShader.getProgramDir(programPath);
-  mystd::GglTexture tx{programPath + string("image/image0.png")};
+  mystd::GglTexture tx{programPath + string("image/image33.jpeg")};
   tx.bind(0);
   gglShader.setUniform1i("uTexture", 0);
   // unbind 测试能否自动绑定vertexbuffer

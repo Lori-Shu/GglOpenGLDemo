@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.obj.d"
   "CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.obj"
   "CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.obj.d"
+  "CMakeFiles/demo.dir/class/stb_image_impl.cpp.obj"
+  "CMakeFiles/demo.dir/class/stb_image_impl.cpp.obj.d"
   "CMakeFiles/demo.dir/glad.c.obj"
   "CMakeFiles/demo.dir/glad.c.obj.d"
   "D:/cppproject/GglOpenGLDemo/bin/demo.exe"

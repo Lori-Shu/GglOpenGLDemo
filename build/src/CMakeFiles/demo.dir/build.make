@@ -188,11 +188,26 @@ src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.s"
 	cd /d D:\cppproject\GglOpenGLDemo\build\src && D:\program\MinGWDevKit\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\cppproject\GglOpenGLDemo\src\class\VertexBufferLayout.cpp -o CMakeFiles\demo.dir\class\VertexBufferLayout.cpp.s
 
+src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.obj: src/CMakeFiles/demo.dir/flags.make
+src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.obj: src/CMakeFiles/demo.dir/includes_CXX.rsp
+src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.obj: D:/cppproject/GglOpenGLDemo/src/class/stb_image_impl.cpp
+src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.obj: src/CMakeFiles/demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\cppproject\GglOpenGLDemo\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.obj"
+	cd /d D:\cppproject\GglOpenGLDemo\build\src && D:\program\MinGWDevKit\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.obj -MF CMakeFiles\demo.dir\class\stb_image_impl.cpp.obj.d -o CMakeFiles\demo.dir\class\stb_image_impl.cpp.obj -c D:\cppproject\GglOpenGLDemo\src\class\stb_image_impl.cpp
+
+src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/class/stb_image_impl.cpp.i"
+	cd /d D:\cppproject\GglOpenGLDemo\build\src && D:\program\MinGWDevKit\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\cppproject\GglOpenGLDemo\src\class\stb_image_impl.cpp > CMakeFiles\demo.dir\class\stb_image_impl.cpp.i
+
+src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/class/stb_image_impl.cpp.s"
+	cd /d D:\cppproject\GglOpenGLDemo\build\src && D:\program\MinGWDevKit\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\cppproject\GglOpenGLDemo\src\class\stb_image_impl.cpp -o CMakeFiles\demo.dir\class\stb_image_impl.cpp.s
+
 src/CMakeFiles/demo.dir/glad.c.obj: src/CMakeFiles/demo.dir/flags.make
 src/CMakeFiles/demo.dir/glad.c.obj: src/CMakeFiles/demo.dir/includes_C.rsp
 src/CMakeFiles/demo.dir/glad.c.obj: D:/cppproject/GglOpenGLDemo/src/glad.c
 src/CMakeFiles/demo.dir/glad.c.obj: src/CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\cppproject\GglOpenGLDemo\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/CMakeFiles/demo.dir/glad.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\cppproject\GglOpenGLDemo\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/CMakeFiles/demo.dir/glad.c.obj"
 	cd /d D:\cppproject\GglOpenGLDemo\build\src && D:\program\MinGWDevKit\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/demo.dir/glad.c.obj -MF CMakeFiles\demo.dir\glad.c.obj.d -o CMakeFiles\demo.dir\glad.c.obj -c D:\cppproject\GglOpenGLDemo\src\glad.c
 
 src/CMakeFiles/demo.dir/glad.c.i: cmake_force
@@ -213,6 +228,7 @@ demo_OBJECTS = \
 "CMakeFiles/demo.dir/class/GglVertexArray.cpp.obj" \
 "CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.obj" \
 "CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.obj" \
+"CMakeFiles/demo.dir/class/stb_image_impl.cpp.obj" \
 "CMakeFiles/demo.dir/glad.c.obj"
 
 # External object files for target demo
@@ -226,12 +242,13 @@ D:/cppproject/GglOpenGLDemo/bin/demo.exe: src/CMakeFiles/demo.dir/class/GglTextu
 D:/cppproject/GglOpenGLDemo/bin/demo.exe: src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.obj
 D:/cppproject/GglOpenGLDemo/bin/demo.exe: src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.obj
 D:/cppproject/GglOpenGLDemo/bin/demo.exe: src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.obj
+D:/cppproject/GglOpenGLDemo/bin/demo.exe: src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.obj
 D:/cppproject/GglOpenGLDemo/bin/demo.exe: src/CMakeFiles/demo.dir/glad.c.obj
 D:/cppproject/GglOpenGLDemo/bin/demo.exe: src/CMakeFiles/demo.dir/build.make
 D:/cppproject/GglOpenGLDemo/bin/demo.exe: src/CMakeFiles/demo.dir/linkLibs.rsp
 D:/cppproject/GglOpenGLDemo/bin/demo.exe: src/CMakeFiles/demo.dir/objects1
 D:/cppproject/GglOpenGLDemo/bin/demo.exe: src/CMakeFiles/demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\cppproject\GglOpenGLDemo\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable D:\cppproject\GglOpenGLDemo\bin\demo.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\cppproject\GglOpenGLDemo\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable D:\cppproject\GglOpenGLDemo\bin\demo.exe"
 	cd /d D:\cppproject\GglOpenGLDemo\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\demo.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
