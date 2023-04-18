@@ -60,6 +60,10 @@
 				{
 					"backtrace" : 3,
 					"path" : "/home/lori/CppProjects/GglOpenGLDemo/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm"
 				}
 			],
 			"language" : "CXX",
@@ -111,11 +115,6 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "-lGLEW",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "-lGLU",
 				"role" : "libraries"
 			},
 			{

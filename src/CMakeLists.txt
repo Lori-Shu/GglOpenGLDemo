@@ -1,4 +1,4 @@
-include_directories(${PROJECT_SOURCE_DIR}/include)
+include_directories(${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/dependencies/glm)
 
 find_package(glfw3 REQUIRED)
 
@@ -12,7 +12,6 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 add_executable(demo ${cppFiles})
 
-target_link_libraries(demo GL glfw3 GLEW GLU X11)
-
+target_link_libraries(demo GL glfw3 GLEW X11)
 
 exec_program(cp ARGS -r ${PROJECT_SOURCE_DIR}/src/shader/ ${PROJECT_SOURCE_DIR}/bin/)

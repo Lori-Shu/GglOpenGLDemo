@@ -19,6 +19,7 @@ class VertexBufferLayout {
         assert(false && "you should not call this primitive method!");
     } 
     std::vector<VertexBufferLayoutElement> & getElements();
+    int32_t getTypeSize(uint32_t type);
     int32_t stride = 0;
 
    private:

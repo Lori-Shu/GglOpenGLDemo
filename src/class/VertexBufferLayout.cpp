@@ -10,6 +10,18 @@ VertexBufferLayout ::~VertexBufferLayout(){
 std::vector<VertexBufferLayoutElement>& VertexBufferLayout ::getElements() {
   return elements;
 }
+int32_t VertexBufferLayout ::getTypeSize(uint32_t type){
+    if(type==GL_FLOAT){
+        return sizeof(float);
+    }
+    if (type == GL_INT) {
+        return sizeof(int32_t);
+    }
+    if(type==GL_BYTE){
+        return sizeof(int8_t);
+    }
+    return 0;
+}
 template <>
 void VertexBufferLayout::push<double>(int32_t count) {
   elements.push_back(VertexBufferLayoutElement{count, GL_DOUBLE, GL_FALSE});

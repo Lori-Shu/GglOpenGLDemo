@@ -5,8 +5,9 @@ layout(location=0) in vec4 positions;
 layout(location=1) in vec2 texCoord;
 
 out vec2 outTexCoord;
+uniform mat4 uProjection;
 void main(){
-    gl_Position=vec4(positions.x,positions.y,positions.z,1.0);
+    gl_Position=positions*uProjection;
     outTexCoord=texCoord;
 }
 

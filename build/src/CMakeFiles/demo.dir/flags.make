@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lori/CppProjects/GglOpenGLDemo/include
+CXX_INCLUDES = -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm
 
 CXX_FLAGS = -g -std=gnu++20
 

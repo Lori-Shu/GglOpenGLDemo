@@ -119,6 +119,9 @@ namespace mystd{
     void GglShader::setUniform1i(std::string uniformName, int32_t i){
         glUniform1i(getUniformLocation(uniformName),i);
     }
+    void GglShader::setUniformMatrix4f(std::string uniformName, glm::mat4 mtx) {
+        glUniformMatrix4fv(getUniformLocation(uniformName),1,GL_FALSE,&mtx[0][0]);
+    }
     void GglShader::useProgram(){
         glUseProgram(program);
     }

@@ -8,6 +8,8 @@
 #include"VertexBufferLayout.h"
 #include"GglRenderer.h"
 #include"GglTexture.h"
+#include<glm/glm.hpp>
+#include<glm/gtc/matrix_transform.hpp>
 using namespace std;
 int main(void) {
   GLFWwindow* window;
@@ -16,7 +18,7 @@ int main(void) {
   if (!glfwInit()) return -1;
 
   /* Create a windowed mode window and its OpenGL context */
-  window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+  window = glfwCreateWindow(1280, 720, "Hello World", NULL, NULL);
   if (!window) {
     glfwTerminate();
     return -1;
@@ -28,6 +30,7 @@ int main(void) {
   // init glew
   GLenum em= glewInit();
   if(em!=GLEW_OK) cout<<"init glew err"<<endl;
+  
   
   cout<<glGetString(GL_VERSION)<<endl;
 
@@ -55,13 +58,15 @@ int main(void) {
   
 
   mystd::GglShader gglShader{};
- 
+  glm::mat4 projection = glm::ortho(-0.5f, 0.5f, -0.5f, 0.5f, -1.0f, 1.0f);
+
   gglShader.useProgram();
   
   gglShader.setUniform4f("uColor", 0.5f, 0.0f, 0.2f, 0.75f);
+  gglShader.setUniformMatrix4f("uProjection",projection);
   std::string programPath;
   gglShader.getProgramDir(programPath);
-  mystd::GglTexture tx{programPath + string("image/image0.png")};
+  mystd::GglTexture tx{programPath + string("image/image3.jpg")};
   tx.bind(0);
   gglShader.setUniform1i("uTexture", 0);
   // unbind 测试能否自动绑定vertexbuffer
