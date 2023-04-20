@@ -19,9 +19,9 @@ namespace mystd{
         glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
         stbi_set_flip_vertically_on_load(1);
         localBuffer =
-            stbi_load(filePath.c_str(), &width, &height, &bitsPerPixel, 4);
+            stbi_load(filePath.c_str(), &width, &height, &bitsPerPixel, 0);
 
-        glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA8,width,height,0,GL_RGBA,GL_UNSIGNED_BYTE,localBuffer);
+        glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,width,height,0,GL_RGB,GL_UNSIGNED_BYTE,localBuffer);
         // glGenerateMipmap(GL_TEXTURE_2D);
     }
 

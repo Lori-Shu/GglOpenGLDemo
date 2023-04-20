@@ -5,8 +5,11 @@ find_package(glfw3 REQUIRED)
 find_package(OpenGL REQUIRED)
 
 file(GLOB cppFiles 
+${PROJECT_SOURCE_DIR}/src/imgui/*.cpp
 ${PROJECT_SOURCE_DIR}/src/*.cpp 
 ${PROJECT_SOURCE_DIR}/src/class/*.cpp)
+
+
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 

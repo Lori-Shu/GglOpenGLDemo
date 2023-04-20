@@ -298,4 +298,9 @@ src/CMakeFiles/demo.dir/app.cpp.o: \
  /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/gtc/matrix_transform.hpp \
  /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/gtc/../glm.hpp \
  /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/gtc/../core/_fixes.hpp \
- /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/gtc/matrix_transform.inl
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/gtc/matrix_transform.inl \
+ /home/lori/CppProjects/GglOpenGLDemo/include/imgui.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/imconfig.h \
+ /usr/include/string.h /usr/include/strings.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/imgui_impl_glfw.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/imgui_impl_opengl3.h

@@ -17,6 +17,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp" "src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/stb_image_impl.cpp" "src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o.d"
+  "/home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui.cpp" "src/CMakeFiles/demo.dir/imgui/imgui.cpp.o" "gcc" "src/CMakeFiles/demo.dir/imgui/imgui.cpp.o.d"
+  "/home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui_draw.cpp" "src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o" "gcc" "src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o.d"
+  "/home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui_impl_glfw.cpp" "src/CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.o" "gcc" "src/CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.o.d"
+  "/home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui_impl_opengl3.cpp" "src/CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o" "gcc" "src/CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o.d"
+  "/home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui_tables.cpp" "src/CMakeFiles/demo.dir/imgui/imgui_tables.cpp.o" "gcc" "src/CMakeFiles/demo.dir/imgui/imgui_tables.cpp.o.d"
+  "/home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui_widgets.cpp" "src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o" "gcc" "src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o.d"
   )
 
 # Targets to which this target links.
