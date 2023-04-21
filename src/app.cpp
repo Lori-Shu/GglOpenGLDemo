@@ -13,7 +13,10 @@
 #include<imgui.h>
 #include<imgui_impl_glfw.h>
 #include<imgui_impl_opengl3.h>
+#include"GglTest.h"
 using namespace std;
+
+
 
 static void glfw_error_callback(int error, const char* description) {
   fprintf(stderr, "GLFW Error %d: %s\n", error, description);
@@ -87,7 +90,7 @@ int main(void) {
     gglShader.setUniform4f("uColor", 0.5f, 0.0f, 0.2f, 0.75f);
     
     std::string programPath;
-    gglShader.getProgramDir(programPath);
+    getProgramDir(programPath);
     mystd::GglTexture tx{programPath + string("image/image3.jpg")};
     tx.bind(0);
     gglShader.setUniform1i("uTexture", 0);
@@ -107,8 +110,18 @@ int main(void) {
     cout << str << endl;
     }
     float imageTranslateXY[2]={0.0f};
-    /* Loop until the user closes the window */
-    while (!glfwWindowShouldClose(window)) {
+    mystd::Test* currentTestPtr;
+    vector<mystd::Test*> testVt;
+    mystd::TextureTest txt3{programPath + string("image/image3.jpg")};
+        testVt.push_back(&txt3);
+        mystd::TextureTest txt2{programPath + string("image/image2.jpg")};
+            testVt.push_back(&txt2);
+            mystd::TextureTest txt1{programPath + string("image/image1.png")};
+                testVt.push_back(&txt1);
+                mystd::TextureTest txt0{programPath + string("image/image0.jpg")};
+                testVt.push_back(&txt0);
+                /* Loop until the user closes the window */
+                while (!glfwWindowShouldClose(window)) {
     /* Render here */
     rderer.clear();
     model =
@@ -138,6 +151,31 @@ int main(void) {
     ImGui::SliderFloat2("imagexy:",imageTranslateXY,-0.5f,0.5f);
 
     ImGui::End();
+    ImGui::Begin("test window");
+    // bool createTableRes=ImGui::BeginTable("tests",1,ImGuiTableFlags_Borders|ImGuiTableFlags_RowBg|ImGuiTableFlags_ScrollY);
+    // if(!createTableRes){
+    //     cout<<"创建table失败"<<endl;
+    // }
+    // ImGui::TableSetupColumn("testcolmn", ImGuiTableColumnFlags_WidthStretch,
+    //                         100.0f);
+    ImGui::BeginChild("scroll");
+    ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(0, 0));
+    for (int32_t index = 0; index < testVt.size();) {
+      
+      ImGui::Columns(1);
+      currentTestPtr= testVt[index];
+    //   ImGui::TableNextRow(0,20.0f);
+    //   ImGui::TableSetColumnIndex(0);
+      if (ImGui::Button((currentTestPtr->testName+to_string(index)).c_str(),ImVec2(30.0f,20.0f))) {
+        currentTestPtr->showTestWindow = !currentTestPtr->showTestWindow;
+        }
+        currentTestPtr->onImGuiRender();
+        ++index;
+    }
+    ImGui::PopStyleVar();
+    ImGui::EndChild();
+    // ImGui::EndTable();
+    ImGui::End();
     // Rendering
     ImGui::Render();
     // int display_w, display_h;
@@ -152,7 +190,7 @@ int main(void) {
 
     /* Poll for and process events */
     glfwPollEvents();
-  }
+    }
   // Cleanup
   ImGui_ImplOpenGL3_Shutdown();
   ImGui_ImplGlfw_Shutdown();

@@ -9,7 +9,8 @@
 #include<unistd.h>
 #include<unordered_map>
 #include<glm/glm.hpp>
-#define Linux
+#include"GglPreBuild.h"
+
 namespace mystd{
     class GglShader{
         public:
@@ -24,7 +25,6 @@ namespace mystd{
         void setUniformMatrix4f(std::string uniformName,glm::mat4 mtx);
         void useProgram();
         void unUseProgram();
-        void getProgramDir(std::string &path);
         uint32_t program;
         std::unordered_map<std::string, int32_t> locationCache;
 

@@ -9,8 +9,6 @@ ${PROJECT_SOURCE_DIR}/src/imgui/*.cpp
 ${PROJECT_SOURCE_DIR}/src/*.cpp 
 ${PROJECT_SOURCE_DIR}/src/class/*.cpp)
 
-
-
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 add_executable(demo ${cppFiles})

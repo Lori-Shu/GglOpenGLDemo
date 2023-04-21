@@ -17,7 +17,7 @@ namespace mystd{
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
-        stbi_set_flip_vertically_on_load(1);
+        // stbi_set_flip_vertically_on_load(1);
         localBuffer =
             stbi_load(filePath.c_str(), &width, &height, &bitsPerPixel, 0);
 
@@ -30,4 +30,7 @@ namespace mystd{
         glBindTexture(GL_TEXTURE_2D, textureId);
     }
     void GglTexture::unBind() { glBindTexture(GL_TEXTURE_2D,0);}
+    uint32_t GglTexture::getTextureId() {return textureId;}
+    int32_t GglTexture::getWidth(){return width;}
+    int32_t GglTexture::getHeight(){return height;}
 }

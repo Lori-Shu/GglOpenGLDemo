@@ -291,4 +291,5 @@ src/CMakeFiles/demo.dir/class/GglRenderer.cpp.o: \
  /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/./core/func_integer.inl \
  /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/./core/func_noise.hpp \
  /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/./core/func_noise.inl \
- /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/./core/_swizzle.hpp
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/./core/_swizzle.hpp \
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglPreBuild.h

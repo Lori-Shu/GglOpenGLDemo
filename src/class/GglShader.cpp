@@ -8,17 +8,6 @@ namespace mystd{
     GglShader::~GglShader(){
         glDeleteProgram(program);
     }
-    void GglShader::getProgramDir(std::string &path) {
-      char proDir[1024];
-    //   只在Linux环境有效
-    #ifdef Linux
-      int32_t size = readlink("/proc/self/exe", proDir, 1024);
-    #endif
-      string tp= string(proDir);
-      int32_t lastIndex=tp.find_last_of('/');
-      path=tp.substr(0,lastIndex+1-0);
-      cout << "proDir==" << path << endl;
-    }
     void GglShader::readShaderFile(std::string &vertexShader,
                                           std::string &fragmentShader) {
         string path;

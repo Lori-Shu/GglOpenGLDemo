@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/demo.dir/class/GglShader.cpp.o.d"
   "CMakeFiles/demo.dir/class/GglTexture.cpp.o"
   "CMakeFiles/demo.dir/class/GglTexture.cpp.o.d"
+  "CMakeFiles/demo.dir/class/GglTextureTest.cpp.o"
+  "CMakeFiles/demo.dir/class/GglTextureTest.cpp.o.d"
   "CMakeFiles/demo.dir/class/GglVertexArray.cpp.o"
   "CMakeFiles/demo.dir/class/GglVertexArray.cpp.o.d"
   "CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o"
