@@ -23,5 +23,5 @@ uniform sampler2D uTexture;
 in vec2 outTexCoord;
 
 void main(){
-    outPutColor=texture(uTexture,outTexCoord);
+    outPutColor=uColor;
 }

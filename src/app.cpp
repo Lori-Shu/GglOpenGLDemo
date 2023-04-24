@@ -57,10 +57,10 @@ int main(void) {
   cout<<glGetString(GL_VERSION)<<endl;
 
   float positions[5 * 4] = {
-      -0.5f, -0.5f, 0.0f, 0.0f, 0.0f,  // bottom left
-      0.5f,  -0.5f, 0.0f, 1.0f, 0.0f,  // bottom right
-      0.5f,  0.5f,  0.0f, 1.0f, 1.0f,  // top right
-      -0.5f, 0.5f,  0.0f, 0.0f, 1.0f  // top left
+      0.0f, 0.0f, 0.0f, 0.0f, 0.0f,  // bottom left
+      50.0f,  0.0f, 0.0f, 1.0f, 0.0f,  // bottom right
+      50.0f,  50.0f,  0.0f, 1.0f, 1.0f,  // top right
+      0.0f, 50.0f,  0.0f, 0.0f, 1.0f  // top left
   };
   uint32_t indices[6]={
     0,1,2,
@@ -80,10 +80,10 @@ int main(void) {
   
 
   mystd::GglShader gglShader{};
-  glm::mat4 projection = glm::ortho(-1.0f, 1.0f, -1.0f, 1.0f, -1.0f, 1.0f);
-    glm::mat4 view=glm::translate(glm::mat4(1.0f),glm::vec3(0.3f,0.0f,0.0f));
+  glm::mat4 projection = glm::ortho(0.0f, 100.0f, 0.0f, 100.0f, 0.0f, 100.0f);
+    glm::mat4 view=glm::translate(glm::mat4(1.0f),glm::vec3(0.0f,0.0f,0.0f));
     glm::mat4 model =
-        glm::translate(glm::mat4{1.0f}, glm::vec3{0.0f, -0.3f, 0.0f});
+        glm::translate(glm::mat4{1.0f}, glm::vec3{0.0f, 0.0f, 0.0f});
     glm::mat4 mvp=projection*view*model;
     gglShader.useProgram();
 
@@ -94,12 +94,6 @@ int main(void) {
     mystd::GglTexture tx{programPath + string("image/image3.jpg")};
     tx.bind(0);
     gglShader.setUniform1i("uTexture", 0);
-    
-    // unbind 测试能否自动绑定vertexbuffer
-    
-    // vb.unBindVertexBuffer();
-    // ib.unBindIndexBuffer();
-    // gglShader.unUseProgram();
     mystd::GglRenderer rderer{va,ib,gglShader};
     for (;;) {
     GLenum em = glGetError();
@@ -109,46 +103,37 @@ int main(void) {
     const uint8_t* str = glewGetErrorString(em);
     cout << str << endl;
     }
-    float imageTranslateXY[2]={0.0f};
+    float imageTranslateXY[2]={50.0f,50.0f};
     mystd::Test* currentTestPtr;
     vector<mystd::Test*> testVt;
     mystd::TextureTest txt3{programPath + string("image/image3.jpg")};
-        testVt.push_back(&txt3);
-        mystd::TextureTest txt2{programPath + string("image/image2.jpg")};
-            testVt.push_back(&txt2);
-            mystd::TextureTest txt1{programPath + string("image/image1.png")};
-                testVt.push_back(&txt1);
-                mystd::TextureTest txt0{programPath + string("image/image0.jpg")};
-                testVt.push_back(&txt0);
-                /* Loop until the user closes the window */
-                while (!glfwWindowShouldClose(window)) {
+    testVt.push_back(&txt3);
+    mystd::TextureTest txt2{programPath + string("image/image2.jpg")};
+    testVt.push_back(&txt2);
+    mystd::TextureTest txt1{programPath + string("image/image1.png")};
+    testVt.push_back(&txt1);
+    mystd::TextureTest txt0{programPath + string("image/image0.jpg")};
+    testVt.push_back(&txt0);
+    mystd::GglBKColorTest bkCTest{&gglShader};
+    testVt.push_back(&bkCTest);
+    /* Loop until the user closes the window */
+    while (!glfwWindowShouldClose(window)) {
     /* Render here */
     rderer.clear();
     model =
         glm::translate(glm::mat4{1.0f}, glm::vec3{imageTranslateXY[0], imageTranslateXY[1], 0.0f});
     mvp = projection * view * model;
-    
-    // draw
-    // glDrawArrays(GL_TRIANGLES,0,3);
-    // draw with indexBuffer
-    
+    gglShader.useProgram();
+    gglShader.setUniformMatrix4f("uMVP", mvp);
+    tx.bind(0);
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplGlfw_NewFrame();
     ImGui::NewFrame();
-    gglShader.useProgram();
-    gglShader.setUniformMatrix4f("uMVP", mvp);
-    tx.bind(0);
-    rderer.draw();
-    glm::mat4 secondView =
-        glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f));
-    mvp=projection*secondView;
-    gglShader.useProgram();
-    gglShader.setUniformMatrix4f("uMVP", mvp);
-    tx.bind(0);
-    rderer.draw();
+
+   
     // imgui demo window
     ImGui::Begin("hello world");
-    ImGui::SliderFloat2("imagexy:",imageTranslateXY,-0.5f,0.5f);
+    ImGui::SliderFloat2("==imagexy",imageTranslateXY,0.0f,100.0f);
 
     ImGui::End();
     ImGui::Begin("test window");
@@ -158,15 +143,14 @@ int main(void) {
     // }
     // ImGui::TableSetupColumn("testcolmn", ImGuiTableColumnFlags_WidthStretch,
     //                         100.0f);
-    ImGui::BeginChild("scroll");
+    ImGui::BeginChild("TestColumns");
     ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(0, 0));
     for (int32_t index = 0; index < testVt.size();) {
-      
       ImGui::Columns(1);
       currentTestPtr= testVt[index];
     //   ImGui::TableNextRow(0,20.0f);
     //   ImGui::TableSetColumnIndex(0);
-      if (ImGui::Button((currentTestPtr->testName+to_string(index)).c_str(),ImVec2(30.0f,20.0f))) {
+      if (ImGui::Button((currentTestPtr->testName+to_string(index)).c_str())) {
         currentTestPtr->showTestWindow = !currentTestPtr->showTestWindow;
         }
         currentTestPtr->onImGuiRender();
@@ -184,7 +168,9 @@ int main(void) {
     // // glClearColor(clear_color.x * clear_color.w, clear_color.y * clear_color.w,
     // //              clear_color.z * clear_color.w, clear_color.w);
     // glClear(GL_COLOR_BUFFER_BIT);
+    
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+    rderer.draw();
     /* Swap front and back buffers */
     glfwSwapBuffers(window);
 

@@ -26,7 +26,7 @@ namespace mystd{
     }
 
     void GglTexture::bind(uint32_t slot) {
-        glActiveTexture(GL_TEXTURE0);
+        glActiveTexture(GL_TEXTURE0+slot);
         glBindTexture(GL_TEXTURE_2D, textureId);
     }
     void GglTexture::unBind() { glBindTexture(GL_TEXTURE_2D,0);}

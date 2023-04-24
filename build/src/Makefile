@@ -226,6 +226,30 @@ class/GglShader.cpp.s:
 	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglShader.cpp.s
 .PHONY : class/GglShader.cpp.s
 
+class/GglTest.o: class/GglTest.cpp.o
+.PHONY : class/GglTest.o
+
+# target to build an object file
+class/GglTest.cpp.o:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglTest.cpp.o
+.PHONY : class/GglTest.cpp.o
+
+class/GglTest.i: class/GglTest.cpp.i
+.PHONY : class/GglTest.i
+
+# target to preprocess a source file
+class/GglTest.cpp.i:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglTest.cpp.i
+.PHONY : class/GglTest.cpp.i
+
+class/GglTest.s: class/GglTest.cpp.s
+.PHONY : class/GglTest.s
+
+# target to generate assembly for a file
+class/GglTest.cpp.s:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglTest.cpp.s
+.PHONY : class/GglTest.cpp.s
+
 class/GglTexture.o: class/GglTexture.cpp.o
 .PHONY : class/GglTexture.o
 
@@ -249,30 +273,6 @@ class/GglTexture.s: class/GglTexture.cpp.s
 class/GglTexture.cpp.s:
 	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglTexture.cpp.s
 .PHONY : class/GglTexture.cpp.s
-
-class/GglTextureTest.o: class/GglTextureTest.cpp.o
-.PHONY : class/GglTextureTest.o
-
-# target to build an object file
-class/GglTextureTest.cpp.o:
-	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglTextureTest.cpp.o
-.PHONY : class/GglTextureTest.cpp.o
-
-class/GglTextureTest.i: class/GglTextureTest.cpp.i
-.PHONY : class/GglTextureTest.i
-
-# target to preprocess a source file
-class/GglTextureTest.cpp.i:
-	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglTextureTest.cpp.i
-.PHONY : class/GglTextureTest.cpp.i
-
-class/GglTextureTest.s: class/GglTextureTest.cpp.s
-.PHONY : class/GglTextureTest.s
-
-# target to generate assembly for a file
-class/GglTextureTest.cpp.s:
-	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglTextureTest.cpp.s
-.PHONY : class/GglTextureTest.cpp.s
 
 class/GglVertexArray.o: class/GglVertexArray.cpp.o
 .PHONY : class/GglVertexArray.o
@@ -535,12 +535,12 @@ help:
 	@echo "... class/GglShader.o"
 	@echo "... class/GglShader.i"
 	@echo "... class/GglShader.s"
+	@echo "... class/GglTest.o"
+	@echo "... class/GglTest.i"
+	@echo "... class/GglTest.s"
 	@echo "... class/GglTexture.o"
 	@echo "... class/GglTexture.i"
 	@echo "... class/GglTexture.s"
-	@echo "... class/GglTextureTest.o"
-	@echo "... class/GglTextureTest.i"
-	@echo "... class/GglTextureTest.s"
 	@echo "... class/GglVertexArray.o"
 	@echo "... class/GglVertexArray.i"
 	@echo "... class/GglVertexArray.s"

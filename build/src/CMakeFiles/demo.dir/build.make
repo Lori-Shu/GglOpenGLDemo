@@ -125,10 +125,24 @@ src/CMakeFiles/demo.dir/class/GglShader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/class/GglShader.cpp.s"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lori/CppProjects/GglOpenGLDemo/src/class/GglShader.cpp -o CMakeFiles/demo.dir/class/GglShader.cpp.s
 
+src/CMakeFiles/demo.dir/class/GglTest.cpp.o: src/CMakeFiles/demo.dir/flags.make
+src/CMakeFiles/demo.dir/class/GglTest.cpp.o: ../src/class/GglTest.cpp
+src/CMakeFiles/demo.dir/class/GglTest.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/demo.dir/class/GglTest.cpp.o"
+	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/class/GglTest.cpp.o -MF CMakeFiles/demo.dir/class/GglTest.cpp.o.d -o CMakeFiles/demo.dir/class/GglTest.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTest.cpp
+
+src/CMakeFiles/demo.dir/class/GglTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/class/GglTest.cpp.i"
+	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTest.cpp > CMakeFiles/demo.dir/class/GglTest.cpp.i
+
+src/CMakeFiles/demo.dir/class/GglTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/class/GglTest.cpp.s"
+	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTest.cpp -o CMakeFiles/demo.dir/class/GglTest.cpp.s
+
 src/CMakeFiles/demo.dir/class/GglTexture.cpp.o: src/CMakeFiles/demo.dir/flags.make
 src/CMakeFiles/demo.dir/class/GglTexture.cpp.o: ../src/class/GglTexture.cpp
 src/CMakeFiles/demo.dir/class/GglTexture.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/demo.dir/class/GglTexture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/demo.dir/class/GglTexture.cpp.o"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/class/GglTexture.cpp.o -MF CMakeFiles/demo.dir/class/GglTexture.cpp.o.d -o CMakeFiles/demo.dir/class/GglTexture.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTexture.cpp
 
 src/CMakeFiles/demo.dir/class/GglTexture.cpp.i: cmake_force
@@ -138,20 +152,6 @@ src/CMakeFiles/demo.dir/class/GglTexture.cpp.i: cmake_force
 src/CMakeFiles/demo.dir/class/GglTexture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/class/GglTexture.cpp.s"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTexture.cpp -o CMakeFiles/demo.dir/class/GglTexture.cpp.s
-
-src/CMakeFiles/demo.dir/class/GglTextureTest.cpp.o: src/CMakeFiles/demo.dir/flags.make
-src/CMakeFiles/demo.dir/class/GglTextureTest.cpp.o: ../src/class/GglTextureTest.cpp
-src/CMakeFiles/demo.dir/class/GglTextureTest.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/demo.dir/class/GglTextureTest.cpp.o"
-	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/class/GglTextureTest.cpp.o -MF CMakeFiles/demo.dir/class/GglTextureTest.cpp.o.d -o CMakeFiles/demo.dir/class/GglTextureTest.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTextureTest.cpp
-
-src/CMakeFiles/demo.dir/class/GglTextureTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/class/GglTextureTest.cpp.i"
-	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTextureTest.cpp > CMakeFiles/demo.dir/class/GglTextureTest.cpp.i
-
-src/CMakeFiles/demo.dir/class/GglTextureTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/class/GglTextureTest.cpp.s"
-	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTextureTest.cpp -o CMakeFiles/demo.dir/class/GglTextureTest.cpp.s
 
 src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o: src/CMakeFiles/demo.dir/flags.make
 src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o: ../src/class/GglVertexArray.cpp
@@ -299,8 +299,8 @@ demo_OBJECTS = \
 "CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o" \
 "CMakeFiles/demo.dir/class/GglRenderer.cpp.o" \
 "CMakeFiles/demo.dir/class/GglShader.cpp.o" \
+"CMakeFiles/demo.dir/class/GglTest.cpp.o" \
 "CMakeFiles/demo.dir/class/GglTexture.cpp.o" \
-"CMakeFiles/demo.dir/class/GglTextureTest.cpp.o" \
 "CMakeFiles/demo.dir/class/GglVertexArray.cpp.o" \
 "CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o" \
 "CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o" \
@@ -319,8 +319,8 @@ demo_EXTERNAL_OBJECTS =
 ../bin/demo: src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/GglRenderer.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/GglShader.cpp.o
+../bin/demo: src/CMakeFiles/demo.dir/class/GglTest.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/GglTexture.cpp.o
-../bin/demo: src/CMakeFiles/demo.dir/class/GglTextureTest.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o

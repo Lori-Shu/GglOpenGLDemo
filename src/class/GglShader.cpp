@@ -87,23 +87,19 @@ namespace mystd{
 
     }
     int32_t GglShader::getUniformLocation(std::string name) {
-        return glGetUniformLocation(program, name.c_str());
-    }
-    void GglShader:: setUniform4f(string uniformName,float v0,float v1,float v2,float v3){
         // do not support double glUniform4d is not ok
         // must use float
         int32_t location;
-        if (locationCache.find(uniformName) !=
-                             locationCache.end()) {
-            location= locationCache[uniformName];
+        if (locationCache.find(name) != locationCache.end()) {
+            location = locationCache[name];
+            return location;
         }
-        if (locationCache.find(uniformName) ==
-                             locationCache.end()){
-        location=getUniformLocation(uniformName);
-        locationCache[uniformName]=location;
-        }
-        
-        glUniform4f(location, v0, v1, v2, v3);
+            location = getUniformLocation(name);
+            locationCache[name] = location;
+        return location;
+    }
+    void GglShader:: setUniform4f(string uniformName,float v0,float v1,float v2,float v3){
+        glUniform4f(getUniformLocation(uniformName), v0, v1, v2, v3);
     }
     void GglShader::setUniform1i(std::string uniformName, int32_t i){
         glUniform1i(getUniformLocation(uniformName),i);

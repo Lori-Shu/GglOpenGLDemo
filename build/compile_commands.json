@@ -21,13 +21,13 @@
 },
 {
   "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
-  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglTexture.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTexture.cpp",
-  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglTexture.cpp"
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglTest.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTest.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglTest.cpp"
 },
 {
   "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
-  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglTextureTest.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTextureTest.cpp",
-  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglTextureTest.cpp"
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglTexture.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglTexture.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglTexture.cpp"
 },
 {
   "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",

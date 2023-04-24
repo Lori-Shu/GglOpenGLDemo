@@ -5,10 +5,11 @@
 #include<imgui.h>
 #include<vector>
 #include"GglPreBuild.h"
+#include"GglShader.h"
 namespace mystd{
     class Test {
         public:
-        Test(){};
+        Test(){testName="";showTestWindow=false;};
         virtual ~Test(){};
         virtual void onImGuiRender(){std::cout<<"should not in this method but the children's"<<std::endl;};
         std::string testName;
@@ -23,5 +24,14 @@ namespace mystd{
 
         private:
          std::unique_ptr<GglTexture> txPtr;
+    };
+    class GglBKColorTest:public Test{
+        public:
+         GglBKColorTest(mystd::GglShader* shader);
+         ~GglBKColorTest();
+         void onImGuiRender();
+         private:
+         mystd::GglShader* gglsr;
+         float rgba[4];
     };
 }
