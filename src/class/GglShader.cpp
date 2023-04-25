@@ -94,7 +94,7 @@ namespace mystd{
             location = locationCache[name];
             return location;
         }
-            location = getUniformLocation(name);
+            location = glGetUniformLocation(program,name.c_str());
             locationCache[name] = location;
         return location;
     }

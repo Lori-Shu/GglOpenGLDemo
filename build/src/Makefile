@@ -154,6 +154,30 @@ app.cpp.s:
 	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/app.cpp.s
 .PHONY : app.cpp.s
 
+class/GglBackground.o: class/GglBackground.cpp.o
+.PHONY : class/GglBackground.o
+
+# target to build an object file
+class/GglBackground.cpp.o:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglBackground.cpp.o
+.PHONY : class/GglBackground.cpp.o
+
+class/GglBackground.i: class/GglBackground.cpp.i
+.PHONY : class/GglBackground.i
+
+# target to preprocess a source file
+class/GglBackground.cpp.i:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglBackground.cpp.i
+.PHONY : class/GglBackground.cpp.i
+
+class/GglBackground.s: class/GglBackground.cpp.s
+.PHONY : class/GglBackground.s
+
+# target to generate assembly for a file
+class/GglBackground.cpp.s:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglBackground.cpp.s
+.PHONY : class/GglBackground.cpp.s
+
 class/GglIndexBuffer.o: class/GglIndexBuffer.cpp.o
 .PHONY : class/GglIndexBuffer.o
 
@@ -526,6 +550,9 @@ help:
 	@echo "... app.o"
 	@echo "... app.i"
 	@echo "... app.s"
+	@echo "... class/GglBackground.o"
+	@echo "... class/GglBackground.i"
+	@echo "... class/GglBackground.s"
 	@echo "... class/GglIndexBuffer.o"
 	@echo "... class/GglIndexBuffer.i"
 	@echo "... class/GglIndexBuffer.s"

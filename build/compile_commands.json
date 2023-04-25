@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglBackground.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglBackground.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglBackground.cpp"
+},
+{
+  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
   "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglIndexBuffer.cpp",
   "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglIndexBuffer.cpp"
 },

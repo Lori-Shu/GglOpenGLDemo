@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../../bin/demo.pdb"
   "CMakeFiles/demo.dir/app.cpp.o"
   "CMakeFiles/demo.dir/app.cpp.o.d"
+  "CMakeFiles/demo.dir/class/GglBackground.cpp.o"
+  "CMakeFiles/demo.dir/class/GglBackground.cpp.o.d"
   "CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o"
   "CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o.d"
   "CMakeFiles/demo.dir/class/GglRenderer.cpp.o"

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lori/CppProjects/GglOpenGLDemo/src/app.cpp" "src/CMakeFiles/demo.dir/app.cpp.o" "gcc" "src/CMakeFiles/demo.dir/app.cpp.o.d"
+  "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglBackground.cpp" "src/CMakeFiles/demo.dir/class/GglBackground.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglBackground.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglIndexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglRenderer.cpp" "src/CMakeFiles/demo.dir/class/GglRenderer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglRenderer.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglShader.cpp" "src/CMakeFiles/demo.dir/class/GglShader.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglShader.cpp.o.d"

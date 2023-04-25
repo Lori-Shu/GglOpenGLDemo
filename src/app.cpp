@@ -14,6 +14,7 @@
 #include<imgui_impl_glfw.h>
 #include<imgui_impl_opengl3.h>
 #include"GglTest.h"
+#include"GglBackground.h"
 using namespace std;
 
 
@@ -57,10 +58,10 @@ int main(void) {
   cout<<glGetString(GL_VERSION)<<endl;
 
   float positions[5 * 4] = {
-      0.0f, 0.0f, 0.0f, 0.0f, 0.0f,  // bottom left
-      50.0f,  0.0f, 0.0f, 1.0f, 0.0f,  // bottom right
-      50.0f,  50.0f,  0.0f, 1.0f, 1.0f,  // top right
-      0.0f, 50.0f,  0.0f, 0.0f, 1.0f  // top left
+      -0.5f, -0.5f, 0.0f, 0.0f, 0.0f,  // bottom left
+      0.5f,  -0.5f, 0.0f, 1.0f, 0.0f,  // bottom right
+      0.5f,  0.5f,  0.0f, 1.0f, 1.0f,  // top right
+      -0.5f, 0.5f,  0.0f, 0.0f, 1.0f  // top left
   };
   uint32_t indices[6]={
     0,1,2,
@@ -80,6 +81,7 @@ int main(void) {
   
 
   mystd::GglShader gglShader{};
+  glm::mat4 pt= glm::perspective(glm::radians(45.0f),1.0f,1.0f,100.0f);
   glm::mat4 projection = glm::ortho(0.0f, 100.0f, 0.0f, 100.0f, 0.0f, 100.0f);
     glm::mat4 view=glm::translate(glm::mat4(1.0f),glm::vec3(0.0f,0.0f,0.0f));
     glm::mat4 model =
@@ -87,7 +89,7 @@ int main(void) {
     glm::mat4 mvp=projection*view*model;
     gglShader.useProgram();
 
-    gglShader.setUniform4f("uColor", 0.5f, 0.0f, 0.2f, 0.75f);
+    gglShader.setUniform4f("uColor", 0.5f, 0.0f, 0.2f, 1.0f);
     
     std::string programPath;
     getProgramDir(programPath);
@@ -103,7 +105,11 @@ int main(void) {
     const uint8_t* str = glewGetErrorString(em);
     cout << str << endl;
     }
-    float imageTranslateXY[2]={50.0f,50.0f};
+    float imageTranslateXY[2]={0.0f,0.0f};
+    float imageTranslateZ=100.0f;
+    mystd::GglBackground bk{window};
+    bk.setMouseControlBkImageZ(imageTranslateZ);
+
     mystd::Test* currentTestPtr;
     vector<mystd::Test*> testVt;
     mystd::TextureTest txt3{programPath + string("image/image3.jpg")};
@@ -121,8 +127,9 @@ int main(void) {
     /* Render here */
     rderer.clear();
     model =
-        glm::translate(glm::mat4{1.0f}, glm::vec3{imageTranslateXY[0], imageTranslateXY[1], 0.0f});
-    mvp = projection * view * model;
+        glm::translate(glm::mat4{1.0f}, glm::vec3{imageTranslateXY[0], imageTranslateXY[1], -imageTranslateZ});
+    // view = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -imageTranslateZ));
+    mvp = pt*view * model;
     gglShader.useProgram();
     gglShader.setUniformMatrix4f("uMVP", mvp);
     tx.bind(0);
@@ -133,7 +140,7 @@ int main(void) {
    
     // imgui demo window
     ImGui::Begin("hello world");
-    ImGui::SliderFloat2("==imagexy",imageTranslateXY,0.0f,100.0f);
+    ImGui::SliderFloat2("==imagexy",imageTranslateXY,-0.5f,0.5f);
 
     ImGui::End();
     ImGui::Begin("test window");
@@ -164,7 +171,7 @@ int main(void) {
     ImGui::Render();
     // int display_w, display_h;
     // glfwGetFramebufferSize(window, &display_w, &display_h);
-    // glViewport(0, 0, display_w, display_h);
+    // glViewport(0, 0, 100, 100);
     // // glClearColor(clear_color.x * clear_color.w, clear_color.y * clear_color.w,
     // //              clear_color.z * clear_color.w, clear_color.w);
     // glClear(GL_COLOR_BUFFER_BIT);

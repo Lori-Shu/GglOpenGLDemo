@@ -9,7 +9,10 @@ namespace mystd{
         sdPtr=&sd;
     }
     GglRenderer::~GglRenderer(){}
-    void GglRenderer::clear() { glClear(GL_COLOR_BUFFER_BIT); }
+    void GglRenderer::clear() { 
+        glClearColor(1.0f,1.0f,1.0f,0.2f);
+        glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT); 
+    }
     void GglRenderer::draw(){
         sdPtr->useProgram();
         vaPtr->bindVertexArray();
