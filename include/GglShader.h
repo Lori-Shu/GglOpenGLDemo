@@ -9,6 +9,7 @@
 #include<unistd.h>
 #include<unordered_map>
 #include<glm/glm.hpp>
+#include<vector>
 #include"GglPreBuild.h"
 
 namespace mystd{
@@ -23,6 +24,8 @@ namespace mystd{
                          float v3);
         void setUniform1i(std::string uniformName,int32_t i);
         void setUniformMatrix4f(std::string uniformName,glm::mat4 mtx);
+        void bindUniformTextureUnit(std::vector<uint32_t> textureIds);
+        void setUniformSamplerArray(std::string name, int32_t size);
         void useProgram();
         void unUseProgram();
         uint32_t program;

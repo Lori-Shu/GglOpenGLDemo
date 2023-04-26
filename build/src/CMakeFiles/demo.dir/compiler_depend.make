@@ -336,16 +336,16 @@ src/CMakeFiles/demo.dir/app.cpp.o: ../src/app.cpp \
   ../dependencies/glm/glm/core/func_noise.hpp \
   ../dependencies/glm/glm/core/func_noise.inl \
   ../dependencies/glm/glm/core/_swizzle.hpp \
-  ../include/GglPreBuild.h \
-  ../include/GglVertexBuffer.h \
-  ../include/GglIndexBuffer.h \
-  ../include/GglVertexArray.h \
-  ../include/VertexBufferLayout.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  ../include/GglPreBuild.h \
+  ../include/GglVertexBuffer.h \
+  ../include/GglIndexBuffer.h \
+  ../include/GglVertexArray.h \
+  ../include/VertexBufferLayout.h \
   ../include/GglRenderer.h \
   ../include/GglTexture.h \
   ../dependencies/glm/glm/gtc/matrix_transform.hpp \
@@ -1387,6 +1387,11 @@ src/CMakeFiles/demo.dir/class/GglShader.cpp.o: ../src/class/GglShader.cpp \
   ../dependencies/glm/glm/core/func_noise.hpp \
   ../dependencies/glm/glm/core/func_noise.inl \
   ../dependencies/glm/glm/core/_swizzle.hpp \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   ../include/GglPreBuild.h
 
 src/CMakeFiles/demo.dir/class/GglTest.cpp.o: ../src/class/GglTest.cpp \
@@ -3532,10 +3537,6 @@ src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o: ../src/imgui/imgui_widgets.cp
 
 ../include/GglTexture.h:
 
-/usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/c++/11/vector:
-
 ../include/GglVertexArray.h:
 
 ../include/GglVertexBuffer.h:
@@ -3543,6 +3544,10 @@ src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o: ../src/imgui/imgui_widgets.cp
 /usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h:
 
 ../include/GglPreBuild.h:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/c++/11/vector:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h:
 

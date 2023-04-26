@@ -107,6 +107,22 @@ namespace mystd{
     void GglShader::setUniformMatrix4f(std::string uniformName, glm::mat4 mtx) {
         glUniformMatrix4fv(getUniformLocation(uniformName),1,GL_FALSE,&mtx[0][0]);
     }
+    void GglShader::bindUniformTextureUnit(std::vector<uint32_t> textureIds) {
+        for(int32_t index=0;index<textureIds.size();){
+            glBindTextureUnit(index,textureIds[index]);
+            ++index;
+        }
+    }
+    void GglShader::setUniformSamplerArray(std::string name, int32_t size) {
+        glUseProgram(program);
+        int32_t location= getUniformLocation(name);
+        int32_t samplers[size]={0};
+        for(int32_t index=0;index<size;){
+            samplers[index]=index;
+            ++index;
+        }
+        glUniform1iv(location,size,samplers);
+    }
     void GglShader::useProgram(){
         glUseProgram(program);
     }

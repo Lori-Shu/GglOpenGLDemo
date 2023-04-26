@@ -57,31 +57,40 @@ int main(void) {
 
   cout<<glGetString(GL_VERSION)<<endl;
 
-  float positions[5 * 4] = {
-      -0.5f, -0.5f, 0.0f, 0.0f, 0.0f,  // bottom left
-      0.5f,  -0.5f, 0.0f, 1.0f, 0.0f,  // bottom right
-      0.5f,  0.5f,  0.0f, 1.0f, 1.0f,  // top right
-      -0.5f, 0.5f,  0.0f, 0.0f, 1.0f  // top left
+  float positions[] = {
+    // two textures
+      -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 0.0f,  // bottom left
+      0.0f,  -0.5f, 0.0f, 1.0f, 0.0f, 0.0f,  // bottom right
+      0.0f,  0.0f,  0.0f, 1.0f, 1.0f, 0.0f,  // top right
+      -0.5f, 0.0f,  0.0f, 0.0f, 1.0f, 0.0f,  // top left
+
+      0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f,  // bottom left
+      1.0f,  -0.5f, 0.0f, 1.0f, 0.0f, 1.0f,  // bottom right
+      1.0f,  0.0f,  0.0f, 1.0f, 1.0f, 1.0f,  // top right
+      0.5f, 0.0f,  0.0f, 0.0f, 1.0f, 1.0f  // top left
   };
-  uint32_t indices[6]={
+  uint32_t indices[]={
     0,1,2,
-    2,3,0
+    2,3,0,
+    4,5,6,
+    6,7,4
   };
   glEnable(GL_BLEND);
   glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
   // 使用vertex array 可以在切换绑定时自动绑定vertexbuffer
 
     mystd::GglVertexArray va{};
-    mystd::GglVertexBuffer vb{positions,5*4*sizeof(float)};
-    mystd::GglIndexBuffer ib{indices, 6};
+    mystd::GglVertexBuffer vb{positions,6*8*sizeof(float)};
+    mystd::GglIndexBuffer ib{indices, 12};
     mystd::VertexBufferLayout layout;
     layout.push<float>(3);
     layout.push<float>(2);
+    layout.push<float>(1);
     va.addVertexBuffer(vb,layout);
   
 
   mystd::GglShader gglShader{};
-  glm::mat4 pt= glm::perspective(glm::radians(45.0f),1.0f,1.0f,100.0f);
+  glm::mat4 pt= glm::perspective(glm::radians(45.0f),1280.0f/720.0f,0.1f,100.0f);
   glm::mat4 projection = glm::ortho(0.0f, 100.0f, 0.0f, 100.0f, 0.0f, 100.0f);
     glm::mat4 view=glm::translate(glm::mat4(1.0f),glm::vec3(0.0f,0.0f,0.0f));
     glm::mat4 model =
@@ -93,9 +102,14 @@ int main(void) {
     
     std::string programPath;
     getProgramDir(programPath);
-    mystd::GglTexture tx{programPath + string("image/image3.jpg")};
-    tx.bind(0);
-    gglShader.setUniform1i("uTexture", 0);
+    mystd::GglTexture txL{programPath + string("image/image3.jpg")};
+    // tx.bind(0);
+    // gglShader.setUniform1i("uTexture", 0);
+    mystd::GglTexture txR{programPath + string("image/image1.png")};
+    // tx1.bind(1);
+    // gglShader.setUniform1i("uTexture", 1);
+    gglShader.bindUniformTextureUnit(vector<uint32_t>{txL.getTextureId(),txR.getTextureId()});
+    gglShader.setUniformSamplerArray("uTexture",2);
     mystd::GglRenderer rderer{va,ib,gglShader};
     for (;;) {
     GLenum em = glGetError();
@@ -112,27 +126,28 @@ int main(void) {
 
     mystd::Test* currentTestPtr;
     vector<mystd::Test*> testVt;
-    mystd::TextureTest txt3{programPath + string("image/image3.jpg")};
-    testVt.push_back(&txt3);
-    mystd::TextureTest txt2{programPath + string("image/image2.jpg")};
-    testVt.push_back(&txt2);
-    mystd::TextureTest txt1{programPath + string("image/image1.png")};
-    testVt.push_back(&txt1);
-    mystd::TextureTest txt0{programPath + string("image/image0.jpg")};
-    testVt.push_back(&txt0);
+    // mystd::TextureTest txt3{programPath + string("image/image3.jpg")};
+    // testVt.push_back(&txt3);
+    // mystd::TextureTest txt2{programPath + string("image/image2.jpg")};
+    // testVt.push_back(&txt2);
+    // mystd::TextureTest txt1{programPath + string("image/image1.png")};
+    // testVt.push_back(&txt1);
+    // mystd::TextureTest txt0{programPath + string("image/image0.jpg")};
+    // testVt.push_back(&txt0);
     mystd::GglBKColorTest bkCTest{&gglShader};
     testVt.push_back(&bkCTest);
+    gglShader.bindUniformTextureUnit(
+        vector<uint32_t>{txL.getTextureId(), txR.getTextureId()});
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window)) {
     /* Render here */
     rderer.clear();
     model =
-        glm::translate(glm::mat4{1.0f}, glm::vec3{imageTranslateXY[0], imageTranslateXY[1], -imageTranslateZ});
+        glm::translate(glm::mat4{1.0f}, glm::vec3{imageTranslateXY[0], imageTranslateXY[1], 0-imageTranslateZ});
     // view = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -imageTranslateZ));
     mvp = pt*view * model;
     gglShader.useProgram();
     gglShader.setUniformMatrix4f("uMVP", mvp);
-    tx.bind(0);
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplGlfw_NewFrame();
     ImGui::NewFrame();
