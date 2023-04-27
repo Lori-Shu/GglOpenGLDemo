@@ -17,8 +17,7 @@ namespace mystd{
         public:
          GglShader();
          ~GglShader();
-         GglShader &operator=(GglShader &) = delete;
-         GglShader &operator=(GglShader &&) = delete;
+         GglShader &operator=(GglShader &anotherInstance) = delete;
 
          void setUniform4f(std::string uniformName, float v0, float v1, float v2,
                          float v3);

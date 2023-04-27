@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lori/CppProjects/GglOpenGLDemo/src/app.cpp" "src/CMakeFiles/demo.dir/app.cpp.o" "gcc" "src/CMakeFiles/demo.dir/app.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglBackground.cpp" "src/CMakeFiles/demo.dir/class/GglBackground.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglBackground.cpp.o.d"
+  "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglDynamicVertexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglIndexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglRenderer.cpp" "src/CMakeFiles/demo.dir/class/GglRenderer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglRenderer.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglShader.cpp" "src/CMakeFiles/demo.dir/class/GglShader.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglShader.cpp.o.d"
@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexArray.cpp" "src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglVertexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp" "src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o.d"
+  "/home/lori/CppProjects/GglOpenGLDemo/src/class/app.cpp" "src/CMakeFiles/demo.dir/class/app.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/app.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/stb_image_impl.cpp" "src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui.cpp" "src/CMakeFiles/demo.dir/imgui/imgui.cpp.o" "gcc" "src/CMakeFiles/demo.dir/imgui/imgui.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui_draw.cpp" "src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o" "gcc" "src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o.d"

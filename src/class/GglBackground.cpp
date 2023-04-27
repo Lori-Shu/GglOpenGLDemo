@@ -5,6 +5,7 @@ namespace mystd{
     static float zmove=0.0f;
     mutex moveMtx;
     static bool endLoopFlag=false;
+    GglBackground::GglBackground(){}
     GglBackground::GglBackground(GLFWwindow* wdow) {
         window=wdow;
     }
@@ -12,7 +13,7 @@ namespace mystd{
       endLoopFlag = true;
       changingThreadPtr->join();
     }
-    void GglBackground::setMouseControlBkImageZ(float &z){
+    void GglBackground::setMouseControlBkImageZ(float *z){
       glfwSetScrollCallback(
           window,
           [](GLFWwindow* window, double xoffset, double yoffset) -> void {
@@ -21,17 +22,17 @@ namespace mystd{
             moveMtx.unlock();
           });
 
-      changingThreadPtr = make_unique<thread>([&]() {
+      changingThreadPtr = make_unique<thread>([=]() {
         for(;;){
             if(endLoopFlag){
                 return;
             }
-          if ((z + zmove) >= 0.0f && (z + zmove) <= 100.0f) {
-            z = z + zmove;
+          if (((*z) + zmove) <= 0.0f && ((*z) + zmove) >= -100.0f) {
+            *z = (*z) + zmove;
             moveMtx.lock();
             zmove = 0;
             moveMtx.unlock();
-            cout << "z==" << z << endl;
+            cout << "z==" << *z << endl;
         }
         this_thread::sleep_for(chrono::duration<int32_t,ratio<1,1000>>(100));
         }

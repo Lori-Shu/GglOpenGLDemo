@@ -96,12 +96,12 @@ src/clean: src/CMakeFiles/demo.dir/clean
 src/CMakeFiles/demo.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target demo"
 .PHONY : src/CMakeFiles/demo.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/demo.dir/rule

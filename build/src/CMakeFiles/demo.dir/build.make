@@ -69,24 +69,10 @@ include src/CMakeFiles/demo.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/demo.dir/flags.make
 
-src/CMakeFiles/demo.dir/app.cpp.o: src/CMakeFiles/demo.dir/flags.make
-src/CMakeFiles/demo.dir/app.cpp.o: ../src/app.cpp
-src/CMakeFiles/demo.dir/app.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/demo.dir/app.cpp.o"
-	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/app.cpp.o -MF CMakeFiles/demo.dir/app.cpp.o.d -o CMakeFiles/demo.dir/app.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/app.cpp
-
-src/CMakeFiles/demo.dir/app.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/app.cpp.i"
-	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lori/CppProjects/GglOpenGLDemo/src/app.cpp > CMakeFiles/demo.dir/app.cpp.i
-
-src/CMakeFiles/demo.dir/app.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/app.cpp.s"
-	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lori/CppProjects/GglOpenGLDemo/src/app.cpp -o CMakeFiles/demo.dir/app.cpp.s
-
 src/CMakeFiles/demo.dir/class/GglBackground.cpp.o: src/CMakeFiles/demo.dir/flags.make
 src/CMakeFiles/demo.dir/class/GglBackground.cpp.o: ../src/class/GglBackground.cpp
 src/CMakeFiles/demo.dir/class/GglBackground.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/demo.dir/class/GglBackground.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/demo.dir/class/GglBackground.cpp.o"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/class/GglBackground.cpp.o -MF CMakeFiles/demo.dir/class/GglBackground.cpp.o.d -o CMakeFiles/demo.dir/class/GglBackground.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglBackground.cpp
 
 src/CMakeFiles/demo.dir/class/GglBackground.cpp.i: cmake_force
@@ -96,6 +82,20 @@ src/CMakeFiles/demo.dir/class/GglBackground.cpp.i: cmake_force
 src/CMakeFiles/demo.dir/class/GglBackground.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/class/GglBackground.cpp.s"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lori/CppProjects/GglOpenGLDemo/src/class/GglBackground.cpp -o CMakeFiles/demo.dir/class/GglBackground.cpp.s
+
+src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o: src/CMakeFiles/demo.dir/flags.make
+src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o: ../src/class/GglDynamicVertexBuffer.cpp
+src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o"
+	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o -MF CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o.d -o CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglDynamicVertexBuffer.cpp
+
+src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.i"
+	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lori/CppProjects/GglOpenGLDemo/src/class/GglDynamicVertexBuffer.cpp > CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.i
+
+src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.s"
+	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lori/CppProjects/GglOpenGLDemo/src/class/GglDynamicVertexBuffer.cpp -o CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.s
 
 src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o: src/CMakeFiles/demo.dir/flags.make
 src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o: ../src/class/GglIndexBuffer.cpp
@@ -209,10 +209,24 @@ src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.s"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp -o CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.s
 
+src/CMakeFiles/demo.dir/class/app.cpp.o: src/CMakeFiles/demo.dir/flags.make
+src/CMakeFiles/demo.dir/class/app.cpp.o: ../src/class/app.cpp
+src/CMakeFiles/demo.dir/class/app.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/demo.dir/class/app.cpp.o"
+	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/class/app.cpp.o -MF CMakeFiles/demo.dir/class/app.cpp.o.d -o CMakeFiles/demo.dir/class/app.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/app.cpp
+
+src/CMakeFiles/demo.dir/class/app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/class/app.cpp.i"
+	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lori/CppProjects/GglOpenGLDemo/src/class/app.cpp > CMakeFiles/demo.dir/class/app.cpp.i
+
+src/CMakeFiles/demo.dir/class/app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/class/app.cpp.s"
+	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lori/CppProjects/GglOpenGLDemo/src/class/app.cpp -o CMakeFiles/demo.dir/class/app.cpp.s
+
 src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o: src/CMakeFiles/demo.dir/flags.make
 src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o: ../src/class/stb_image_impl.cpp
 src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o -MF CMakeFiles/demo.dir/class/stb_image_impl.cpp.o.d -o CMakeFiles/demo.dir/class/stb_image_impl.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/stb_image_impl.cpp
 
 src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.i: cmake_force
@@ -226,7 +240,7 @@ src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.s: cmake_force
 src/CMakeFiles/demo.dir/imgui/imgui.cpp.o: src/CMakeFiles/demo.dir/flags.make
 src/CMakeFiles/demo.dir/imgui/imgui.cpp.o: ../src/imgui/imgui.cpp
 src/CMakeFiles/demo.dir/imgui/imgui.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/demo.dir/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/demo.dir/imgui/imgui.cpp.o"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/imgui/imgui.cpp.o -MF CMakeFiles/demo.dir/imgui/imgui.cpp.o.d -o CMakeFiles/demo.dir/imgui/imgui.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui.cpp
 
 src/CMakeFiles/demo.dir/imgui/imgui.cpp.i: cmake_force
@@ -240,7 +254,7 @@ src/CMakeFiles/demo.dir/imgui/imgui.cpp.s: cmake_force
 src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o: src/CMakeFiles/demo.dir/flags.make
 src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o: ../src/imgui/imgui_draw.cpp
 src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o -MF CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o.d -o CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui_draw.cpp
 
 src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.i: cmake_force
@@ -254,7 +268,7 @@ src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.s: cmake_force
 src/CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.o: src/CMakeFiles/demo.dir/flags.make
 src/CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.o: ../src/imgui/imgui_impl_glfw.cpp
 src/CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.o"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.o -MF CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.o.d -o CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui_impl_glfw.cpp
 
 src/CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.i: cmake_force
@@ -268,7 +282,7 @@ src/CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.s: cmake_force
 src/CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o: src/CMakeFiles/demo.dir/flags.make
 src/CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o: ../src/imgui/imgui_impl_opengl3.cpp
 src/CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o -MF CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui_impl_opengl3.cpp
 
 src/CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.i: cmake_force
@@ -282,7 +296,7 @@ src/CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.s: cmake_force
 src/CMakeFiles/demo.dir/imgui/imgui_tables.cpp.o: src/CMakeFiles/demo.dir/flags.make
 src/CMakeFiles/demo.dir/imgui/imgui_tables.cpp.o: ../src/imgui/imgui_tables.cpp
 src/CMakeFiles/demo.dir/imgui/imgui_tables.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/demo.dir/imgui/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/demo.dir/imgui/imgui_tables.cpp.o"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/imgui/imgui_tables.cpp.o -MF CMakeFiles/demo.dir/imgui/imgui_tables.cpp.o.d -o CMakeFiles/demo.dir/imgui/imgui_tables.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui_tables.cpp
 
 src/CMakeFiles/demo.dir/imgui/imgui_tables.cpp.i: cmake_force
@@ -296,7 +310,7 @@ src/CMakeFiles/demo.dir/imgui/imgui_tables.cpp.s: cmake_force
 src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o: src/CMakeFiles/demo.dir/flags.make
 src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o: ../src/imgui/imgui_widgets.cpp
 src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o: src/CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o -MF CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/imgui/imgui_widgets.cpp
 
 src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.i: cmake_force
@@ -309,8 +323,8 @@ src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.s: cmake_force
 
 # Object files for target demo
 demo_OBJECTS = \
-"CMakeFiles/demo.dir/app.cpp.o" \
 "CMakeFiles/demo.dir/class/GglBackground.cpp.o" \
+"CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o" \
 "CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o" \
 "CMakeFiles/demo.dir/class/GglRenderer.cpp.o" \
 "CMakeFiles/demo.dir/class/GglShader.cpp.o" \
@@ -319,6 +333,7 @@ demo_OBJECTS = \
 "CMakeFiles/demo.dir/class/GglVertexArray.cpp.o" \
 "CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o" \
 "CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o" \
+"CMakeFiles/demo.dir/class/app.cpp.o" \
 "CMakeFiles/demo.dir/class/stb_image_impl.cpp.o" \
 "CMakeFiles/demo.dir/imgui/imgui.cpp.o" \
 "CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o" \
@@ -330,8 +345,8 @@ demo_OBJECTS = \
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
 
-../bin/demo: src/CMakeFiles/demo.dir/app.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/GglBackground.cpp.o
+../bin/demo: src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/GglRenderer.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/GglShader.cpp.o
@@ -340,6 +355,7 @@ demo_EXTERNAL_OBJECTS =
 ../bin/demo: src/CMakeFiles/demo.dir/class/GglVertexArray.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o
+../bin/demo: src/CMakeFiles/demo.dir/class/app.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/imgui/imgui.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o
@@ -349,7 +365,7 @@ demo_EXTERNAL_OBJECTS =
 ../bin/demo: src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o
 ../bin/demo: src/CMakeFiles/demo.dir/build.make
 ../bin/demo: src/CMakeFiles/demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable ../../bin/demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lori/CppProjects/GglOpenGLDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable ../../bin/demo"
 	cd /home/lori/CppProjects/GglOpenGLDemo/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

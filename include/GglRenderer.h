@@ -6,7 +6,9 @@
 namespace mystd{
     class GglRenderer{
         public:
-         GglRenderer(GglVertexArray &va, GglIndexBuffer &ib,GglShader &sd);
+         GglRenderer();
+        GglRenderer(GglVertexArray& va, GglIndexBuffer& ib,
+                                 GglShader& sd);
          ~GglRenderer();
          void clear();
          void draw();

@@ -4,7 +4,8 @@
 namespace mystd{
     class GglVertexBuffer{
         public:
-         GglVertexBuffer(float *positions, int32_t size);
+         GglVertexBuffer();
+          GglVertexBuffer(float *positions, int32_t size);
          ~GglVertexBuffer();
          void unBindVertexBuffer();
          void bindVertexBuffer();

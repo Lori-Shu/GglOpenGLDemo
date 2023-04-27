@@ -1,5 +1,6 @@
 #include"GglIndexBuffer.h"
 namespace mystd{
+GglIndexBuffer::GglIndexBuffer(){}
 GglIndexBuffer::GglIndexBuffer(uint32_t *indices, int32_t count){
     createIndexBuffer(indices,count);
 }

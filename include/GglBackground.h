@@ -8,9 +8,11 @@
 namespace mystd{
     class GglBackground{
         public:
-         GglBackground(GLFWwindow* wdow);
+         GglBackground();
+          GglBackground(GLFWwindow* wdow);
+
          ~GglBackground();
-        void setMouseControlBkImageZ(float& z);
+        void setMouseControlBkImageZ(float* z);
         private:
          GLFWwindow* window;
          std::unique_ptr<std::thread> changingThreadPtr;

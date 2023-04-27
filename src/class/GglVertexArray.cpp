@@ -19,7 +19,7 @@ namespace mystd{
         VertexBufferLayoutElement& e = elements[index];
         // 这个函数的最后一个参数指的是vertebuffer对象“每一份”buffer中“每个元素”（由几个float组成）在它所在的buffer中距离buffer初始位置的偏移量
         glVertexAttribPointer(index, e.count, e.type, e.normalized,
-                              layout.stride,reinterpret_cast<const void*>( offset));
+                              layout.stride,reinterpret_cast<const void*>(offset));
         glEnableVertexAttribArray(index);
         offset += e.count*layout.getTypeSize(e.type);
         ++index;

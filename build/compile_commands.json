@@ -1,13 +1,13 @@
 [
 {
   "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
-  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm -g -std=gnu++20 -o CMakeFiles/demo.dir/app.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/app.cpp",
-  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/app.cpp"
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglBackground.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglBackground.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglBackground.cpp"
 },
 {
   "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
-  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglBackground.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglBackground.cpp",
-  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglBackground.cpp"
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm -g -std=gnu++20 -o CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/GglDynamicVertexBuffer.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglDynamicVertexBuffer.cpp"
 },
 {
   "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
@@ -48,6 +48,11 @@
   "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
   "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm -g -std=gnu++20 -o CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp",
   "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/VertexBufferLayout.cpp"
+},
+{
+  "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",
+  "command": "/usr/bin/g++  -I/home/lori/CppProjects/GglOpenGLDemo/include -I/home/lori/CppProjects/GglOpenGLDemo/dependencies/glm -g -std=gnu++20 -o CMakeFiles/demo.dir/class/app.cpp.o -c /home/lori/CppProjects/GglOpenGLDemo/src/class/app.cpp",
+  "file": "/home/lori/CppProjects/GglOpenGLDemo/src/class/app.cpp"
 },
 {
   "directory": "/home/lori/CppProjects/GglOpenGLDemo/build/src",

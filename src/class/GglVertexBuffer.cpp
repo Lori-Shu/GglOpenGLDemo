@@ -1,5 +1,6 @@
 #include"GglVertexBuffer.h"
 namespace mystd{
+GglVertexBuffer::GglVertexBuffer(){}
 GglVertexBuffer::GglVertexBuffer(float *positions,int32_t size){
     createVertexBuffer(positions,size);
 }

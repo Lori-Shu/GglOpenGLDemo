@@ -130,30 +130,6 @@ demo/fast:
 	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
-app.o: app.cpp.o
-.PHONY : app.o
-
-# target to build an object file
-app.cpp.o:
-	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/app.cpp.o
-.PHONY : app.cpp.o
-
-app.i: app.cpp.i
-.PHONY : app.i
-
-# target to preprocess a source file
-app.cpp.i:
-	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/app.cpp.i
-.PHONY : app.cpp.i
-
-app.s: app.cpp.s
-.PHONY : app.s
-
-# target to generate assembly for a file
-app.cpp.s:
-	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/app.cpp.s
-.PHONY : app.cpp.s
-
 class/GglBackground.o: class/GglBackground.cpp.o
 .PHONY : class/GglBackground.o
 
@@ -177,6 +153,30 @@ class/GglBackground.s: class/GglBackground.cpp.s
 class/GglBackground.cpp.s:
 	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglBackground.cpp.s
 .PHONY : class/GglBackground.cpp.s
+
+class/GglDynamicVertexBuffer.o: class/GglDynamicVertexBuffer.cpp.o
+.PHONY : class/GglDynamicVertexBuffer.o
+
+# target to build an object file
+class/GglDynamicVertexBuffer.cpp.o:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o
+.PHONY : class/GglDynamicVertexBuffer.cpp.o
+
+class/GglDynamicVertexBuffer.i: class/GglDynamicVertexBuffer.cpp.i
+.PHONY : class/GglDynamicVertexBuffer.i
+
+# target to preprocess a source file
+class/GglDynamicVertexBuffer.cpp.i:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.i
+.PHONY : class/GglDynamicVertexBuffer.cpp.i
+
+class/GglDynamicVertexBuffer.s: class/GglDynamicVertexBuffer.cpp.s
+.PHONY : class/GglDynamicVertexBuffer.s
+
+# target to generate assembly for a file
+class/GglDynamicVertexBuffer.cpp.s:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.s
+.PHONY : class/GglDynamicVertexBuffer.cpp.s
 
 class/GglIndexBuffer.o: class/GglIndexBuffer.cpp.o
 .PHONY : class/GglIndexBuffer.o
@@ -370,6 +370,30 @@ class/VertexBufferLayout.cpp.s:
 	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/VertexBufferLayout.cpp.s
 .PHONY : class/VertexBufferLayout.cpp.s
 
+class/app.o: class/app.cpp.o
+.PHONY : class/app.o
+
+# target to build an object file
+class/app.cpp.o:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/app.cpp.o
+.PHONY : class/app.cpp.o
+
+class/app.i: class/app.cpp.i
+.PHONY : class/app.i
+
+# target to preprocess a source file
+class/app.cpp.i:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/app.cpp.i
+.PHONY : class/app.cpp.i
+
+class/app.s: class/app.cpp.s
+.PHONY : class/app.s
+
+# target to generate assembly for a file
+class/app.cpp.s:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/app.cpp.s
+.PHONY : class/app.cpp.s
+
 class/stb_image_impl.o: class/stb_image_impl.cpp.o
 .PHONY : class/stb_image_impl.o
 
@@ -547,12 +571,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... demo"
-	@echo "... app.o"
-	@echo "... app.i"
-	@echo "... app.s"
 	@echo "... class/GglBackground.o"
 	@echo "... class/GglBackground.i"
 	@echo "... class/GglBackground.s"
+	@echo "... class/GglDynamicVertexBuffer.o"
+	@echo "... class/GglDynamicVertexBuffer.i"
+	@echo "... class/GglDynamicVertexBuffer.s"
 	@echo "... class/GglIndexBuffer.o"
 	@echo "... class/GglIndexBuffer.i"
 	@echo "... class/GglIndexBuffer.s"
@@ -577,6 +601,9 @@ help:
 	@echo "... class/VertexBufferLayout.o"
 	@echo "... class/VertexBufferLayout.i"
 	@echo "... class/VertexBufferLayout.s"
+	@echo "... class/app.o"
+	@echo "... class/app.i"
+	@echo "... class/app.s"
 	@echo "... class/stb_image_impl.o"
 	@echo "... class/stb_image_impl.i"
 	@echo "... class/stb_image_impl.s"

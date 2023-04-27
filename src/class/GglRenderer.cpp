@@ -2,6 +2,7 @@
 
 namespace mystd{
     using namespace std;
+    GglRenderer::GglRenderer(){}
     GglRenderer::GglRenderer(GglVertexArray &va, GglIndexBuffer &ib,
                            GglShader &sd){
         vaPtr=&va;
@@ -10,7 +11,7 @@ namespace mystd{
     }
     GglRenderer::~GglRenderer(){}
     void GglRenderer::clear() { 
-        glClearColor(1.0f,1.0f,1.0f,0.5f);
+        glClearColor(0.0f,0.0f,1.0f,1.0f);
         glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT); 
     }
     void GglRenderer::draw(){
