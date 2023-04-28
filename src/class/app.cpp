@@ -92,47 +92,61 @@ void App::runMainLoop() {
     glfwPollEvents();
   }
     }
-
+    void App::setDebugMessageCallBack() {
+        glDebugMessageCallback([](GLenum source,GLenum type,uint32_t id,GLenum severity,int32_t length,const char *message,const void* userParam){
+            cout<<"err---------"<<endl;
+            cout<<"message=="<<message<<endl;
+            cout<<"source=="<<source<<endl;
+            cout << "type==" << type << endl;
+            cout << "severity==" << severity << endl;
+            cout<<"------------"<<endl;
+        },nullptr);
+        glEnable(GL_DEBUG_OUTPUT);
+    }
     void App::loadVertexBufferDynamicly(){
         dynamicVbPtr->bindVertexBuffer();
         std::array<GglVertex, 4> r1=createVertexVec4(-1.0f, 0.0f, 0.0f);
-        std::array<GglVertex, 4> r2 = createVertexVec4(0.0f,-1.0f, 1.0f);
+        std::array<GglVertex, 4> r2 = createVertexVec4(0.0f,-0.5f, 1.0f);
         float ptr[sizeof(GglVertex)*4*2];
+        int32_t bufSize=sizeof(ptr);
         memcpy(ptr, &r1, sizeof(GglVertex) * 4);
-        memcpy(ptr + sizeof(GglVertex) * 4, &r2, sizeof(GglVertex) * 4);
-        glBufferSubData(dynamicVbPtr->id, 0,sizeof(ptr) ,static_cast<const void*>(ptr));
+        memcpy(ptr + sizeof(GglVertex)*4/sizeof(float), &r2, sizeof(GglVertex) * 4);
+        glBufferSubData(GL_ARRAY_BUFFER, 0,bufSize ,static_cast<const void*>(ptr));
         glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE,
                               sizeof(GglVertex),
                               reinterpret_cast<const void*>(offsetof(GglVertex,position)));
-        glEnableVertexAttribArray(0);
+        glEnableVertexArrayAttrib(vaPtr->id,0);
         glVertexAttribPointer(
             1, 4, GL_FLOAT, GL_FALSE, sizeof(GglVertex),
             reinterpret_cast<const void*>(offsetof(GglVertex, color)));
-        glEnableVertexAttribArray(1);
+        glEnableVertexArrayAttrib(vaPtr->id, 1);
         glVertexAttribPointer(
             2, 2, GL_FLOAT, GL_FALSE, sizeof(GglVertex),
             reinterpret_cast<const void*>(offsetof(GglVertex, texCoord)));
-        glEnableVertexAttribArray(2);
+        glEnableVertexArrayAttrib(vaPtr->id, 2);
         glVertexAttribPointer(
             3, 1, GL_FLOAT, GL_FALSE, sizeof(GglVertex),
             reinterpret_cast<const void*>(offsetof(GglVertex, vertexId)));
-        glEnableVertexAttribArray(3);
+        glEnableVertexArrayAttrib(vaPtr->id, 3);
     }
     // create rectangle Vertex by bottom left point
     std::array<GglVertex, 4> App::createVertexVec4(float botlx,float botly,float id){
         // widandheight
         float wAndh=0.5f;
         // botleft
-        GglVertex v1{botlx,botly,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,id};
+        GglVertex v1{glm::vec3(botlx,botly,0.0f),glm::vec4(0.0f,0.0f,0.0f,0.0f),glm::vec2(0.0f,0.0f),id};
         // botright
-        GglVertex v2{botlx+wAndh, botly, 0.0f, 0.0f, 0.0f,
-                     0.0f,  0.0f,  1.0f, 0.0f, id};
-        // topleft
-        GglVertex v3{botlx, botly + wAndh, 0.0f, 0.0f, 0.0f,
-                     0.0f,  0.0f,          0.0f, 1.0f, id};
+        GglVertex v2{glm::vec3(botlx+wAndh, botly, 0.0f),
+                     glm::vec4(0.0f, 0.0f, 0.0f, 0.0f), glm::vec2(1.0f, 0.0f),
+                     id};
         // topright
-        GglVertex v4{botlx + wAndh, botly + wAndh, 0.0f, 0.0f, 0.0f,
-                     0.0f,          0.0f,          1.0f, 1.0f, id};
+        GglVertex v3{glm::vec3(botlx+wAndh, botly+wAndh, 0.0f),
+                     glm::vec4(0.0f, 0.0f, 0.0f, 0.0f), glm::vec2(1.0f, 1.0f),
+                     id};
+        // topleft
+        GglVertex v4{glm::vec3(botlx, botly+wAndh, 0.0f),
+                     glm::vec4(0.0f, 0.0f, 0.0f, 0.0f), glm::vec2(0.0f, 1.0f),
+                     id};
         return std::array<GglVertex, 4>{v1,v2,v3,v4};
     }
     int32_t App::initEnvironment(){
@@ -155,6 +169,7 @@ void App::runMainLoop() {
   // init glew
   GLenum em = glewInit();
   if (em != GLEW_OK) cout << "init glew err" << endl;
+  setDebugMessageCallBack();
   // Setup Dear ImGui context
   IMGUI_CHECKVERSION();
   ImGui::CreateContext();
@@ -220,14 +235,7 @@ void App::runMainLoop() {
       vector<uint32_t>{textureVector[0]->getTextureId(), textureVector[1]->getTextureId()});
   gglShaderPtr->setUniformSamplerArray("uTexture", 2);
   rdererPtr = make_unique<  mystd::GglRenderer>(*vaPtr, *ibPtr, *gglShaderPtr);
-  for (;;) {
-    GLenum em = glGetError();
-    if (em == GL_NO_ERROR) {
-      break;
-    }
-    const uint8_t* str = glewGetErrorString(em);
-    cout << str << endl;
-  }
+  
   bkPtr = make_unique<mystd::GglBackground>(windowPtr);
 //   cout<<"xyz z=="<<*(imageTranslateXYZ+2)<<endl;
   bkPtr->setMouseControlBkImageZ(imageTranslateXYZ+2);
@@ -241,8 +249,6 @@ void App::runMainLoop() {
   // testVt.push_back(&txt0);
 //   mystd::GglBKColorTest bkCTest{gglShaderPtr.get()};
 //   testVt.push_back(&bkCTest);
-  gglShaderPtr->bindUniformTextureUnit(vector<uint32_t>{
-      textureVector[0]->getTextureId(), textureVector[1]->getTextureId()});
   return 0;
     }
 }
