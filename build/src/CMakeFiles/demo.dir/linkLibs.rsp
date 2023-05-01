@@ -1,1 +1,1 @@
-  -L"D:/cppproject/GglOpenGLDemo/dependencies/glfw-3.3.8.bin.WIN64/lib-mingw-w64"  -lglfw3 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+  -L"D:/cppproject/GglOpenGLDemo/dependencies/glfw-3.3.8.bin.WIN64/lib-mingw-w64"  -L"D:/cppproject/GglOpenGLDemo/dependencies/ffmpeg-master-latest-win64-gpl-shared/lib"  -lglfw3 -lavcodec -lavdevice -lavfilter -lavutil -lavformat -lpostproc -lswresample -lswscale -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

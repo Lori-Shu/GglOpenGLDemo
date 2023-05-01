@@ -8,8 +8,14 @@
 #include"VertexBufferLayout.h"
 #include"GglRenderer.h"
 #include"GglTexture.h"
+#include"GglDemuxProcess.h"
 using namespace std;
 int main(void) {
+    cout<<"hello ffmpeg!"<<av_version_info()<<endl;
+    mystd::GglDemuxProcess
+    dprocess{"C://Users/24120/Downloads/全职高手第二季12.mp4"};
+    dprocess.runDemux();
+    // printf("%s",av_version_info());
   GLFWwindow* window;
 
   /* Initialize the library */

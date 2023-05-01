@@ -10,6 +10,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/cppproject/GglOpenGLDemo/src/glad.c" "src/CMakeFiles/demo.dir/glad.c.obj" "gcc" "src/CMakeFiles/demo.dir/glad.c.obj.d"
   "D:/cppproject/GglOpenGLDemo/src/app.cpp" "src/CMakeFiles/demo.dir/app.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/app.cpp.obj.d"
+  "D:/cppproject/GglOpenGLDemo/src/class/GglAVFrameQueue.cpp" "src/CMakeFiles/demo.dir/class/GglAVFrameQueue.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglAVFrameQueue.cpp.obj.d"
+  "D:/cppproject/GglOpenGLDemo/src/class/GglAVPacketQueue.cpp" "src/CMakeFiles/demo.dir/class/GglAVPacketQueue.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglAVPacketQueue.cpp.obj.d"
+  "D:/cppproject/GglOpenGLDemo/src/class/GglDemuxProcess.cpp" "src/CMakeFiles/demo.dir/class/GglDemuxProcess.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglDemuxProcess.cpp.obj.d"
   "D:/cppproject/GglOpenGLDemo/src/class/GglIndexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.obj.d"
   "D:/cppproject/GglOpenGLDemo/src/class/GglRenderer.cpp" "src/CMakeFiles/demo.dir/class/GglRenderer.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglRenderer.cpp.obj.d"
   "D:/cppproject/GglOpenGLDemo/src/class/GglShader.cpp" "src/CMakeFiles/demo.dir/class/GglShader.cpp.obj" "gcc" "src/CMakeFiles/demo.dir/class/GglShader.cpp.obj.d"

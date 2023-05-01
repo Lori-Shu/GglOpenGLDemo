@@ -6,6 +6,21 @@
 },
 {
   "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglAVFrameQueue.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglAVFrameQueue.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglAVFrameQueue.cpp"
+},
+{
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglAVPacketQueue.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglAVPacketQueue.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglAVPacketQueue.cpp"
+},
+{
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglDemuxProcess.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglDemuxProcess.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglDemuxProcess.cpp"
+},
+{
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
   "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglIndexBuffer.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglIndexBuffer.cpp",
   "file": "D:/cppproject/GglOpenGLDemo/src/class/GglIndexBuffer.cpp"
 },

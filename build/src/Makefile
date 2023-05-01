@@ -153,6 +153,78 @@ app.cpp.s:
 	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/app.cpp.s
 .PHONY : app.cpp.s
 
+class/GglAVFrameQueue.obj: class/GglAVFrameQueue.cpp.obj
+.PHONY : class/GglAVFrameQueue.obj
+
+# target to build an object file
+class/GglAVFrameQueue.cpp.obj:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAVFrameQueue.cpp.obj
+.PHONY : class/GglAVFrameQueue.cpp.obj
+
+class/GglAVFrameQueue.i: class/GglAVFrameQueue.cpp.i
+.PHONY : class/GglAVFrameQueue.i
+
+# target to preprocess a source file
+class/GglAVFrameQueue.cpp.i:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAVFrameQueue.cpp.i
+.PHONY : class/GglAVFrameQueue.cpp.i
+
+class/GglAVFrameQueue.s: class/GglAVFrameQueue.cpp.s
+.PHONY : class/GglAVFrameQueue.s
+
+# target to generate assembly for a file
+class/GglAVFrameQueue.cpp.s:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAVFrameQueue.cpp.s
+.PHONY : class/GglAVFrameQueue.cpp.s
+
+class/GglAVPacketQueue.obj: class/GglAVPacketQueue.cpp.obj
+.PHONY : class/GglAVPacketQueue.obj
+
+# target to build an object file
+class/GglAVPacketQueue.cpp.obj:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAVPacketQueue.cpp.obj
+.PHONY : class/GglAVPacketQueue.cpp.obj
+
+class/GglAVPacketQueue.i: class/GglAVPacketQueue.cpp.i
+.PHONY : class/GglAVPacketQueue.i
+
+# target to preprocess a source file
+class/GglAVPacketQueue.cpp.i:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAVPacketQueue.cpp.i
+.PHONY : class/GglAVPacketQueue.cpp.i
+
+class/GglAVPacketQueue.s: class/GglAVPacketQueue.cpp.s
+.PHONY : class/GglAVPacketQueue.s
+
+# target to generate assembly for a file
+class/GglAVPacketQueue.cpp.s:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAVPacketQueue.cpp.s
+.PHONY : class/GglAVPacketQueue.cpp.s
+
+class/GglDemuxProcess.obj: class/GglDemuxProcess.cpp.obj
+.PHONY : class/GglDemuxProcess.obj
+
+# target to build an object file
+class/GglDemuxProcess.cpp.obj:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglDemuxProcess.cpp.obj
+.PHONY : class/GglDemuxProcess.cpp.obj
+
+class/GglDemuxProcess.i: class/GglDemuxProcess.cpp.i
+.PHONY : class/GglDemuxProcess.i
+
+# target to preprocess a source file
+class/GglDemuxProcess.cpp.i:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglDemuxProcess.cpp.i
+.PHONY : class/GglDemuxProcess.cpp.i
+
+class/GglDemuxProcess.s: class/GglDemuxProcess.cpp.s
+.PHONY : class/GglDemuxProcess.s
+
+# target to generate assembly for a file
+class/GglDemuxProcess.cpp.s:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglDemuxProcess.cpp.s
+.PHONY : class/GglDemuxProcess.cpp.s
+
 class/GglIndexBuffer.obj: class/GglIndexBuffer.cpp.obj
 .PHONY : class/GglIndexBuffer.obj
 
@@ -381,6 +453,15 @@ help:
 	@echo ... app.obj
 	@echo ... app.i
 	@echo ... app.s
+	@echo ... class/GglAVFrameQueue.obj
+	@echo ... class/GglAVFrameQueue.i
+	@echo ... class/GglAVFrameQueue.s
+	@echo ... class/GglAVPacketQueue.obj
+	@echo ... class/GglAVPacketQueue.i
+	@echo ... class/GglAVPacketQueue.s
+	@echo ... class/GglDemuxProcess.obj
+	@echo ... class/GglDemuxProcess.i
+	@echo ... class/GglDemuxProcess.s
 	@echo ... class/GglIndexBuffer.obj
 	@echo ... class/GglIndexBuffer.i
 	@echo ... class/GglIndexBuffer.s

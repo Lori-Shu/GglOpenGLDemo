@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/demo.dir/app.cpp.obj"
   "CMakeFiles/demo.dir/app.cpp.obj.d"
+  "CMakeFiles/demo.dir/class/GglAVFrameQueue.cpp.obj"
+  "CMakeFiles/demo.dir/class/GglAVFrameQueue.cpp.obj.d"
+  "CMakeFiles/demo.dir/class/GglAVPacketQueue.cpp.obj"
+  "CMakeFiles/demo.dir/class/GglAVPacketQueue.cpp.obj.d"
+  "CMakeFiles/demo.dir/class/GglDemuxProcess.cpp.obj"
+  "CMakeFiles/demo.dir/class/GglDemuxProcess.cpp.obj.d"
   "CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.obj"
   "CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.obj.d"
   "CMakeFiles/demo.dir/class/GglRenderer.cpp.obj"
