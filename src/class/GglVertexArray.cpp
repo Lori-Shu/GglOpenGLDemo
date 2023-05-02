@@ -6,7 +6,7 @@ namespace mystd{
         createVertexArray();
     }
     GglVertexArray::~GglVertexArray(){
-
+        glDeleteVertexArrays(1,&id);
     }
     void GglVertexArray::addVertexBuffer(GglVertexBuffer& vb,
                                          VertexBufferLayout& layout) {

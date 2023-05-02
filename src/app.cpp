@@ -9,23 +9,35 @@
 #include"GglRenderer.h"
 #include"GglTexture.h"
 #include"GglDemuxProcess.h"
+#include"GglCodecProcess.h"
+#include"GglSwScale.h"
 using namespace std;
+void errorCallback(GLenum source, GLenum type, GLuint id, GLenum severity,
+                   GLsizei length, const GLchar* message,
+                   const void* userParam) {
+  // 处理错误
+  cout<<"error=="<<message<<endl;
+}
 int main(void) {
     cout<<"hello ffmpeg!"<<av_version_info()<<endl;
     mystd::GglDemuxProcess
     dprocess{"C://Users/24120/Downloads/全职高手第二季12.mp4"};
     dprocess.runDemux();
-    // printf("%s",av_version_info());
-  GLFWwindow* window;
+    mystd::GglCodecProcess videoCodecPro{dprocess.getVideoCodecParameters()};
+    videoCodecPro.runCodec(&dprocess.getVideoPacketQueue());
+    mystd::GglSwScale swScale{&videoCodecPro.getFrameQueue(), videoCodecPro.getCodecPar()};
+    
 
-  /* Initialize the library */
-  if (!glfwInit()) return -1;
+    GLFWwindow* window;
 
-  /* Create a windowed mode window and its OpenGL context */
-  window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
-  if (!window) {
-    glfwTerminate();
-    return -1;
+    /* Initialize the library */
+    if (!glfwInit()) return -1;
+
+    /* Create a windowed mode window and its OpenGL context */
+    window = glfwCreateWindow(1920, 1080, "Hello World", NULL, NULL);
+    if (!window) {
+      glfwTerminate();
+      return -1;
   }
 
   /* Make the window's context current */
@@ -37,14 +49,14 @@ int main(void) {
 //  init glew
 //          GLenum em = glewInit();
 //   if(em!=GLEW_OK) cout<<"init glew err"<<endl;
-  
+  glDebugMessageCallback(errorCallback, nullptr);
   cout<<glGetString(GL_VERSION)<<endl;
   
   float positions[16]={
-    -0.5f,-0.5f,0.0f,0.0f,
-    0.5f,-0.5f,1.0f,0.0f,
-    0.5f,0.5f,1.0f,1.0f,
-    -0.5f,0.5f,0.0f,1.0f
+    -0.5f,-0.5f,0.0f,1.0f,
+    0.5f,-0.5f,1.0f,1.0f,
+    0.5f,0.5f,1.0f,0.0f,
+    -0.5f,0.5f,0.0f,0.0f
   };
   uint32_t indices[6]={
     0,1,2,
@@ -86,13 +98,15 @@ va.addVertexBuffer(vb,layout);
     // const uint8_t* str = glewGetErrorString(em);
     // cout << str << endl;
     // }
-  /* Loop until the user closes the window */
-  while (!glfwWindowShouldClose(window)) {
+    
+    /* Loop until the user closes the window */
+    while (!glfwWindowShouldClose(window)) {
     /* Render here */
     rderer.clear();
     // draw
     // glDrawArrays(GL_TRIANGLES,0,3);
     // draw with indexBuffer
+    swScale.scaleOneTextureData(tx.getTextureId());
     rderer.draw();
     /* Swap front and back buffers */
     glfwSwapBuffers(window);

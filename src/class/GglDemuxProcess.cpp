@@ -6,32 +6,42 @@ GglDemuxProcess::GglDemuxProcess(std::string filePath){
   this->filePath = filePath;
   this->audioIndex=-1;
   this->videoIndex=-1;
+  this->audioQuePtr=make_unique<GglAVPacketQueue>();
+  this->videoQuePtr = make_unique<GglAVPacketQueue>();
   if(initDemux(filePath)!=0){
     cout<<"初始化视频解包失败"<<endl;
     return;
   }
+  findAudioCodecParameters();
+  findVideoCodecParameters();
 }
 GglDemuxProcess ::~GglDemuxProcess(){
     threadStopFlag=true;
     demuxThread->join();
     avformat_close_input(&formatContextPtr);
+
+      // 高版本不能使用 avformat_free_context(formatContextPtr);
 }
 void GglDemuxProcess ::runDemux() {
     demuxThread=new std::thread(&GglDemuxProcess::demux,this);
     threadStopFlag=false;
 }
-void GglDemuxProcess::getAudioParameters() {
-    if(audioIndex!=-1){
-        audioPar= formatContextPtr->streams[audioIndex]->codecpar;
-        return;
+int32_t GglDemuxProcess ::getAudioIndex(){return audioIndex;}
+int32_t GglDemuxProcess ::getVideoIndex(){return videoIndex;}
+AVFormatContext* GglDemuxProcess ::getFormatContext() {return formatContextPtr;}
+AVCodecParameters* GglDemuxProcess ::getVideoCodecParameters() {return videoPar;}
+GglAVPacketQueue& GglDemuxProcess::getVideoPacketQueue(){return *videoQuePtr;}
+void GglDemuxProcess ::findAudioCodecParameters() {
+    if (audioIndex != -1) {
+    audioPar = formatContextPtr->streams[audioIndex]->codecpar;
+    return;
     }
     throw runtime_error("audioIndex is invalid!");
-
 }
-void GglDemuxProcess::getVideoParameters() {
-    if (audioIndex != -1) {
-        audioPar = formatContextPtr->streams[audioIndex]->codecpar;
-        return;
+void GglDemuxProcess ::findVideoCodecParameters() {
+    if (videoIndex != -1) {
+    videoPar = formatContextPtr->streams[videoIndex]->codecpar;
+    return;
     }
     throw runtime_error("videoIndex is invalid!");
 }
@@ -63,19 +73,23 @@ int32_t GglDemuxProcess::initDemux(std::string filePath) {
     return 0;
 }
 void GglDemuxProcess::demux() {
-    AVPacket pt;
+    AVPacket* pt;
     int32_t res;
     for(;!threadStopFlag;){
-        res=av_read_frame(formatContextPtr,&pt);
+        pt = av_packet_alloc();
+        res=av_read_frame(formatContextPtr,pt);
         if(res!=0){
           av_strerror(res, msgBuffer, 1024);
           cout << msgBuffer << endl;
           return;
         }
-        if(pt.stream_index==audioIndex){
-            audioque.push(pt);
-        }else if(pt.stream_index==videoIndex){
-            videoque.push(pt);
+        for(;(videoQuePtr->size()>10)&&(!threadStopFlag);){
+            this_thread::sleep_for(chrono::milliseconds(100));
+        }
+        if(pt->stream_index==audioIndex){
+            audioQuePtr->push(pt);
+        }else if(pt->stream_index==videoIndex){
+            videoQuePtr->push(pt);
         }
     }
 }

@@ -29,4 +29,5 @@ namespace mystd{
         glBindTexture(GL_TEXTURE_2D, textureId);
     }
     void GglTexture::unBind() { glBindTexture(GL_TEXTURE_2D,0);}
+    uint32_t GglTexture::getTextureId() { return textureId;}
 }

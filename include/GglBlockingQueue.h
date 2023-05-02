@@ -18,16 +18,22 @@ namespace mystd{
             std::unique_lock<std::mutex> lock{queMtx};
             rawQueue.push(item);
          }
-         bool pop(){
+         void pop(){
             std::unique_lock<std::mutex> lock{queMtx};
             if(rawQueue.size()>0){
                 rawQueue.pop();
-                return true;
+                return;
             }
-            return false;
+            throw std::runtime_error(" queue is empty can not pop ! ");
          }
          T front(){
+            if(rawQueue.size()>0){
             return rawQueue.front();
+            }
+            throw std::runtime_error("no item in this queue!");
+         }
+         int32_t size(){
+            return rawQueue.size();
          }
          protected:
         std::queue<T> rawQueue;

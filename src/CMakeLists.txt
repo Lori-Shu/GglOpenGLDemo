@@ -14,4 +14,6 @@ add_executable(demo ${cppFiles})
 
 target_link_libraries(demo glfw3 avcodec.dll avdevice.dll avfilter.dll avutil.dll avformat.dll postproc.dll swresample.dll swscale.dll)
 
+
+
 exec_program(xcopy ARGS ${PROJECT_SOURCE_DIR}/src/shader ${PROJECT_SOURCE_DIR}/bin)

@@ -7,8 +7,7 @@ namespace mystd{
     GglAVPacketQueue::~GglAVPacketQueue(){
         AVPacket* tempPtr;
         for(;rawQueue.size()>0;){
-            AVPacket& temp=rawQueue.front();
-            tempPtr=&temp;
+            tempPtr=rawQueue.front();
             av_packet_free(&tempPtr);
             rawQueue.pop();
         }

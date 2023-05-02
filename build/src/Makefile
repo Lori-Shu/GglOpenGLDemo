@@ -201,6 +201,30 @@ class/GglAVPacketQueue.cpp.s:
 	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAVPacketQueue.cpp.s
 .PHONY : class/GglAVPacketQueue.cpp.s
 
+class/GglCodecProcess.obj: class/GglCodecProcess.cpp.obj
+.PHONY : class/GglCodecProcess.obj
+
+# target to build an object file
+class/GglCodecProcess.cpp.obj:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglCodecProcess.cpp.obj
+.PHONY : class/GglCodecProcess.cpp.obj
+
+class/GglCodecProcess.i: class/GglCodecProcess.cpp.i
+.PHONY : class/GglCodecProcess.i
+
+# target to preprocess a source file
+class/GglCodecProcess.cpp.i:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglCodecProcess.cpp.i
+.PHONY : class/GglCodecProcess.cpp.i
+
+class/GglCodecProcess.s: class/GglCodecProcess.cpp.s
+.PHONY : class/GglCodecProcess.s
+
+# target to generate assembly for a file
+class/GglCodecProcess.cpp.s:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglCodecProcess.cpp.s
+.PHONY : class/GglCodecProcess.cpp.s
+
 class/GglDemuxProcess.obj: class/GglDemuxProcess.cpp.obj
 .PHONY : class/GglDemuxProcess.obj
 
@@ -296,6 +320,30 @@ class/GglShader.s: class/GglShader.cpp.s
 class/GglShader.cpp.s:
 	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglShader.cpp.s
 .PHONY : class/GglShader.cpp.s
+
+class/GglSwScale.obj: class/GglSwScale.cpp.obj
+.PHONY : class/GglSwScale.obj
+
+# target to build an object file
+class/GglSwScale.cpp.obj:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglSwScale.cpp.obj
+.PHONY : class/GglSwScale.cpp.obj
+
+class/GglSwScale.i: class/GglSwScale.cpp.i
+.PHONY : class/GglSwScale.i
+
+# target to preprocess a source file
+class/GglSwScale.cpp.i:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglSwScale.cpp.i
+.PHONY : class/GglSwScale.cpp.i
+
+class/GglSwScale.s: class/GglSwScale.cpp.s
+.PHONY : class/GglSwScale.s
+
+# target to generate assembly for a file
+class/GglSwScale.cpp.s:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglSwScale.cpp.s
+.PHONY : class/GglSwScale.cpp.s
 
 class/GglTexture.obj: class/GglTexture.cpp.obj
 .PHONY : class/GglTexture.obj
@@ -459,6 +507,9 @@ help:
 	@echo ... class/GglAVPacketQueue.obj
 	@echo ... class/GglAVPacketQueue.i
 	@echo ... class/GglAVPacketQueue.s
+	@echo ... class/GglCodecProcess.obj
+	@echo ... class/GglCodecProcess.i
+	@echo ... class/GglCodecProcess.s
 	@echo ... class/GglDemuxProcess.obj
 	@echo ... class/GglDemuxProcess.i
 	@echo ... class/GglDemuxProcess.s
@@ -471,6 +522,9 @@ help:
 	@echo ... class/GglShader.obj
 	@echo ... class/GglShader.i
 	@echo ... class/GglShader.s
+	@echo ... class/GglSwScale.obj
+	@echo ... class/GglSwScale.i
+	@echo ... class/GglSwScale.s
 	@echo ... class/GglTexture.obj
 	@echo ... class/GglTexture.i
 	@echo ... class/GglTexture.s

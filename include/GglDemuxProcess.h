@@ -15,10 +15,15 @@ namespace mystd{
          ~GglDemuxProcess();
         //  会启动一个独立线程
          void runDemux();
+        AVFormatContext* getFormatContext();
+        int32_t getAudioIndex();
+        int32_t getVideoIndex();
+        AVCodecParameters*  getVideoCodecParameters();
+        GglAVPacketQueue& getVideoPacketQueue();
 
-        private:
-        void getAudioParameters();
-        void getVideoParameters();
+       private: 
+        void findAudioCodecParameters();
+        void findVideoCodecParameters();
         int32_t initDemux(std::string filePath);
         void demux();
          std::string filePath;
@@ -28,9 +33,9 @@ namespace mystd{
          int32_t videoIndex;
          std::thread * demuxThread;
          bool threadStopFlag;
-         std::unique_ptr<GglAVPacketQueue> videoque;
-         std::unique_ptr<GglAVPacketQueue> audioque;
-         AVCodecParameters * audioPar;
+         std::unique_ptr<GglAVPacketQueue> videoQuePtr;
+         std::unique_ptr<GglAVPacketQueue> audioQuePtr;
+         AVCodecParameters* audioPar;
          AVCodecParameters* videoPar;
     };
 }

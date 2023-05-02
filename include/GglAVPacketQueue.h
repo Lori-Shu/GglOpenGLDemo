@@ -5,7 +5,7 @@ extern "C" {
 #include <libavformat/avformat.h>
 }
 namespace mystd{
-    class GglAVPacketQueue:public GglBlockingQueue<AVPacket> {
+    class GglAVPacketQueue:public GglBlockingQueue<AVPacket*> {
         public:
          GglAVPacketQueue();
          ~GglAVPacketQueue();

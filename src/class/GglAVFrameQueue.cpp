@@ -8,8 +8,7 @@ namespace mystd{
     GglAVFrameQueue ::~GglAVFrameQueue(){
       AVFrame *tempPtr;
       for (; rawQueue.size() > 0;) {
-        AVFrame& temp = rawQueue.front();
-        tempPtr=&temp;
+        tempPtr = rawQueue.front();
         av_frame_free(&tempPtr);
         rawQueue.pop();
       }

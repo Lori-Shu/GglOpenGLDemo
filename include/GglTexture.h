@@ -11,7 +11,7 @@ namespace mystd{
          ~GglTexture();
          void bind(uint32_t slot);
          void unBind();
-
+        uint32_t getTextureId();
         private:
          void createTexture();
 

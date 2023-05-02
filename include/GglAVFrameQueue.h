@@ -6,7 +6,7 @@ extern "C" {
 }
 
 namespace mystd{
-    class GglAVFrameQueue:public GglBlockingQueue<AVFrame>{
+    class GglAVFrameQueue:public GglBlockingQueue<AVFrame*>{
         public:
          GglAVFrameQueue();
          ~GglAVFrameQueue();
