@@ -36,7 +36,7 @@ void GglCodecProcess::codec(GglAVPacketQueue* packetQuePtr) {
         res= avcodec_send_packet(codecContextPtr,tempPacketPtr);
         if (res != 0) {
             av_strerror(res, errBuffer, 1024);
-            cout << errBuffer << endl;
+            throw runtime_error(errBuffer);
             return;
         }
         av_packet_free(&tempPacketPtr);
@@ -49,7 +49,7 @@ void GglCodecProcess::codec(GglAVPacketQueue* packetQuePtr) {
             }
             if (res != 0) {
               av_strerror(res, errBuffer, 1024);
-              cout << errBuffer << endl;
+              throw runtime_error(errBuffer);
               return;
             }
             frameQueuePtr->push(framePtr);

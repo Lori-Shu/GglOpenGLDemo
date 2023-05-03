@@ -23,14 +23,17 @@ GglDemuxProcess ::~GglDemuxProcess(){
       // 高版本不能使用 avformat_free_context(formatContextPtr);
 }
 void GglDemuxProcess ::runDemux() {
+    threadStopFlag = false;
     demuxThread=new std::thread(&GglDemuxProcess::demux,this);
-    threadStopFlag=false;
+    
 }
 int32_t GglDemuxProcess ::getAudioIndex(){return audioIndex;}
 int32_t GglDemuxProcess ::getVideoIndex(){return videoIndex;}
 AVFormatContext* GglDemuxProcess ::getFormatContext() {return formatContextPtr;}
 AVCodecParameters* GglDemuxProcess ::getVideoCodecParameters() {return videoPar;}
+AVCodecParameters* GglDemuxProcess ::getAudioCodecParameters(){return audioPar;}
 GglAVPacketQueue& GglDemuxProcess::getVideoPacketQueue(){return *videoQuePtr;}
+GglAVPacketQueue& GglDemuxProcess::getAudioPacketQueue(){return *audioQuePtr;}
 void GglDemuxProcess ::findAudioCodecParameters() {
     if (audioIndex != -1) {
     audioPar = formatContextPtr->streams[audioIndex]->codecpar;
@@ -80,11 +83,11 @@ void GglDemuxProcess::demux() {
         res=av_read_frame(formatContextPtr,pt);
         if(res!=0){
           av_strerror(res, msgBuffer, 1024);
-          cout << msgBuffer << endl;
+          throw runtime_error(msgBuffer);
           return;
         }
         for(;(videoQuePtr->size()>10)&&(!threadStopFlag);){
-            this_thread::sleep_for(chrono::milliseconds(100));
+            this_thread::sleep_for(chrono::milliseconds(10));
         }
         if(pt->stream_index==audioIndex){
             audioQuePtr->push(pt);

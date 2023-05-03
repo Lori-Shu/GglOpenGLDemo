@@ -16,6 +16,16 @@
 },
 {
   "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglAudioPlayTask.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglAudioPlayTask.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglAudioPlayTask.cpp"
+},
+{
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglAudioPlayer.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglAudioPlayer.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglAudioPlayer.cpp"
+},
+{
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
   "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglCodecProcess.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglCodecProcess.cpp",
   "file": "D:/cppproject/GglOpenGLDemo/src/class/GglCodecProcess.cpp"
 },
@@ -26,6 +36,11 @@
 },
 {
   "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglFrameVector.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglFrameVector.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglFrameVector.cpp"
+},
+{
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
   "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglIndexBuffer.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglIndexBuffer.cpp",
   "file": "D:/cppproject/GglOpenGLDemo/src/class/GglIndexBuffer.cpp"
 },
@@ -33,6 +48,11 @@
   "directory": "D:/cppproject/GglOpenGLDemo/build/src",
   "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglRenderer.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglRenderer.cpp",
   "file": "D:/cppproject/GglOpenGLDemo/src/class/GglRenderer.cpp"
+},
+{
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglResample.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglResample.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglResample.cpp"
 },
 {
   "directory": "D:/cppproject/GglOpenGLDemo/build/src",
@@ -58,6 +78,11 @@
   "directory": "D:/cppproject/GglOpenGLDemo/build/src",
   "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglVertexBuffer.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglVertexBuffer.cpp",
   "file": "D:/cppproject/GglOpenGLDemo/src/class/GglVertexBuffer.cpp"
+},
+{
+  "directory": "D:/cppproject/GglOpenGLDemo/build/src",
+  "command": "D:\\program\\MinGWDevKit\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\demo.dir\\class\\GglVideoPlayTask.cpp.obj -c D:\\cppproject\\GglOpenGLDemo\\src\\class\\GglVideoPlayTask.cpp",
+  "file": "D:/cppproject/GglOpenGLDemo/src/class/GglVideoPlayTask.cpp"
 },
 {
   "directory": "D:/cppproject/GglOpenGLDemo/build/src",

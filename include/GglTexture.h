@@ -4,6 +4,8 @@
 
 #include <iostream>
 #include <string>
+#include"GglFrameVector.h"
+#include"GglVideoPlayTask.h"
 namespace mystd{
     class GglTexture{
         public:
@@ -12,12 +14,14 @@ namespace mystd{
          void bind(uint32_t slot);
          void unBind();
         uint32_t getTextureId();
-        private:
-         void createTexture();
+        void updateVideoFrameTexture(GglVideoPlayTask& fv);
 
-         uint32_t textureId;
-         uint8_t* localBuffer;
-         std::string filePath;
-         int32_t width, height, bitsPerPixel;
+       private:
+        void createTexture();
+
+        uint32_t textureId;
+        uint8_t* localBuffer;
+        std::string filePath;
+        int32_t width, height, bitsPerPixel;
     };
 }

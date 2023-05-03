@@ -3,6 +3,7 @@
 extern "C"{
     #include<libswscale/swscale.h>
     #include<libavutil/imgutils.h>
+    
     #include<libavcodec/avcodec.h>
 }
 #include"GglAVFrameQueue.h"
@@ -12,13 +13,14 @@ namespace mystd{
         public:
          GglSwScale(GglAVFrameQueue* frameQueuePtr,AVCodecParameters* par);
          ~GglSwScale();
-         void scaleOneTextureData(uint32_t textureId);
-         private:
-          void createSwsContext();
-          AVCodecParameters* parPtr;
-          SwsContext* swsContextPtr;
-          GglAVFrameQueue* frameQueuePtr;
-          AVFrame* currentFramePtr;
-          char errBuffer[1024];
+         void scaleAndLoadTextureData(AVFrame* destFrame);
+
+        private:
+         void createSwsContext();
+         AVCodecParameters* parPtr;
+         SwsContext* swsContextPtr;
+         GglAVFrameQueue* frameQueuePtr;
+         AVFrame* currentFramePtr;
+         char errBuffer[1024];
     };
 }

@@ -11,6 +11,10 @@
 #include"GglDemuxProcess.h"
 #include"GglCodecProcess.h"
 #include"GglSwScale.h"
+#include"GglVideoPlayTask.h"
+#include"GglFrameVector.h"
+#include"GglAudioPlayTask.h"
+#include"GglAudioPlayer.h"
 using namespace std;
 void errorCallback(GLenum source, GLenum type, GLuint id, GLenum severity,
                    GLsizei length, const GLchar* message,
@@ -25,8 +29,8 @@ int main(void) {
     dprocess.runDemux();
     mystd::GglCodecProcess videoCodecPro{dprocess.getVideoCodecParameters()};
     videoCodecPro.runCodec(&dprocess.getVideoPacketQueue());
-    mystd::GglSwScale swScale{&videoCodecPro.getFrameQueue(), videoCodecPro.getCodecPar()};
-    
+    mystd::GglCodecProcess audioCodecPro{dprocess.getAudioCodecParameters()};
+    audioCodecPro.runCodec(&dprocess.getAudioPacketQueue());
 
     GLFWwindow* window;
 
@@ -98,7 +102,19 @@ va.addVertexBuffer(vb,layout);
     // const uint8_t* str = glewGetErrorString(em);
     // cout << str << endl;
     // }
-    
+   
+    chrono::duration<int32_t,std::milli> duPerFrame=chrono::milliseconds(1000/24);
+    mystd::GglFrameVector vfVector{};
+    mystd::GglFrameVector afVector{};
+    mystd::GglSwScale swScale{&videoCodecPro.getFrameQueue(),
+                              videoCodecPro.getCodecPar()};
+    mystd::GglVideoPlayTask vPlayTask{swScale, duPerFrame, vfVector,
+                                      videoCodecPro.getFrameQueue()};
+    vPlayTask.runPlayThread();
+    mystd::GglSwResample swRsam{&audioCodecPro.getFrameQueue(),dprocess.getAudioCodecParameters()};
+    mystd::GglAudioPlayTask aPlayTask{swRsam,afVector,audioCodecPro.getFrameQueue(),vPlayTask};
+    mystd::GglAudioPlayer aPlayer{aPlayTask};
+    aPlayTask.runPlayTask(&aPlayer);
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window)) {
     /* Render here */
@@ -106,7 +122,9 @@ va.addVertexBuffer(vb,layout);
     // draw
     // glDrawArrays(GL_TRIANGLES,0,3);
     // draw with indexBuffer
-    swScale.scaleOneTextureData(tx.getTextureId());
+    if(vfVector.getVector().size()>0){
+    tx.updateVideoFrameTexture(vPlayTask);
+    }
     rderer.draw();
     /* Swap front and back buffers */
     glfwSwapBuffers(window);

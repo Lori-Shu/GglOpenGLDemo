@@ -201,6 +201,54 @@ class/GglAVPacketQueue.cpp.s:
 	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAVPacketQueue.cpp.s
 .PHONY : class/GglAVPacketQueue.cpp.s
 
+class/GglAudioPlayTask.obj: class/GglAudioPlayTask.cpp.obj
+.PHONY : class/GglAudioPlayTask.obj
+
+# target to build an object file
+class/GglAudioPlayTask.cpp.obj:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAudioPlayTask.cpp.obj
+.PHONY : class/GglAudioPlayTask.cpp.obj
+
+class/GglAudioPlayTask.i: class/GglAudioPlayTask.cpp.i
+.PHONY : class/GglAudioPlayTask.i
+
+# target to preprocess a source file
+class/GglAudioPlayTask.cpp.i:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAudioPlayTask.cpp.i
+.PHONY : class/GglAudioPlayTask.cpp.i
+
+class/GglAudioPlayTask.s: class/GglAudioPlayTask.cpp.s
+.PHONY : class/GglAudioPlayTask.s
+
+# target to generate assembly for a file
+class/GglAudioPlayTask.cpp.s:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAudioPlayTask.cpp.s
+.PHONY : class/GglAudioPlayTask.cpp.s
+
+class/GglAudioPlayer.obj: class/GglAudioPlayer.cpp.obj
+.PHONY : class/GglAudioPlayer.obj
+
+# target to build an object file
+class/GglAudioPlayer.cpp.obj:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAudioPlayer.cpp.obj
+.PHONY : class/GglAudioPlayer.cpp.obj
+
+class/GglAudioPlayer.i: class/GglAudioPlayer.cpp.i
+.PHONY : class/GglAudioPlayer.i
+
+# target to preprocess a source file
+class/GglAudioPlayer.cpp.i:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAudioPlayer.cpp.i
+.PHONY : class/GglAudioPlayer.cpp.i
+
+class/GglAudioPlayer.s: class/GglAudioPlayer.cpp.s
+.PHONY : class/GglAudioPlayer.s
+
+# target to generate assembly for a file
+class/GglAudioPlayer.cpp.s:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglAudioPlayer.cpp.s
+.PHONY : class/GglAudioPlayer.cpp.s
+
 class/GglCodecProcess.obj: class/GglCodecProcess.cpp.obj
 .PHONY : class/GglCodecProcess.obj
 
@@ -249,6 +297,30 @@ class/GglDemuxProcess.cpp.s:
 	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglDemuxProcess.cpp.s
 .PHONY : class/GglDemuxProcess.cpp.s
 
+class/GglFrameVector.obj: class/GglFrameVector.cpp.obj
+.PHONY : class/GglFrameVector.obj
+
+# target to build an object file
+class/GglFrameVector.cpp.obj:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglFrameVector.cpp.obj
+.PHONY : class/GglFrameVector.cpp.obj
+
+class/GglFrameVector.i: class/GglFrameVector.cpp.i
+.PHONY : class/GglFrameVector.i
+
+# target to preprocess a source file
+class/GglFrameVector.cpp.i:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglFrameVector.cpp.i
+.PHONY : class/GglFrameVector.cpp.i
+
+class/GglFrameVector.s: class/GglFrameVector.cpp.s
+.PHONY : class/GglFrameVector.s
+
+# target to generate assembly for a file
+class/GglFrameVector.cpp.s:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglFrameVector.cpp.s
+.PHONY : class/GglFrameVector.cpp.s
+
 class/GglIndexBuffer.obj: class/GglIndexBuffer.cpp.obj
 .PHONY : class/GglIndexBuffer.obj
 
@@ -296,6 +368,30 @@ class/GglRenderer.s: class/GglRenderer.cpp.s
 class/GglRenderer.cpp.s:
 	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglRenderer.cpp.s
 .PHONY : class/GglRenderer.cpp.s
+
+class/GglResample.obj: class/GglResample.cpp.obj
+.PHONY : class/GglResample.obj
+
+# target to build an object file
+class/GglResample.cpp.obj:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglResample.cpp.obj
+.PHONY : class/GglResample.cpp.obj
+
+class/GglResample.i: class/GglResample.cpp.i
+.PHONY : class/GglResample.i
+
+# target to preprocess a source file
+class/GglResample.cpp.i:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglResample.cpp.i
+.PHONY : class/GglResample.cpp.i
+
+class/GglResample.s: class/GglResample.cpp.s
+.PHONY : class/GglResample.s
+
+# target to generate assembly for a file
+class/GglResample.cpp.s:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglResample.cpp.s
+.PHONY : class/GglResample.cpp.s
 
 class/GglShader.obj: class/GglShader.cpp.obj
 .PHONY : class/GglShader.obj
@@ -417,6 +513,30 @@ class/GglVertexBuffer.cpp.s:
 	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglVertexBuffer.cpp.s
 .PHONY : class/GglVertexBuffer.cpp.s
 
+class/GglVideoPlayTask.obj: class/GglVideoPlayTask.cpp.obj
+.PHONY : class/GglVideoPlayTask.obj
+
+# target to build an object file
+class/GglVideoPlayTask.cpp.obj:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglVideoPlayTask.cpp.obj
+.PHONY : class/GglVideoPlayTask.cpp.obj
+
+class/GglVideoPlayTask.i: class/GglVideoPlayTask.cpp.i
+.PHONY : class/GglVideoPlayTask.i
+
+# target to preprocess a source file
+class/GglVideoPlayTask.cpp.i:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglVideoPlayTask.cpp.i
+.PHONY : class/GglVideoPlayTask.cpp.i
+
+class/GglVideoPlayTask.s: class/GglVideoPlayTask.cpp.s
+.PHONY : class/GglVideoPlayTask.s
+
+# target to generate assembly for a file
+class/GglVideoPlayTask.cpp.s:
+	cd /d D:\cppproject\GglOpenGLDemo\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\demo.dir\build.make src/CMakeFiles/demo.dir/class/GglVideoPlayTask.cpp.s
+.PHONY : class/GglVideoPlayTask.cpp.s
+
 class/VertexBufferLayout.obj: class/VertexBufferLayout.cpp.obj
 .PHONY : class/VertexBufferLayout.obj
 
@@ -507,18 +627,30 @@ help:
 	@echo ... class/GglAVPacketQueue.obj
 	@echo ... class/GglAVPacketQueue.i
 	@echo ... class/GglAVPacketQueue.s
+	@echo ... class/GglAudioPlayTask.obj
+	@echo ... class/GglAudioPlayTask.i
+	@echo ... class/GglAudioPlayTask.s
+	@echo ... class/GglAudioPlayer.obj
+	@echo ... class/GglAudioPlayer.i
+	@echo ... class/GglAudioPlayer.s
 	@echo ... class/GglCodecProcess.obj
 	@echo ... class/GglCodecProcess.i
 	@echo ... class/GglCodecProcess.s
 	@echo ... class/GglDemuxProcess.obj
 	@echo ... class/GglDemuxProcess.i
 	@echo ... class/GglDemuxProcess.s
+	@echo ... class/GglFrameVector.obj
+	@echo ... class/GglFrameVector.i
+	@echo ... class/GglFrameVector.s
 	@echo ... class/GglIndexBuffer.obj
 	@echo ... class/GglIndexBuffer.i
 	@echo ... class/GglIndexBuffer.s
 	@echo ... class/GglRenderer.obj
 	@echo ... class/GglRenderer.i
 	@echo ... class/GglRenderer.s
+	@echo ... class/GglResample.obj
+	@echo ... class/GglResample.i
+	@echo ... class/GglResample.s
 	@echo ... class/GglShader.obj
 	@echo ... class/GglShader.i
 	@echo ... class/GglShader.s
@@ -534,6 +666,9 @@ help:
 	@echo ... class/GglVertexBuffer.obj
 	@echo ... class/GglVertexBuffer.i
 	@echo ... class/GglVertexBuffer.s
+	@echo ... class/GglVideoPlayTask.obj
+	@echo ... class/GglVideoPlayTask.i
+	@echo ... class/GglVideoPlayTask.s
 	@echo ... class/VertexBufferLayout.obj
 	@echo ... class/VertexBufferLayout.i
 	@echo ... class/VertexBufferLayout.s

@@ -19,7 +19,9 @@ namespace mystd{
         int32_t getAudioIndex();
         int32_t getVideoIndex();
         AVCodecParameters*  getVideoCodecParameters();
+        AVCodecParameters* getAudioCodecParameters();
         GglAVPacketQueue& getVideoPacketQueue();
+        GglAVPacketQueue& getAudioPacketQueue();
 
        private: 
         void findAudioCodecParameters();
