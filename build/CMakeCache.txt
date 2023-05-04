@@ -238,9 +238,6 @@ CMAKE_STRIP:FILEPATH=D:/program/MinGWDevKit/mingw64/bin/strip.exe
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Path to a program.
-OpenGL:FILEPATH=OpenGL-NOTFOUND
-
 //Value Computed by CMake
 OpenGLDemo_BINARY_DIR:STATIC=D:/cppproject/GglOpenGLDemo/build
 

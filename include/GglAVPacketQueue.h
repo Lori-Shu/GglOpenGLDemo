@@ -9,5 +9,6 @@ namespace mystd{
         public:
          GglAVPacketQueue();
          ~GglAVPacketQueue();
+         void push(AVPacket *pPacket);
     };
 }

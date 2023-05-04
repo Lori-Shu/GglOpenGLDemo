@@ -19,7 +19,7 @@ void GglAudioPlayTask ::runPlayTask(GglAudioPlayer* player) {
   playThreadPtr = new thread(&GglAudioPlayTask::playTask, this,player);
 }
 AVFrame* GglAudioPlayTask ::getCurrentFramePtr() {return currentFramePtr;}
-
+bool GglAudioPlayTask ::getStopFlag() {return stopFlag;}
 void GglAudioPlayTask ::playTask(GglAudioPlayer* player) {
   auto& rawV = fVector.getVector();
   for (; rawV.size() == 0;) {
@@ -65,7 +65,7 @@ void GglAudioPlayTask ::loadTask() {
       AVFrame* destFramePtr = av_frame_alloc();
       destFramePtr->ch_layout = frameQueue.front()->ch_layout;
       destFramePtr->nb_samples = frameQueue.front()->nb_samples;
-      destFramePtr->format = AV_SAMPLE_FMT_FLT;
+      destFramePtr->format = AV_SAMPLE_FMT_U8P;
       destFramePtr->sample_rate = frameQueue.front()->sample_rate;
       int32_t res= av_frame_get_buffer(destFramePtr, 0);
       if (res != 0) {

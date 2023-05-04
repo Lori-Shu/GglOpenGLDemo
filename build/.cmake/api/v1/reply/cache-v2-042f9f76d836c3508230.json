@@ -1270,18 +1270,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "OpenGL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "OpenGL-NOTFOUND"
-		},
-		{
 			"name" : "OpenGLDemo_BINARY_DIR",
 			"properties" : 
 			[

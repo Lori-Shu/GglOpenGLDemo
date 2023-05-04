@@ -57,7 +57,6 @@ int32_t GglDemuxProcess::initDemux(std::string filePath) {
         return -1;
     }
     av_dump_format(formatContextPtr,0,filePath.c_str(),0);
-
     res=avformat_find_stream_info(formatContextPtr,nullptr);
     if (res != 0) {
         av_strerror(res, msgBuffer, 1024);
@@ -83,6 +82,9 @@ void GglDemuxProcess::demux() {
         res=av_read_frame(formatContextPtr,pt);
         if(res!=0){
           av_strerror(res, msgBuffer, 1024);
+          if(res==AVERROR_EOF){
+            break;
+          }
           throw runtime_error(msgBuffer);
           return;
         }
@@ -90,7 +92,8 @@ void GglDemuxProcess::demux() {
             this_thread::sleep_for(chrono::milliseconds(10));
         }
         if(pt->stream_index==audioIndex){
-            audioQuePtr->push(pt);
+            av_packet_free(&pt);
+            // audioQuePtr->push(pt);
         }else if(pt->stream_index==videoIndex){
             videoQuePtr->push(pt);
         }

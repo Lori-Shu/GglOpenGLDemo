@@ -15,20 +15,21 @@ namespace mystd{
          ~GglAudioPlayTask();
          void runPlayTask(GglAudioPlayer* instance);
          AVFrame * getCurrentFramePtr();
-         private:
-          void playTask(GglAudioPlayer* instance);
-          void loadTask();
-          std::thread* playThreadPtr;
-          std::thread* loadThreadPtr;
-          GglSwResample& gglResample;
-          GglFrameVector& fVector;
-          GglAVFrameQueue& frameQueue;
-          bool stopFlag;
-          AVFrame* currentFramePtr;
-          AVFrame* lastVideoFramePtr;
-          int32_t currentIndex;
-          GglVideoPlayTask& vTask;
-          char errBuffer[1024];
+         bool getStopFlag();
+        private:
+         void playTask(GglAudioPlayer* instance);
+         void loadTask();
+         std::thread* playThreadPtr;
+         std::thread* loadThreadPtr;
+         GglSwResample& gglResample;
+         GglFrameVector& fVector;
+         GglAVFrameQueue& frameQueue;
+         bool stopFlag;
+         AVFrame* currentFramePtr;
+         AVFrame* lastVideoFramePtr;
+         int32_t currentIndex;
+         GglVideoPlayTask& vTask;
+         char errBuffer[1024];
         };
 }
 

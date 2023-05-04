@@ -24,11 +24,13 @@ void errorCallback(GLenum source, GLenum type, GLuint id, GLenum severity,
 }
 int main(void) {
     cout<<"hello ffmpeg!"<<av_version_info()<<endl;
-    mystd::GglDemuxProcess
-    dprocess{"C://Users/24120/Downloads/全职高手第二季12.mp4"};
+    mystd::GglDemuxProcess dprocess{"C://Users/24120/Downloads/全职高手第二季12.mp4"};
     dprocess.runDemux();
+
     mystd::GglCodecProcess videoCodecPro{dprocess.getVideoCodecParameters()};
     videoCodecPro.runCodec(&dprocess.getVideoPacketQueue());
+
+    
     mystd::GglCodecProcess audioCodecPro{dprocess.getAudioCodecParameters()};
     audioCodecPro.runCodec(&dprocess.getAudioPacketQueue());
 
@@ -38,7 +40,7 @@ int main(void) {
     if (!glfwInit()) return -1;
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(1920, 1080, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(1200, 800, "Hello World", NULL, NULL);
     if (!window) {
       glfwTerminate();
       return -1;
@@ -104,17 +106,16 @@ va.addVertexBuffer(vb,layout);
     // }
    
     chrono::duration<int32_t,std::milli> duPerFrame=chrono::milliseconds(1000/24);
-    mystd::GglFrameVector vfVector{};
-    mystd::GglFrameVector afVector{};
-    mystd::GglSwScale swScale{&videoCodecPro.getFrameQueue(),
+    mystd::GglSwScale swScale{videoCodecPro.getCacheFrameQueue(),
                               videoCodecPro.getCodecPar()};
-    mystd::GglVideoPlayTask vPlayTask{swScale, duPerFrame, vfVector,
-                                      videoCodecPro.getFrameQueue()};
+    mystd::GglVideoPlayTask vPlayTask{swScale, duPerFrame,videoCodecPro.getCacheFrameQueue()};
     vPlayTask.runPlayThread();
-    mystd::GglSwResample swRsam{&audioCodecPro.getFrameQueue(),dprocess.getAudioCodecParameters()};
-    mystd::GglAudioPlayTask aPlayTask{swRsam,afVector,audioCodecPro.getFrameQueue(),vPlayTask};
-    mystd::GglAudioPlayer aPlayer{aPlayTask};
-    aPlayTask.runPlayTask(&aPlayer);
+    // mystd::GglSwResample swRsam{&audioCodecPro.getFrameQueue(),dprocess.getAudioCodecParameters()};
+    // mystd::GglAudioPlayTask aPlayTask{swRsam,afVector,audioCodecPro.getFrameQueue(),vPlayTask};
+    // mystd::GglAudioPlayer aPlayer{aPlayTask};
+    // aPlayTask.runPlayTask(&aPlayer);
+
+    
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window)) {
     /* Render here */
@@ -122,8 +123,11 @@ va.addVertexBuffer(vb,layout);
     // draw
     // glDrawArrays(GL_TRIANGLES,0,3);
     // draw with indexBuffer
-    if(vfVector.getVector().size()>0){
+    if(vPlayTask.shouldDrawVideoTex){
     tx.updateVideoFrameTexture(vPlayTask);
+    unique_lock<mutex> lock{vPlayTask.drawMtx};
+    vPlayTask.shouldDrawVideoTex=false;
+    lock.unlock();
     }
     rderer.draw();
     /* Swap front and back buffers */

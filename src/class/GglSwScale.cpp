@@ -15,18 +15,25 @@ namespace mystd{
     void GglSwScale::scaleAndLoadTextureData(AVFrame* destFramePtr) {
         currentFramePtr = frameQueuePtr->front();
         frameQueuePtr->pop();
+        if(av_frame_is_writable(currentFramePtr)<1){
+            cout<<"frame not writeable"<<endl;
+        }
         int32_t height = sws_scale(swsContextPtr, currentFramePtr->data,
                                    currentFramePtr->linesize, 0, currentFramePtr->height,
                                    destFramePtr->data, destFramePtr->linesize);
+        if(height<=0){
+            throw runtime_error("scale out 0!");
+        }
+        // av_frame_unref(currentFramePtr);
         av_frame_free(&currentFramePtr);
     }
     void GglSwScale::createSwsContext(){
-      swsContextPtr =
-          sws_getContext(parPtr->width, parPtr->height, AV_PIX_FMT_YUV420P,
-                         parPtr->width, parPtr->height, AV_PIX_FMT_RGBA,
-                         SWS_BILINEAR, nullptr, nullptr, nullptr);
-      cout << "frame width==" << parPtr->width << endl;
-      cout << "frame height==" << parPtr->height << endl;
-      cout << "frame format==" << parPtr->format << endl;
+        swsContextPtr =
+            sws_getContext(parPtr->width, parPtr->height, AV_PIX_FMT_YUV420P,
+                           parPtr->width, parPtr->height, AV_PIX_FMT_RGBA,
+                           SWS_BICUBIC, nullptr, nullptr, nullptr);
+        cout << "frame width==" << parPtr->width << endl;
+        cout << "frame height==" << parPtr->height << endl;
+        cout << "frame format==" << parPtr->format << endl;
     }
 }

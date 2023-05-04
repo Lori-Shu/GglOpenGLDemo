@@ -10,15 +10,13 @@ namespace mystd{
         glDeleteTextures(1,&textureId);
     }
     void GglTexture::updateVideoFrameTexture(GglVideoPlayTask& vT) {
-        glActiveTexture(GL_TEXTURE0);
+        auto currentFramePtr= vT.getCurrentFramePtr();
         glBindTexture(GL_TEXTURE_2D, textureId);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1280,
-                     720, 0, GL_RGBA, GL_UNSIGNED_BYTE,
-                     vT.getCurrentFramePtr()->data[0]);
+        // glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 1280, 720, GL_RGBA,
+        //                 GL_UNSIGNED_BYTE, vT.getCurrentFramePtr()->data[0]);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1280, 720, 0, GL_RGBA,
+                     GL_UNSIGNED_BYTE, currentFramePtr->data[0]);
+        av_frame_free(&currentFramePtr);
     }
     void GglTexture::createTexture() {
         stbi_set_flip_vertically_on_load(1);

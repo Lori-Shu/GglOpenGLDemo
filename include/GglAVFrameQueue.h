@@ -11,5 +11,6 @@ namespace mystd{
         public:
          GglAVFrameQueue();
          ~GglAVFrameQueue();
+         void push(AVFrame* pFrame);
     };
 }
