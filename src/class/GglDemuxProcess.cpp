@@ -88,12 +88,13 @@ void GglDemuxProcess::demux() {
           throw runtime_error(msgBuffer);
           return;
         }
-        for(;(videoQuePtr->size()>10)&&(!threadStopFlag);){
+        for(;(audioQuePtr->size()>1000 &&videoQuePtr->size()>1000)&&(!threadStopFlag);){
+            cout<<"full v pts"<<videoQuePtr->front()->pts<<endl;
+            cout << "full a pts" << audioQuePtr->front()->pts << endl;
             this_thread::sleep_for(chrono::milliseconds(10));
         }
         if(pt->stream_index==audioIndex){
-            av_packet_free(&pt);
-            // audioQuePtr->push(pt);
+            audioQuePtr->push(pt);
         }else if(pt->stream_index==videoIndex){
             videoQuePtr->push(pt);
         }

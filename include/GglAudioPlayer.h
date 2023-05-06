@@ -12,6 +12,7 @@ namespace mystd{
         void pause();
         void stop();
         void play();
+        void pauseIfBufferNotReady();
 
        private:
         int32_t initOpenAL();
@@ -21,5 +22,7 @@ namespace mystd{
          GglAudioPlayTask& playTask;
          int32_t bufferSize;
          std::vector<uint32_t> bufIds;
+         int32_t usedBufSize;
+         int32_t freq;
     };
 }

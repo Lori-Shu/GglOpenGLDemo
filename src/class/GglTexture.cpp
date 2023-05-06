@@ -16,7 +16,6 @@ namespace mystd{
         //                 GL_UNSIGNED_BYTE, vT.getCurrentFramePtr()->data[0]);
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1280, 720, 0, GL_RGBA,
                      GL_UNSIGNED_BYTE, currentFramePtr->data[0]);
-        av_frame_free(&currentFramePtr);
     }
     void GglTexture::createTexture() {
         stbi_set_flip_vertically_on_load(1);

@@ -9,8 +9,8 @@ namespace mystd{
     class GglAudioPlayer;
     class GglAudioPlayTask{
         public:
-         GglAudioPlayTask(GglSwResample& gglResample, GglFrameVector& fVector,
-                          GglAVFrameQueue& frameQueue, 
+         GglAudioPlayTask(GglSwResample& gglResample,
+                          GglAVFrameQueue& cacheFrameQueue, 
                           GglVideoPlayTask& vTask);
          ~GglAudioPlayTask();
          void runPlayTask(GglAudioPlayer* instance);
@@ -18,18 +18,15 @@ namespace mystd{
          bool getStopFlag();
         private:
          void playTask(GglAudioPlayer* instance);
-         void loadTask();
          std::thread* playThreadPtr;
-         std::thread* loadThreadPtr;
          GglSwResample& gglResample;
-         GglFrameVector& fVector;
-         GglAVFrameQueue& frameQueue;
+         GglAVFrameQueue& cacheFrameQueue;
          bool stopFlag;
          AVFrame* currentFramePtr;
          AVFrame* lastVideoFramePtr;
-         int32_t currentIndex;
          GglVideoPlayTask& vTask;
          char errBuffer[1024];
         };
 }
+
 

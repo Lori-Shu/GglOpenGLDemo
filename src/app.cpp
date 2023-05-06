@@ -24,7 +24,8 @@ void errorCallback(GLenum source, GLenum type, GLuint id, GLenum severity,
 }
 int main(void) {
     cout<<"hello ffmpeg!"<<av_version_info()<<endl;
-    mystd::GglDemuxProcess dprocess{"C://Users/24120/Downloads/全职高手第二季12.mp4"};
+    mystd::GglDemuxProcess dprocess{
+        "C://Users/24120/Downloads/test.mp4"};
     dprocess.runDemux();
 
     mystd::GglCodecProcess videoCodecPro{dprocess.getVideoCodecParameters()};
@@ -110,10 +111,10 @@ va.addVertexBuffer(vb,layout);
                               videoCodecPro.getCodecPar()};
     mystd::GglVideoPlayTask vPlayTask{swScale, duPerFrame,videoCodecPro.getCacheFrameQueue()};
     vPlayTask.runPlayThread();
-    // mystd::GglSwResample swRsam{&audioCodecPro.getFrameQueue(),dprocess.getAudioCodecParameters()};
-    // mystd::GglAudioPlayTask aPlayTask{swRsam,afVector,audioCodecPro.getFrameQueue(),vPlayTask};
-    // mystd::GglAudioPlayer aPlayer{aPlayTask};
-    // aPlayTask.runPlayTask(&aPlayer);
+    mystd::GglSwResample swRsam{audioCodecPro.getCacheFrameQueue(),dprocess.getAudioCodecParameters()};
+    mystd::GglAudioPlayTask aPlayTask{swRsam,*audioCodecPro.getCacheFrameQueue(),vPlayTask};
+    mystd::GglAudioPlayer aPlayer{aPlayTask};
+    aPlayTask.runPlayTask(&aPlayer);
 
     
     /* Loop until the user closes the window */
@@ -124,10 +125,11 @@ va.addVertexBuffer(vb,layout);
     // glDrawArrays(GL_TRIANGLES,0,3);
     // draw with indexBuffer
     if(vPlayTask.shouldDrawVideoTex){
-    tx.updateVideoFrameTexture(vPlayTask);
-    unique_lock<mutex> lock{vPlayTask.drawMtx};
-    vPlayTask.shouldDrawVideoTex=false;
-    lock.unlock();
+      unique_lock<mutex> lock{vPlayTask.drawMtx};
+      tx.updateVideoFrameTexture(vPlayTask);
+
+      vPlayTask.shouldDrawVideoTex = false;
+      lock.unlock();
     }
     rderer.draw();
     /* Swap front and back buffers */

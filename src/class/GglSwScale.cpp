@@ -13,11 +13,15 @@ namespace mystd{
     }
 
     void GglSwScale::scaleAndLoadTextureData(AVFrame* destFramePtr) {
+            
         currentFramePtr = frameQueuePtr->front();
         frameQueuePtr->pop();
-        if(av_frame_is_writable(currentFramePtr)<1){
-            cout<<"frame not writeable"<<endl;
-        }
+        destFramePtr->width = 1280;
+        destFramePtr->height = 720;
+        destFramePtr->format = AV_PIX_FMT_RGBA;
+        destFramePtr->pts = currentFramePtr->pts;
+        destFramePtr->time_base=currentFramePtr->time_base;
+        av_frame_get_buffer(destFramePtr, 0);
         int32_t height = sws_scale(swsContextPtr, currentFramePtr->data,
                                    currentFramePtr->linesize, 0, currentFramePtr->height,
                                    destFramePtr->data, destFramePtr->linesize);

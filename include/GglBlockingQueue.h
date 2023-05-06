@@ -27,6 +27,9 @@ namespace mystd{
             throw std::runtime_error(" queue is empty can not pop ! ");
          }
          T front(){
+            if(rawQueue.size()<1){
+                std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            }
             if(rawQueue.size()>0){
             return rawQueue.front();
             }
