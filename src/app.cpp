@@ -25,7 +25,7 @@ void errorCallback(GLenum source, GLenum type, GLuint id, GLenum severity,
 int main(void) {
     cout<<"hello ffmpeg!"<<av_version_info()<<endl;
     mystd::GglDemuxProcess dprocess{
-        "C://Users/24120/Downloads/test.mp4"};
+        "C://Users/24120/Downloads/心墙-郭静.flac"};
     dprocess.runDemux();
 
     mystd::GglCodecProcess videoCodecPro{dprocess.getVideoCodecParameters()};

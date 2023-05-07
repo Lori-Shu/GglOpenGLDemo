@@ -12,7 +12,6 @@ namespace mystd{
         swr_free(&swrContextPtr);
     }
     void GglSwResample::resampleAndLoadPCMData(AVFrame * destFramePtr){
-        
         AVFrame* tempFramePtr= frameQueuePtr->front();
         frameQueuePtr->pop();
         destFramePtr->ch_layout = AV_CHANNEL_LAYOUT_STEREO;

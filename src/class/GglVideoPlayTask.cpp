@@ -10,7 +10,7 @@ namespace mystd{
       this->timePerFramePtr=&timePerFrame;
       this->playPortWidth=1280;
       this->playPortHeight = 720;
-      this->shouldDrawVideoTex=true;
+      this->shouldDrawVideoTex=false;
       currentFramePtr=nullptr;
       cacheFrameQueuePtr=frameQueuePtr;
     }

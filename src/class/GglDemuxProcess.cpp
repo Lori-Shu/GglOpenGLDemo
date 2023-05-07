@@ -35,17 +35,18 @@ AVCodecParameters* GglDemuxProcess ::getAudioCodecParameters(){return audioPar;}
 GglAVPacketQueue& GglDemuxProcess::getVideoPacketQueue(){return *videoQuePtr;}
 GglAVPacketQueue& GglDemuxProcess::getAudioPacketQueue(){return *audioQuePtr;}
 void GglDemuxProcess ::findAudioCodecParameters() {
-    if (audioIndex != -1) {
+    if (audioIndex != AVERROR_STREAM_NOT_FOUND) {
     audioPar = formatContextPtr->streams[audioIndex]->codecpar;
     return;
     }
     throw runtime_error("audioIndex is invalid!");
 }
 void GglDemuxProcess ::findVideoCodecParameters() {
-    if (videoIndex != -1) {
+    if (videoIndex != AVERROR_STREAM_NOT_FOUND) {
     videoPar = formatContextPtr->streams[videoIndex]->codecpar;
     return;
     }
+    return;
     throw runtime_error("videoIndex is invalid!");
 }
 int32_t GglDemuxProcess::initDemux(std::string filePath) {
@@ -68,6 +69,9 @@ int32_t GglDemuxProcess::initDemux(std::string filePath) {
     videoIndex= av_find_best_stream(formatContextPtr, AVMEDIA_TYPE_VIDEO, -1, -1, nullptr,
                         0);
     if(audioIndex<0||videoIndex<0){
+        if (audioIndex != AVERROR_STREAM_NOT_FOUND) {
+            return 0;
+        }
         cout<<"获取音视频流下标失败"<<endl;
         return -1;
     }
@@ -88,7 +92,7 @@ void GglDemuxProcess::demux() {
           throw runtime_error(msgBuffer);
           return;
         }
-        for(;(audioQuePtr->size()>1000 &&videoQuePtr->size()>1000)&&(!threadStopFlag);){
+        for(;(videoQuePtr->size()>1000)&&(!threadStopFlag);){
             cout<<"full v pts"<<videoQuePtr->front()->pts<<endl;
             cout << "full a pts" << audioQuePtr->front()->pts << endl;
             this_thread::sleep_for(chrono::milliseconds(10));
