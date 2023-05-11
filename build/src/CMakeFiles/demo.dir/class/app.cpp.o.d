@@ -339,4 +339,5 @@ src/CMakeFiles/demo.dir/class/app.cpp.o: \
  /home/lori/CppProjects/GglOpenGLDemo/include/GglPreBuild.h \
  /home/lori/CppProjects/GglOpenGLDemo/include/GglTest.h \
  /home/lori/CppProjects/GglOpenGLDemo/include/GglTexture.h \
- /home/lori/CppProjects/GglOpenGLDemo/include/GglDynamicVertexBuffer.h
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglDynamicVertexBuffer.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglDynamicIndexBuffer.h

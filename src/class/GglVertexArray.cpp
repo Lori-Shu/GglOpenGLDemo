@@ -11,7 +11,6 @@ namespace mystd{
     void GglVertexArray::addVertexBuffer(GglVertexBuffer& vb,
                                          VertexBufferLayout& layout) {
         bindVertexArray();
-      vb.bindVertexBuffer();
       int32_t offset = 0;
       auto& elements =
           layout.getElements();

@@ -15,5 +15,4 @@ add_executable(demo ${cppFiles})
 
 target_link_libraries(demo GL glfw3 GLEW X11)
 
-
 exec_program(cp ARGS -r ${PROJECT_SOURCE_DIR}/src/shader/ ${PROJECT_SOURCE_DIR}/bin/)

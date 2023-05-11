@@ -11,7 +11,7 @@ namespace mystd{
                                  GglShader& sd);
          ~GglRenderer();
          void clear();
-         void draw();
+         void draw(int32_t objectNum);
          
         private:
          GglVertexArray* vaPtr;

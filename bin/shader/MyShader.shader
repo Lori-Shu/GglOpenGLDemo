@@ -29,6 +29,6 @@ in float ioTextureIndex;
 
 void main(){
     int i=int(ioTextureIndex);
-    // outPutColor=texture(uTexture[i],outTexCoord);
-    outPutColor=uColor;
+    outPutColor=texture(uTexture[i],outTexCoord);
+    // outPutColor=uColor;
 }

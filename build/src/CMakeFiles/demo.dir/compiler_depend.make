@@ -271,6 +271,37 @@ src/CMakeFiles/demo.dir/class/GglBackground.cpp.o: ../src/class/GglBackground.cp
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/bits/unique_lock.h
 
+src/CMakeFiles/demo.dir/class/GglDynamicIndexBuffer.cpp.o: ../src/class/GglDynamicIndexBuffer.cpp \
+  /usr/include/stdc-predef.h \
+  ../include/GglDynamicIndexBuffer.h \
+  /usr/include/GL/glew.h \
+  /usr/include/c++/11/cstddef \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/include/c++/11/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/GL/glu.h \
+  /usr/include/GL/gl.h
+
 src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o: ../src/class/GglDynamicVertexBuffer.cpp \
   /usr/include/stdc-predef.h \
   ../include/GglDynamicVertexBuffer.h \
@@ -2253,7 +2284,8 @@ src/CMakeFiles/demo.dir/class/app.cpp.o: ../src/class/app.cpp \
   ../include/GglPreBuild.h \
   ../include/GglTest.h \
   ../include/GglTexture.h \
-  ../include/GglDynamicVertexBuffer.h
+  ../include/GglDynamicVertexBuffer.h \
+  ../include/GglDynamicIndexBuffer.h
 
 src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o: ../src/class/stb_image_impl.cpp \
   /usr/include/stdc-predef.h \
@@ -3682,6 +3714,12 @@ src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o: ../src/imgui/imgui_widgets.cp
 
 ../src/class/GglRenderer.cpp:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h:
+
+../include/GglDynamicVertexBuffer.h:
+
+../src/class/GglDynamicVertexBuffer.cpp:
+
 /usr/include/GL/glu.h:
 
 /usr/include/c++/11/bits/stl_vector.h:
@@ -3692,11 +3730,9 @@ src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o: ../src/imgui/imgui_widgets.cp
 
 /usr/include/GL/glew.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h:
+../include/GglDynamicIndexBuffer.h:
 
-../include/GglDynamicVertexBuffer.h:
-
-../src/class/GglDynamicVertexBuffer.cpp:
+../src/class/GglDynamicIndexBuffer.cpp:
 
 /usr/include/c++/11/mutex:
 

@@ -20,6 +20,7 @@
 #include "GglVertexBuffer.h"
 #include "VertexBufferLayout.h"
 #include"GglDynamicVertexBuffer.h"
+#include"GglDynamicIndexBuffer.h"
 namespace mystd{
     struct GglVertex{
         glm::vec3 position;
@@ -34,14 +35,16 @@ namespace mystd{
         void runMainLoop();
         private:
         void  setDebugMessageCallBack();
-        void loadVertexBufferDynamicly();
-        std::array<GglVertex, 4> createVertexVec4(float botlx, float botly,
+        void loadVertexBufferDynamicly(int32_t objectRow, int32_t objectColumn);
+        GglVertex * createVertexVec4(GglVertex* offsetPtr,float botlx, float botly,
                                                   float id);
         int32_t initEnvironment();
+        void loadIndexBufferDynamicly(int32_t objectRow, int32_t objectColumn);
         GLFWwindow* windowPtr;
         std::unique_ptr<mystd::GglVertexArray> vaPtr;
         std::unique_ptr<mystd::GglVertexBuffer> vbPtr;
         std::unique_ptr<mystd::GglDynamicVertexBuffer> dynamicVbPtr;
+        std::unique_ptr<mystd::GglDynamicIndexBuffer> dynamicIbPtr;
         std::unique_ptr <mystd::GglIndexBuffer> ibPtr;
         std::unique_ptr<mystd::GglShader> gglShaderPtr;
         glm::mat4 projectionPerspective;

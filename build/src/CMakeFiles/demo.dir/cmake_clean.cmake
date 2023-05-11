@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../../bin/demo.pdb"
   "CMakeFiles/demo.dir/class/GglBackground.cpp.o"
   "CMakeFiles/demo.dir/class/GglBackground.cpp.o.d"
+  "CMakeFiles/demo.dir/class/GglDynamicIndexBuffer.cpp.o"
+  "CMakeFiles/demo.dir/class/GglDynamicIndexBuffer.cpp.o.d"
   "CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o"
   "CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o.d"
   "CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o"

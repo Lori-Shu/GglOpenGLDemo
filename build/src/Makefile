@@ -154,6 +154,30 @@ class/GglBackground.cpp.s:
 	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglBackground.cpp.s
 .PHONY : class/GglBackground.cpp.s
 
+class/GglDynamicIndexBuffer.o: class/GglDynamicIndexBuffer.cpp.o
+.PHONY : class/GglDynamicIndexBuffer.o
+
+# target to build an object file
+class/GglDynamicIndexBuffer.cpp.o:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglDynamicIndexBuffer.cpp.o
+.PHONY : class/GglDynamicIndexBuffer.cpp.o
+
+class/GglDynamicIndexBuffer.i: class/GglDynamicIndexBuffer.cpp.i
+.PHONY : class/GglDynamicIndexBuffer.i
+
+# target to preprocess a source file
+class/GglDynamicIndexBuffer.cpp.i:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglDynamicIndexBuffer.cpp.i
+.PHONY : class/GglDynamicIndexBuffer.cpp.i
+
+class/GglDynamicIndexBuffer.s: class/GglDynamicIndexBuffer.cpp.s
+.PHONY : class/GglDynamicIndexBuffer.s
+
+# target to generate assembly for a file
+class/GglDynamicIndexBuffer.cpp.s:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglDynamicIndexBuffer.cpp.s
+.PHONY : class/GglDynamicIndexBuffer.cpp.s
+
 class/GglDynamicVertexBuffer.o: class/GglDynamicVertexBuffer.cpp.o
 .PHONY : class/GglDynamicVertexBuffer.o
 
@@ -574,6 +598,9 @@ help:
 	@echo "... class/GglBackground.o"
 	@echo "... class/GglBackground.i"
 	@echo "... class/GglBackground.s"
+	@echo "... class/GglDynamicIndexBuffer.o"
+	@echo "... class/GglDynamicIndexBuffer.i"
+	@echo "... class/GglDynamicIndexBuffer.s"
 	@echo "... class/GglDynamicVertexBuffer.o"
 	@echo "... class/GglDynamicVertexBuffer.i"
 	@echo "... class/GglDynamicVertexBuffer.s"
