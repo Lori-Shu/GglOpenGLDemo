@@ -21,6 +21,8 @@
 #include "VertexBufferLayout.h"
 #include"GglDynamicVertexBuffer.h"
 #include"GglDynamicIndexBuffer.h"
+#include"GglNote.h"
+#include"GglMainWindowManager.h"
 namespace mystd{
     struct GglVertex{
         glm::vec3 position;
@@ -59,5 +61,7 @@ namespace mystd{
         mystd::Test* currentTestPtr;
         std::vector<mystd::Test*> testVt;
         std::vector<std::unique_ptr<mystd::GglTexture>> textureVector;
+        std::unique_ptr<mystd::GglNote> notePtr;
+        std::unique_ptr<mystd::GglMainWindowManager> windowManagerPtr;
     };
 }

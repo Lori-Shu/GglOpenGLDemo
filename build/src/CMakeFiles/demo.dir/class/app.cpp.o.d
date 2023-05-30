@@ -337,7 +337,10 @@ src/CMakeFiles/demo.dir/class/app.cpp.o: \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h \
  /home/lori/CppProjects/GglOpenGLDemo/include/GglPreBuild.h \
+ /usr/include/c++/11/cstring \
  /home/lori/CppProjects/GglOpenGLDemo/include/GglTest.h \
  /home/lori/CppProjects/GglOpenGLDemo/include/GglTexture.h \
  /home/lori/CppProjects/GglOpenGLDemo/include/GglDynamicVertexBuffer.h \
- /home/lori/CppProjects/GglOpenGLDemo/include/GglDynamicIndexBuffer.h
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglDynamicIndexBuffer.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglNote.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglMainWindowManager.h

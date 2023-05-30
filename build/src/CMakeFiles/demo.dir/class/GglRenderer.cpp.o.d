@@ -292,4 +292,29 @@ src/CMakeFiles/demo.dir/class/GglRenderer.cpp.o: \
  /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/./core/func_noise.hpp \
  /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/./core/func_noise.inl \
  /home/lori/CppProjects/GglOpenGLDemo/dependencies/glm/glm/./core/_swizzle.hpp \
- /home/lori/CppProjects/GglOpenGLDemo/include/GglPreBuild.h
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglPreBuild.h \
+ /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11/bits/atomic_wait.h /usr/include/syscall.h \
+ /usr/include/x86_64-linux-gnu/sys/syscall.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+ /usr/include/x86_64-linux-gnu/bits/syscall.h \
+ /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/bits/ranges_uninitialized.h \
+ /usr/include/c++/11/bits/ranges_algobase.h /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/c++/11/bits/uses_allocator_args.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h \
+ /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/cstring \
+ /usr/include/string.h /usr/include/strings.h

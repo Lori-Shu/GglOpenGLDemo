@@ -226,6 +226,54 @@ class/GglIndexBuffer.cpp.s:
 	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.s
 .PHONY : class/GglIndexBuffer.cpp.s
 
+class/GglMainWindowManager.o: class/GglMainWindowManager.cpp.o
+.PHONY : class/GglMainWindowManager.o
+
+# target to build an object file
+class/GglMainWindowManager.cpp.o:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglMainWindowManager.cpp.o
+.PHONY : class/GglMainWindowManager.cpp.o
+
+class/GglMainWindowManager.i: class/GglMainWindowManager.cpp.i
+.PHONY : class/GglMainWindowManager.i
+
+# target to preprocess a source file
+class/GglMainWindowManager.cpp.i:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglMainWindowManager.cpp.i
+.PHONY : class/GglMainWindowManager.cpp.i
+
+class/GglMainWindowManager.s: class/GglMainWindowManager.cpp.s
+.PHONY : class/GglMainWindowManager.s
+
+# target to generate assembly for a file
+class/GglMainWindowManager.cpp.s:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglMainWindowManager.cpp.s
+.PHONY : class/GglMainWindowManager.cpp.s
+
+class/GglNote.o: class/GglNote.cpp.o
+.PHONY : class/GglNote.o
+
+# target to build an object file
+class/GglNote.cpp.o:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglNote.cpp.o
+.PHONY : class/GglNote.cpp.o
+
+class/GglNote.i: class/GglNote.cpp.i
+.PHONY : class/GglNote.i
+
+# target to preprocess a source file
+class/GglNote.cpp.i:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglNote.cpp.i
+.PHONY : class/GglNote.cpp.i
+
+class/GglNote.s: class/GglNote.cpp.s
+.PHONY : class/GglNote.s
+
+# target to generate assembly for a file
+class/GglNote.cpp.s:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglNote.cpp.s
+.PHONY : class/GglNote.cpp.s
+
 class/GglRenderer.o: class/GglRenderer.cpp.o
 .PHONY : class/GglRenderer.o
 
@@ -607,6 +655,12 @@ help:
 	@echo "... class/GglIndexBuffer.o"
 	@echo "... class/GglIndexBuffer.i"
 	@echo "... class/GglIndexBuffer.s"
+	@echo "... class/GglMainWindowManager.o"
+	@echo "... class/GglMainWindowManager.i"
+	@echo "... class/GglMainWindowManager.s"
+	@echo "... class/GglNote.o"
+	@echo "... class/GglNote.i"
+	@echo "... class/GglNote.s"
 	@echo "... class/GglRenderer.o"
 	@echo "... class/GglRenderer.i"
 	@echo "... class/GglRenderer.s"

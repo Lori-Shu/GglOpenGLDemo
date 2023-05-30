@@ -2,6 +2,9 @@
 #include<string>
 #include<unistd.h>
 #include<iostream>
+#include<memory>
+#include<cstdlib>
+#include<cstring>
 #define Linux
 static void getProgramDir(std::string &path) {
   char proDir[1024];
