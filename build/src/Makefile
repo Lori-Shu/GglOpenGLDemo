@@ -202,6 +202,30 @@ class/GglDynamicVertexBuffer.cpp.s:
 	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.s
 .PHONY : class/GglDynamicVertexBuffer.cpp.s
 
+class/GglHttpSender.o: class/GglHttpSender.cpp.o
+.PHONY : class/GglHttpSender.o
+
+# target to build an object file
+class/GglHttpSender.cpp.o:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglHttpSender.cpp.o
+.PHONY : class/GglHttpSender.cpp.o
+
+class/GglHttpSender.i: class/GglHttpSender.cpp.i
+.PHONY : class/GglHttpSender.i
+
+# target to preprocess a source file
+class/GglHttpSender.cpp.i:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglHttpSender.cpp.i
+.PHONY : class/GglHttpSender.cpp.i
+
+class/GglHttpSender.s: class/GglHttpSender.cpp.s
+.PHONY : class/GglHttpSender.s
+
+# target to generate assembly for a file
+class/GglHttpSender.cpp.s:
+	cd /home/lori/CppProjects/GglOpenGLDemo/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/demo.dir/build.make src/CMakeFiles/demo.dir/class/GglHttpSender.cpp.s
+.PHONY : class/GglHttpSender.cpp.s
+
 class/GglIndexBuffer.o: class/GglIndexBuffer.cpp.o
 .PHONY : class/GglIndexBuffer.o
 
@@ -652,6 +676,9 @@ help:
 	@echo "... class/GglDynamicVertexBuffer.o"
 	@echo "... class/GglDynamicVertexBuffer.i"
 	@echo "... class/GglDynamicVertexBuffer.s"
+	@echo "... class/GglHttpSender.o"
+	@echo "... class/GglHttpSender.i"
+	@echo "... class/GglHttpSender.s"
 	@echo "... class/GglIndexBuffer.o"
 	@echo "... class/GglIndexBuffer.i"
 	@echo "... class/GglIndexBuffer.s"

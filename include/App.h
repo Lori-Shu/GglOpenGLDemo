@@ -23,6 +23,7 @@
 #include"GglDynamicIndexBuffer.h"
 #include"GglNote.h"
 #include"GglMainWindowManager.h"
+#include"GglHttpSender.h"
 namespace mystd{
     struct GglVertex{
         glm::vec3 position;
@@ -63,5 +64,6 @@ namespace mystd{
         std::vector<std::unique_ptr<mystd::GglTexture>> textureVector;
         std::unique_ptr<mystd::GglNote> notePtr;
         std::unique_ptr<mystd::GglMainWindowManager> windowManagerPtr;
+        std::unique_ptr<mystd::GglHttpSender> httpSenderPtr;
     };
 }

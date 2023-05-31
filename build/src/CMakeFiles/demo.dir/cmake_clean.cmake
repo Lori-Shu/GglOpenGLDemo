@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/demo.dir/class/GglDynamicIndexBuffer.cpp.o.d"
   "CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o"
   "CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o.d"
+  "CMakeFiles/demo.dir/class/GglHttpSender.cpp.o"
+  "CMakeFiles/demo.dir/class/GglHttpSender.cpp.o.d"
   "CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o"
   "CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o.d"
   "CMakeFiles/demo.dir/class/GglMainWindowManager.cpp.o"

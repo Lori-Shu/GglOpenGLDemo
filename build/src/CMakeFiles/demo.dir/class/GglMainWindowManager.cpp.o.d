@@ -205,8 +205,60 @@ src/CMakeFiles/demo.dir/class/GglMainWindowManager.cpp.o: \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/cstring \
- /usr/include/string.h /usr/include/strings.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/assert.h \
  /home/lori/CppProjects/GglOpenGLDemo/include/GglNote.h \
  /home/lori/CppProjects/GglOpenGLDemo/include/imgui.h \
  /home/lori/CppProjects/GglOpenGLDemo/include/imconfig.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h /usr/include/assert.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/document.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/reader.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/allocators.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+ /usr/include/inttypes.h /usr/include/c++/11/cassert \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/stream.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/encodings.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/encodedstream.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/memorystream.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/meta.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/../rapidjson.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/stack.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/../allocators.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/swap.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/strtod.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/ieee754.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/biginteger.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/diyfp.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/pow10.h \
+ /usr/include/c++/11/limits \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/error/error.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/error/../rapidjson.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/strfunc.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/../stream.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/internal/../rapidjson.h \
+ /home/lori/CppProjects/GglOpenGLDemo/dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+ /home/lori/CppProjects/GglOpenGLDemo/include/GglHttpSender.h \
+ /usr/include/x86_64-linux-gnu/curl/curl.h \
+ /usr/include/x86_64-linux-gnu/curl/curlver.h \
+ /usr/include/x86_64-linux-gnu/curl/system.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/x86_64-linux-gnu/curl/easy.h \
+ /usr/include/x86_64-linux-gnu/curl/multi.h \
+ /usr/include/x86_64-linux-gnu/curl/curl.h \
+ /usr/include/x86_64-linux-gnu/curl/urlapi.h \
+ /usr/include/x86_64-linux-gnu/curl/options.h

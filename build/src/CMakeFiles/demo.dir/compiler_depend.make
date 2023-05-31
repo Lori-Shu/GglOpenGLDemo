@@ -333,6 +333,285 @@ src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o: ../src/class/GglDyna
   /usr/include/GL/glu.h \
   /usr/include/GL/gl.h
 
+src/CMakeFiles/demo.dir/class/GglHttpSender.cpp.o: ../src/class/GglHttpSender.cpp \
+  /usr/include/stdc-predef.h \
+  ../include/GglHttpSender.h \
+  /usr/include/x86_64-linux-gnu/curl/curl.h \
+  /usr/include/x86_64-linux-gnu/curl/curlver.h \
+  /usr/include/x86_64-linux-gnu/curl/system.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/sys/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/x86_64-linux-gnu/bits/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+  /usr/include/x86_64-linux-gnu/asm/socket.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/x86_64-linux-gnu/asm/sockios.h \
+  /usr/include/asm-generic/sockios.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/x86_64-linux-gnu/curl/easy.h \
+  /usr/include/x86_64-linux-gnu/curl/multi.h \
+  /usr/include/x86_64-linux-gnu/curl/curl.h \
+  /usr/include/x86_64-linux-gnu/curl/urlapi.h \
+  /usr/include/x86_64-linux-gnu/curl/options.h \
+  ../include/GglPreBuild.h \
+  /usr/include/c++/11/string \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/bits/exception_defines.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/move.h \
+  /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
+  /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
+  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/11/bits/concept_check.h \
+  /usr/include/c++/11/debug/assertions.h \
+  /usr/include/c++/11/bits/stl_iterator.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/debug/debug.h \
+  /usr/include/c++/11/bits/predefined_ops.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/cwchar \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/c++/11/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/assert.h
+
 src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o: ../src/class/GglIndexBuffer.cpp \
   /usr/include/stdc-predef.h \
   ../include/GglIndexBuffer.h \
@@ -615,19 +894,76 @@ src/CMakeFiles/demo.dir/class/GglMainWindowManager.cpp.o: ../src/class/GglMainWi
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/assert.h \
   ../include/GglNote.h \
   ../include/imgui.h \
   ../include/imconfig.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
-  /usr/include/assert.h
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/document.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/reader.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/allocators.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  /usr/include/inttypes.h \
+  /usr/include/c++/11/cassert \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/stream.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/encodings.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/encodedstream.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/memorystream.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/meta.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/stack.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/allocators.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/swap.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/strtod.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/ieee754.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/biginteger.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/diyfp.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/pow10.h \
+  /usr/include/c++/11/limits \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/error/error.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/strfunc.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/stream.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  ../include/GglHttpSender.h \
+  /usr/include/x86_64-linux-gnu/curl/curl.h \
+  /usr/include/x86_64-linux-gnu/curl/curlver.h \
+  /usr/include/x86_64-linux-gnu/curl/system.h \
+  /usr/include/x86_64-linux-gnu/sys/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/x86_64-linux-gnu/bits/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+  /usr/include/x86_64-linux-gnu/asm/socket.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/x86_64-linux-gnu/asm/sockios.h \
+  /usr/include/asm-generic/sockios.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/x86_64-linux-gnu/curl/easy.h \
+  /usr/include/x86_64-linux-gnu/curl/multi.h \
+  /usr/include/x86_64-linux-gnu/curl/curl.h \
+  /usr/include/x86_64-linux-gnu/curl/urlapi.h \
+  /usr/include/x86_64-linux-gnu/curl/options.h
 
 src/CMakeFiles/demo.dir/class/GglNote.cpp.o: ../src/class/GglNote.cpp \
   /usr/include/stdc-predef.h \
   ../include/GglNote.h \
-  ../include/GglPreBuild.h \
-  /usr/include/c++/11/string \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  ../include/imgui.h \
+  ../include/imconfig.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/include/string.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h \
   /usr/include/features-time64.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -636,86 +972,36 @@ src/CMakeFiles/demo.dir/class/GglNote.cpp.o: ../src/class/GglNote.cpp \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
-  /usr/include/c++/11/pstl/pstl_config.h \
-  /usr/include/c++/11/bits/stringfwd.h \
-  /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/bits/stl_algobase.h \
-  /usr/include/c++/11/bits/functexcept.h \
-  /usr/include/c++/11/bits/exception_defines.h \
-  /usr/include/c++/11/bits/cpp_type_traits.h \
-  /usr/include/c++/11/ext/type_traits.h \
-  /usr/include/c++/11/ext/numeric_traits.h \
-  /usr/include/c++/11/bits/stl_pair.h \
-  /usr/include/c++/11/bits/move.h \
-  /usr/include/c++/11/type_traits \
-  /usr/include/c++/11/compare \
-  /usr/include/c++/11/concepts \
-  /usr/include/c++/11/bits/stl_iterator_base_types.h \
-  /usr/include/c++/11/bits/iterator_concepts.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
-  /usr/include/c++/11/bits/ranges_cmp.h \
-  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/11/bits/concept_check.h \
-  /usr/include/c++/11/debug/assertions.h \
-  /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/exception.h \
-  /usr/include/c++/11/debug/debug.h \
-  /usr/include/c++/11/bits/predefined_ops.h \
-  /usr/include/c++/11/bits/postypes.h \
-  /usr/include/c++/11/cwchar \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/c++/11/cstdint \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
-  /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/bits/localefwd.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
-  /usr/include/c++/11/clocale \
-  /usr/include/locale.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/c++/11/iosfwd \
-  /usr/include/c++/11/cctype \
-  /usr/include/ctype.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/c++/11/bits/ostream_insert.h \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/strings.h \
+  /usr/include/assert.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/document.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/reader.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/allocators.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
   /usr/include/c++/11/cstdlib \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
@@ -733,14 +1019,74 @@ src/CMakeFiles/demo.dir/class/GglNote.cpp.o: ../src/class/GglNote.cpp \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/11/bits/std_abs.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/cstring \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/inttypes.h \
+  /usr/include/c++/11/cassert \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/stream.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/encodings.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/encodedstream.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/memorystream.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/meta.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/stack.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/allocators.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/swap.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/strtod.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/ieee754.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/biginteger.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/diyfp.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/pow10.h \
+  /usr/include/c++/11/limits \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/error/error.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/strfunc.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/stream.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/concepts \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/move.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
+  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/11/bits/concept_check.h \
+  /usr/include/c++/11/debug/assertions.h \
+  /usr/include/c++/11/bits/stl_iterator.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/bits/exception_defines.h \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/cwchar \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/debug/debug.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
@@ -759,6 +1105,31 @@ src/CMakeFiles/demo.dir/class/GglNote.cpp.o: ../src/class/GglNote.cpp \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/predefined_ops.h \
+  /usr/include/c++/11/cstdint \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/string_view \
@@ -786,6 +1157,56 @@ src/CMakeFiles/demo.dir/class/GglNote.cpp.o: ../src/class/GglNote.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  ../include/GglHttpSender.h \
+  /usr/include/x86_64-linux-gnu/curl/curl.h \
+  /usr/include/x86_64-linux-gnu/curl/curlver.h \
+  /usr/include/x86_64-linux-gnu/curl/system.h \
+  /usr/include/x86_64-linux-gnu/sys/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/x86_64-linux-gnu/bits/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+  /usr/include/x86_64-linux-gnu/asm/socket.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/x86_64-linux-gnu/asm/sockios.h \
+  /usr/include/asm-generic/sockios.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/x86_64-linux-gnu/curl/easy.h \
+  /usr/include/x86_64-linux-gnu/curl/multi.h \
+  /usr/include/x86_64-linux-gnu/curl/curl.h \
+  /usr/include/x86_64-linux-gnu/curl/urlapi.h \
+  /usr/include/x86_64-linux-gnu/curl/options.h \
+  ../include/GglPreBuild.h \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -797,26 +1218,12 @@ src/CMakeFiles/demo.dir/class/GglNote.cpp.o: ../src/class/GglNote.cpp \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/bits/nested_exception.h \
-  /usr/include/c++/11/bits/ios_base.h \
-  /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/bits/locale_classes.tcc \
-  /usr/include/c++/11/system_error \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /usr/include/c++/11/stdexcept \
-  /usr/include/c++/11/streambuf \
-  /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/basic_ios.h \
   /usr/include/c++/11/bits/locale_facets.h \
   /usr/include/c++/11/cwctype \
   /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
-  /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/basic_ios.tcc \
@@ -830,8 +1237,6 @@ src/CMakeFiles/demo.dir/class/GglNote.cpp.o: ../src/class/GglNote.cpp \
   /usr/include/c++/11/bit \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/array \
   /usr/include/c++/11/bits/invoke.h \
@@ -846,15 +1251,6 @@ src/CMakeFiles/demo.dir/class/GglNote.cpp.o: ../src/class/GglNote.cpp \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   /usr/include/c++/11/bits/atomic_wait.h \
   /usr/include/c++/11/climits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/syscall.h \
   /usr/include/x86_64-linux-gnu/sys/syscall.h \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
@@ -864,18 +1260,9 @@ src/CMakeFiles/demo.dir/class/GglNote.cpp.o: ../src/class/GglNote.cpp \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/bits/ranges_uninitialized.h \
   /usr/include/c++/11/bits/ranges_algobase.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
-  /usr/include/c++/11/pstl/execution_defs.h \
-  /usr/include/c++/11/cstring \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  ../include/imgui.h \
-  ../include/imconfig.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
-  /usr/include/assert.h
+  /usr/include/c++/11/pstl/execution_defs.h
 
 src/CMakeFiles/demo.dir/class/GglRenderer.cpp.o: ../src/class/GglRenderer.cpp \
   /usr/include/stdc-predef.h \
@@ -2864,6 +3251,57 @@ src/CMakeFiles/demo.dir/class/app.cpp.o: ../src/class/app.cpp \
   ../include/GglDynamicVertexBuffer.h \
   ../include/GglDynamicIndexBuffer.h \
   ../include/GglNote.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/document.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/reader.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/allocators.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  /usr/include/inttypes.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/stream.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/encodings.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/encodedstream.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/memorystream.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/meta.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/stack.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/allocators.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/swap.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/strtod.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/ieee754.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/biginteger.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/diyfp.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/pow10.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/error/error.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/internal/strfunc.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/stream.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  ../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h \
+  ../include/GglHttpSender.h \
+  /usr/include/x86_64-linux-gnu/curl/curl.h \
+  /usr/include/x86_64-linux-gnu/curl/curlver.h \
+  /usr/include/x86_64-linux-gnu/curl/system.h \
+  /usr/include/x86_64-linux-gnu/sys/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/x86_64-linux-gnu/bits/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+  /usr/include/x86_64-linux-gnu/asm/socket.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/x86_64-linux-gnu/asm/sockios.h \
+  /usr/include/asm-generic/sockios.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+  /usr/include/x86_64-linux-gnu/curl/easy.h \
+  /usr/include/x86_64-linux-gnu/curl/multi.h \
+  /usr/include/x86_64-linux-gnu/curl/curl.h \
+  /usr/include/x86_64-linux-gnu/curl/urlapi.h \
+  /usr/include/x86_64-linux-gnu/curl/options.h \
   ../include/GglMainWindowManager.h
 
 src/CMakeFiles/demo.dir/class/stb_image_impl.cpp.o: ../src/class/stb_image_impl.cpp \
@@ -3997,1034 +4435,1124 @@ src/CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o: ../src/imgui/imgui_widgets.cp
   ../include/imstb_textedit.h
 
 
+../src/imgui/imgui_widgets.cpp:
+
 ../src/imgui/imgui_tables.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/dl_find_object.h:
 
-../include/imstb_rectpack.h:
-
-../src/imgui/imgui_draw.cpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16vlintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/vaesintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/f16cintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectvlintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2vlintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124vnniwintrin.h:
-
 /usr/include/dlfcn.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vldqintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512dqintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512erintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avxintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/wmmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xsavecintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512pfintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/wbnoinvdintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/tbmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/sgxintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/serializeintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/popcntintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
-
-/usr/include/c++/11/math.h:
-
-../src/imgui/imgui_impl_glfw.cpp:
-
-../include/imgui_impl_glfw.h:
-
-../include/App.h:
-
-../src/class/VertexBufferLayout.cpp:
-
-../src/class/GglVertexBuffer.cpp:
-
-../src/class/GglVertexArray.cpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h:
-
-../include/GglTexture.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h:
-
-../dependencies/glm/glm/core/func_noise.inl:
-
-../dependencies/glm/glm/core/func_noise.hpp:
-
-../dependencies/glm/glm/core/func_vector_relational.inl:
-
-../dependencies/glm/glm/core/func_vector_relational.hpp:
-
-../dependencies/glm/glm/core/func_matrix.inl:
-
-../dependencies/glm/glm/core/func_matrix.hpp:
-
-../dependencies/glm/glm/core/func_geometric.hpp:
-
-../dependencies/glm/glm/core/func_packing.hpp:
-
-../dependencies/glm/glm/core/func_common.inl:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h:
-
-../dependencies/glm/glm/core/func_integer.hpp:
-
-../dependencies/glm/glm/core/type_mat4x4.inl:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512cdintrin.h:
-
-../include/stb_image.h:
-
-../dependencies/glm/glm/core/type_mat4x4.hpp:
-
-../dependencies/glm/glm/core/type_mat4x3.inl:
-
-../dependencies/glm/glm/core/_vectorize.hpp:
-
-../dependencies/glm/glm/core/type_mat4x2.inl:
-
-../dependencies/glm/glm/core/type_mat3x4.inl:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h:
-
-../dependencies/glm/glm/core/type_mat3x3.inl:
-
-../dependencies/glm/glm/gtc/matrix_transform.hpp:
-
-../dependencies/glm/glm/core/type_mat3x2.hpp:
-
-../dependencies/glm/glm/core/type_mat2x4.inl:
-
-../dependencies/glm/glm/core/type_mat2x2.inl:
-
-../dependencies/glm/glm/core/type_mat.hpp:
-
-../dependencies/glm/glm/core/type_mat2x2.hpp:
-
-../dependencies/glm/glm/gtc/matrix_transform.inl:
-
-../dependencies/glm/glm/core/type_vec4.hpp:
-
-../dependencies/glm/glm/core/type_vec2.inl:
-
-../dependencies/glm/glm/core/type_vec2.hpp:
-
-../dependencies/glm/glm/core/_swizzle_func.hpp:
-
-../dependencies/glm/glm/core/_swizzle.hpp:
-
-../dependencies/glm/glm/core/type_size.hpp:
-
-../dependencies/glm/glm/core/type_gentype.hpp:
-
-../dependencies/glm/glm/core/type_int.hpp:
-
-../dependencies/glm/glm/core/type_float.hpp:
-
-../dependencies/glm/glm/core/type_half.inl:
-
-../dependencies/glm/glm/core/type.hpp:
-
-../dependencies/glm/glm/core/_detail.hpp:
-
-/usr/include/c++/11/stdlib.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h:
-
-../dependencies/glm/glm/core/type_vec3.inl:
-
-/usr/include/c++/11/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/11/tr1/poly_hermite.tcc:
-
-/usr/include/c++/11/tr1/modified_bessel_func.tcc:
-
-/usr/include/c++/11/tr1/hypergeometric.tcc:
-
-/usr/include/c++/11/tr1/exp_integral.tcc:
-
-/usr/include/c++/11/tr1/ell_integral.tcc:
-
-/usr/include/c++/11/tr1/bessel_function.tcc:
-
-/usr/include/c++/11/tr1/special_function_util.h:
-
-/usr/include/c++/11/bits/specfun.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2intrin.h:
-
-../dependencies/glm/glm/core/func_trigonometric.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-../dependencies/glm/glm/core/_fixes.hpp:
-
-../dependencies/glm/glm/glm.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h:
-
-/usr/include/c++/11/bits/unordered_map.h:
-
-/usr/include/c++/11/bits/hashtable.h:
-
-/usr/include/c++/11/unordered_map:
-
-/usr/include/c++/11/bits/fstream.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
-
-/usr/include/c++/11/fstream:
-
-../include/GglShader.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h:
-
-/usr/include/c++/11/cassert:
-
-../src/imgui/imgui_widgets.cpp:
-
-../src/imgui/imgui_impl_opengl3.cpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h:
-
-../dependencies/glm/glm/core/type_mat2x3.hpp:
-
-/usr/include/c++/11/bits/vector.tcc:
-
-/usr/include/c++/11/vector:
-
-../include/GglVertexBuffer.h:
-
-../include/GglVertexArray.h:
-
-../src/class/GglRenderer.cpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
-
-../src/class/GglNote.cpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
-
-../include/imconfig.h:
-
-../include/imgui.h:
-
-../include/imstb_truetype.h:
-
-/usr/include/strings.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h:
-
-../include/GglPreBuild.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h:
-
-../include/GglDynamicVertexBuffer.h:
-
-../src/class/GglDynamicVertexBuffer.cpp:
-
-/usr/include/GL/glu.h:
-
-/usr/include/c++/11/bits/stl_vector.h:
-
-/usr/include/c++/11/cstddef:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h:
-
-/usr/include/GL/glew.h:
-
-../include/GglDynamicIndexBuffer.h:
-
-../src/class/GglDynamicIndexBuffer.cpp:
-
-/usr/include/c++/11/mutex:
-
-/usr/include/c++/11/pstl/glue_memory_defs.h:
-
-/usr/include/c++/11/bits/uses_allocator_args.h:
-
-/usr/include/c++/11/bits/stream_iterator.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h:
-
-/usr/include/c++/11/backward/auto_ptr.h:
-
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/11/ext/concurrence.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:
-
-../dependencies/glm/glm/core/func_exponential.inl:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
-
-/usr/include/c++/11/bits/locale_classes.h:
-
-../include/imgui_impl_opengl3.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-../dependencies/glm/glm/core/type_vec.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/c++/11/bits/ranges_uninitialized.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 ../include/imgui_impl_opengl3_loader.h:
 
-/usr/include/c++/11/ext/new_allocator.h:
+../src/imgui/imgui_impl_opengl3.cpp:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/c++/11/bits/allocated_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/c++/11/ext/atomicity.h:
-
-/usr/include/pthread.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlbwintrin.h:
-
-../src/class/GglTest.cpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
-../dependencies/glm/glm/core/type_half.hpp:
-
-/usr/include/c++/11/bits/ios_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-../src/class/stb_image_impl.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/c++/11/bits/localefwd.h:
-
-/usr/include/c++/11/ext/alloc_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-../src/class/GglMainWindowManager.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/c++/11/bits/stl_iterator.h:
-
-/usr/include/linux/close_range.h:
-
-/usr/include/ctype.h:
-
-/usr/include/c++/11/bits/ranges_cmp.h:
-
-/usr/include/c++/11/clocale:
-
-/usr/include/c++/11/bits/ostream.tcc:
-
-/usr/include/GL/glext.h:
-
-/usr/include/c++/11/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/11/cstdlib:
-
-/usr/include/c++/11/bit:
-
-../src/class/GglShader.cpp:
-
-/usr/include/c++/11/bits/stl_pair.h:
-
-/usr/include/c++/11/concepts:
-
-/usr/include/c++/11/compare:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h:
-
-/usr/include/c++/11/ext/type_traits.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
-../dependencies/glm/glm/core/type_vec3.hpp:
-
-/usr/include/c++/11/cwchar:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
-
-/usr/include/c++/11/cmath:
-
-/usr/include/c++/11/bits/allocator.h:
-
-/usr/include/c++/11/pstl/pstl_config.h:
-
-/usr/include/c++/11/bits/char_traits.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/c++/11/bits/stl_algobase.h:
-
-/usr/include/unistd.h:
-
-../dependencies/glm/glm/core/func_common.hpp:
-
-/usr/include/c++/11/tr1/gamma.tcc:
-
-../include/GglMainWindowManager.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/c++/11/semaphore:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
-
-/usr/include/c++/11/bits/functexcept.h:
-
-/usr/include/c++/11/streambuf:
-
-/usr/include/KHR/khrplatform.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/include/c++/11/bits/node_handle.h:
-
-/usr/include/c++/11/iostream:
-
-/usr/include/c++/11/backward/binders.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:
-
-/usr/include/x86_64-linux-gnu/sys/syscall.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/fmaintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/c++/11/ostream:
-
-../dependencies/glm/glm/core/type_vec1.inl:
-
-/usr/include/c++/11/bits/unique_ptr.h:
-
-/usr/include/c++/11/cfloat:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
-
-../include/GglBackground.h:
-
-/usr/include/c++/11/sstream:
-
-/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-../dependencies/glm/glm/core/type_mat4x2.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/c++/11/bits/predefined_ops.h:
-
-../src/class/GglBackground.cpp:
-
-/usr/include/c++/11/bits/atomic_wait.h:
-
-/usr/include/c++/11/bits/hashtable_policy.h:
-
-/usr/local/include/GLFW/glfw3.h:
-
-/usr/include/c++/11/bits/ostream_insert.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/c++/11/type_traits:
-
-../dependencies/glm/glm/core/type_mat3x4.hpp:
-
-/usr/include/c++/11/tuple:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/c++/11/debug/assertions.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
-
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/11/bits/std_mutex.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h:
-
-/usr/include/c++/11/exception:
-
-/usr/include/c++/11/tr1/legendre_function.tcc:
-
-../include/VertexBufferLayout.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-../src/imgui/imgui.cpp:
-
-/usr/include/linux/errno.h:
-
-/usr/include/c++/11/bits/invoke.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h:
-
-/usr/include/c++/11/cstdint:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/c++/11/bits/iterator_concepts.h:
-
-/usr/include/c++/11/ext/numeric_traits.h:
-
-/usr/include/c++/11/bits/atomic_base.h:
-
-/usr/include/features.h:
-
-/usr/include/c++/11/bits/stringfwd.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h:
-
-/usr/include/c++/11/bits/stl_function.h:
-
-/usr/include/c++/11/bits/memoryfwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-../dependencies/glm/glm/core/type_mat4x3.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-../dependencies/glm/glm/core/func_exponential.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-../dependencies/glm/glm/core/type_vec4.inl:
-
-../include/GglRenderer.h:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/c++/11/ctime:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h:
-
-/usr/include/wchar.h:
-
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
-
-/usr/include/GL/gl.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/c++/11/bits/nested_exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/math.h:
-
-/usr/include/c++/11/cstring:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/c++/11/bits/stl_tempbuf.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/c++/11/bits/concept_check.h:
-
-/usr/include/c++/11/bits/shared_ptr_base.h:
-
-/usr/include/c++/11/bits/basic_string.h:
-
-/usr/include/linux/limits.h:
-
-../dependencies/glm/glm/core/type_mat2x4.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/c++/11/bits/exception_ptr.h:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h:
-
-/usr/include/c++/11/atomic:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-../dependencies/glm/glm/core/type_vec1.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/c++/11/typeinfo:
-
-/usr/include/c++/11/bits/move.h:
-
-/usr/include/c++/11/bits/hash_bytes.h:
-
-/usr/include/assert.h:
-
-/usr/include/c++/11/numbers:
-
-/usr/include/c++/11/bits/string_view.tcc:
-
-/usr/include/c++/11/bits/stl_algo.h:
-
-/usr/include/stdlib.h:
-
-../include/GglTest.h:
-
-../src/class/GglIndexBuffer.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h:
-
-/usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/c++/11/ext/aligned_buffer.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/c++/11/bits/postypes.h:
-
-/usr/include/c++/11/stop_token:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h:
-
-/usr/include/alloca.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h:
-
-../dependencies/glm/glm/core/func_trigonometric.inl:
-
-../dependencies/glm/glm/core/type_mat3x2.inl:
-
-/usr/include/c++/11/bits/atomic_timed_wait.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h:
-
-/usr/include/c++/11/pstl/execution_defs.h:
-
-/usr/include/c++/11/bits/algorithmfwd.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h:
-
-/usr/include/c++/11/iosfwd:
-
-/usr/include/c++/11/initializer_list:
-
-/usr/include/x86_64-linux-gnu/bits/semaphore.h:
-
-/usr/include/c++/11/bits/shared_ptr.h:
-
-/usr/include/c++/11/bits/stl_construct.h:
-
-../src/class/app.cpp:
-
-/usr/include/c++/11/iterator:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/c++/11/bits/range_access.h:
-
-/usr/include/c++/11/bits/std_abs.h:
-
-/usr/include/c++/11/bits/stl_heap.h:
-
-/usr/include/c++/11/bits/ranges_base.h:
-
-../dependencies/glm/glm/core/type_mat3x3.hpp:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/11/bits/alloc_traits.h:
-
-../dependencies/glm/glm/core/func_geometric.inl:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/c++/11/string_view:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
-
-../dependencies/glm/glm/core/func_integer.inl:
-
-/usr/include/c++/11/cctype:
-
-/usr/include/x86_64-linux-gnu/asm/unistd.h:
-
-/usr/include/c++/11/bits/functional_hash.h:
-
-/usr/include/c++/11/cstdio:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/c++/11/chrono:
-
-../dependencies/glm/glm/core/type_mat2x3.inl:
-
-/usr/include/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/c++/11/cerrno:
-
-/usr/include/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/sched.h:
-
-/usr/include/wctype.h:
+../src/imgui/imgui_impl_glfw.cpp:
 
 ../include/imstb_textedit.h:
 
-../dependencies/glm/glm/core/func_packing.inl:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h:
 
-../include/GglIndexBuffer.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16vlintrin.h:
 
-/usr/include/asm-generic/errno.h:
-
-/usr/include/syscall.h:
-
-../include/GglNote.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-../include/imgui_internal.h:
-
-/usr/include/c++/11/bits/charconv.h:
-
-/usr/include/c++/11/bits/basic_string.tcc:
-
-/usr/include/c++/11/bits/locale_classes.tcc:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/cetintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
-
-/usr/include/c++/11/system_error:
-
-/usr/include/c++/11/ios:
-
-/usr/include/c++/11/utility:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
-
-/usr/include/c++/11/stdexcept:
-
-/usr/include/string.h:
-
-/usr/include/c++/11/bits/streambuf.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/dlfcn.h:
-
-../dependencies/glm/glm/core/setup.hpp:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/11/bits/uniform_int_dist.h:
-
-/usr/include/c++/11/bits/basic_ios.h:
-
-/usr/include/c++/11/bits/exception.h:
-
-/usr/include/c++/11/bits/locale_facets.h:
-
-/usr/include/semaphore.h:
-
-/usr/include/c++/11/cwctype:
-
-/usr/include/c++/11/bits/streambuf_iterator.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/usr/include/c++/11/bits/locale_facets.tcc:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
-/usr/include/c++/11/istream:
-
-/usr/include/c++/11/bits/istream.tcc:
-
-/usr/include/c++/11/bits/sstream.tcc:
-
-/usr/include/c++/11/new:
-
-/usr/include/c++/11/climits:
-
-/usr/include/c++/11/tr1/beta_function.tcc:
-
-/usr/include/c++/11/array:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
-
-/usr/include/c++/11/debug/debug.h:
-
-/usr/include/features-time64.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
-
-/usr/include/limits.h:
-
-/usr/include/c++/11/bits/stl_relops.h:
-
-../src/class/GglTexture.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h:
-
-/usr/include/c++/11/string:
-
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
-/usr/include/c++/11/bits/ranges_algobase.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
-/usr/include/c++/11/bits/exception_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/c++/11/bits/max_size_type.h:
-
-/usr/include/c++/11/bits/align.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/syscall.h:
-
-/usr/include/c++/11/memory:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
-
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/11/bits/std_thread.h:
-
-/usr/include/c++/11/bits/unique_lock.h:
-
-/usr/include/c++/11/bits/uses_allocator.h:
-
-/usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/c++/11/bits/semaphore_base.h:
-
-/usr/include/c++/11/thread:
-
-/usr/include/c++/11/ratio:
-
-/usr/include/c++/11/limits:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/x86_64-linux-gnu/sys/time.h:
+/usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
-/usr/include/c++/11/bits/stl_raw_storage_iter.h:
+/usr/include/x86_64-linux-gnu/sys/time.h:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h:
+
+/usr/include/c++/11/limits:
+
+../include/imstb_rectpack.h:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/thread:
+
+/usr/include/c++/11/bits/semaphore_base.h:
+
+/usr/include/c++/11/bits/refwrap.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/c++/11/bits/uses_allocator.h:
+
+/usr/include/c++/11/bits/unique_lock.h:
+
+/usr/include/c++/11/bits/std_thread.h:
+
+/usr/include/x86_64-linux-gnu/bits/syscall.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/c++/11/bits/align.h:
+
+/usr/include/c++/11/bits/max_size_type.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/include/c++/11/string:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h:
+
+../src/class/GglTexture.cpp:
+
+/usr/include/limits.h:
+
+../include/GglHttpSender.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
+
+/usr/include/c++/11/debug/debug.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/tr1/beta_function.tcc:
+
+/usr/include/c++/11/climits:
+
+/usr/include/c++/11/new:
+
+/usr/include/c++/11/bits/istream.tcc:
+
+/usr/include/c++/11/istream:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/document.h:
+
+/usr/include/c++/11/cwctype:
+
+/usr/include/semaphore.h:
+
+/usr/include/c++/11/bits/exception.h:
+
+/usr/include/c++/11/bits/basic_ios.h:
+
+/usr/include/c++/11/bits/uniform_int_dist.h:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/include/string.h:
+
+/usr/include/c++/11/stdexcept:
+
+/usr/include/c++/11/utility:
+
+/usr/include/c++/11/ios:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/cetintrin.h:
+
+/usr/include/c++/11/bits/basic_string.tcc:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
+
+../include/GglIndexBuffer.h:
+
+../dependencies/glm/glm/core/func_packing.inl:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/c++/11/cerrno:
+
+../dependencies/glm/glm/core/type_mat2x3.inl:
+
+/usr/include/c++/11/chrono:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/c++/11/cstdio:
+
+/usr/include/c++/11/bits/functional_hash.h:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
+
+/usr/include/x86_64-linux-gnu/asm/unistd.h:
+
+/usr/include/c++/11/cctype:
+
+../dependencies/glm/glm/core/func_integer.inl:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
+
+/usr/include/c++/11/string_view:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+../dependencies/glm/glm/core/func_geometric.inl:
+
+/usr/include/errno.h:
+
+/usr/include/c++/11/bits/alloc_traits.h:
+
+/usr/include/stdc-predef.h:
+
+../dependencies/glm/glm/core/type_mat3x3.hpp:
+
+/usr/include/c++/11/bits/stl_heap.h:
+
+/usr/include/c++/11/bits/std_abs.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/c++/11/iterator:
+
+../src/class/app.cpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+/usr/include/c++/11/bits/stl_construct.h:
+
+/usr/include/c++/11/bits/shared_ptr.h:
+
+/usr/include/c++/11/initializer_list:
+
+/usr/include/c++/11/iosfwd:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h:
+
+/usr/include/c++/11/pstl/execution_defs.h:
+
+/usr/include/x86_64-linux-gnu/curl/system.h:
+
+../dependencies/glm/glm/core/type_mat3x2.inl:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h:
+
+/usr/include/alloca.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h:
+
+/usr/include/c++/11/stop_token:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/11/bits/locale_classes.tcc:
+
+/usr/include/c++/11/ext/aligned_buffer.h:
+
+/usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/include/endian.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/c++/11/bits/erase_if.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+../include/GglTest.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/c++/11/bits/stl_algo.h:
+
+/usr/include/c++/11/bits/string_view.tcc:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/internal/strtod.h:
+
+/usr/include/c++/11/bits/hash_bytes.h:
+
+/usr/include/c++/11/bits/move.h:
+
+/usr/include/c++/11/typeinfo:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/internal/pow10.h:
+
+/usr/include/c++/11/atomic:
+
+/usr/include/c++/11/bits/atomic_timed_wait.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/c++/11/bits/locale_facets.h:
+
+../dependencies/glm/glm/core/type_mat2x4.hpp:
+
+/usr/include/linux/limits.h:
+
+/usr/include/c++/11/bits/basic_string.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/internal/ieee754.h:
+
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
+
+/usr/include/c++/11/cstring:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/c++/11/bits/nested_exception.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/internal/diyfp.h:
+
+/usr/include/c++/11/bits/postypes.h:
+
+/usr/include/GL/gl.h:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h:
+
+/usr/include/c++/11/ctime:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+
+../dependencies/glm/glm/core/type_vec1.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+../dependencies/glm/glm/core/type_vec4.inl:
+
+/usr/include/features-time64.h:
+
+/usr/include/c++/11/system_error:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+../dependencies/glm/glm/core/func_exponential.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+../dependencies/glm/glm/core/type_mat4x3.hpp:
+
+/usr/include/c++/11/bits/memoryfwd.h:
+
+/usr/include/c++/11/bits/stl_function.h:
+
+/usr/include/x86_64-linux-gnu/sys/socket.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/encodedstream.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/11/bits/atomic_base.h:
+
+/usr/include/c++/11/ext/numeric_traits.h:
+
+/usr/include/c++/11/bits/iterator_concepts.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/c++/11/cstdint:
+
+/usr/include/c++/11/bits/concept_check.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h:
+
+/usr/include/c++/11/bits/invoke.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/asm-generic/socket.h:
+
+../src/imgui/imgui.cpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+
+/usr/include/c++/11/tr1/legendre_function.tcc:
+
+/usr/include/c++/11/exception:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h:
+
+/usr/include/c++/11/bits/std_mutex.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/usr/include/c++/11/debug/assertions.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/11/tuple:
+
+../dependencies/glm/glm/core/type_mat3x4.hpp:
+
+/usr/include/c++/11/type_traits:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/11/bits/ostream_insert.h:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+../src/class/GglBackground.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/c++/11/sstream:
+
+../include/GglBackground.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h:
+
+/usr/include/c++/11/cfloat:
+
+/usr/include/c++/11/bits/unique_ptr.h:
+
+../dependencies/glm/glm/core/type_vec1.inl:
+
+/usr/include/c++/11/ostream:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/sys/syscall.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/c++/11/iostream:
+
+/usr/include/c++/11/bits/node_handle.h:
+
+/usr/include/KHR/khrplatform.h:
+
+/usr/include/c++/11/streambuf:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/c++/11/bits/functexcept.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
+
+/usr/include/c++/11/semaphore:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/c++/11/backward/binders.h:
+
+../include/GglMainWindowManager.h:
+
+/usr/include/c++/11/tr1/gamma.tcc:
+
+../dependencies/glm/glm/core/func_common.hpp:
+
+/usr/include/unistd.h:
+
+../include/imstb_truetype.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h:
+
+/usr/include/c++/11/bits/stl_algobase.h:
+
+../src/imgui/imgui_draw.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/asm/socket.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/11/pstl/pstl_config.h:
+
+/usr/include/c++/11/bits/allocator.h:
+
+/usr/include/c++/11/cmath:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+
+../dependencies/glm/glm/core/type_vec3.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+
+/usr/include/c++/11/memory:
+
+../src/class/GglHttpSender.cpp:
+
+/usr/include/c++/11/ext/type_traits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h:
+
+/usr/include/c++/11/compare:
+
+/usr/include/c++/11/concepts:
+
+/usr/include/c++/11/bits/stl_pair.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+../src/class/GglShader.cpp:
+
+/usr/include/c++/11/bit:
+
+/usr/include/c++/11/cstdlib:
+
+/usr/include/c++/11/bits/stl_iterator_base_types.h:
+
+/usr/include/GL/glext.h:
+
+/usr/include/c++/11/clocale:
+
+../dependencies/glm/glm/core/setup.hpp:
+
+/usr/include/c++/11/bits/ranges_cmp.h:
+
+/usr/include/ctype.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/reader.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/c++/11/bits/stl_iterator.h:
+
+../src/class/GglIndexBuffer.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+../src/class/GglMainWindowManager.cpp:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/internal/biginteger.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/c++/11/ext/alloc_traits.h:
+
+/usr/include/c++/11/bits/localefwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/11/numbers:
+
+/usr/include/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
+../src/class/stb_image_impl.cpp:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/x86_64-linux-gnu/bits/dlfcn.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+../src/class/GglTest.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlbwintrin.h:
+
+/usr/include/c++/11/bits/ranges_base.h:
+
+/usr/include/pthread.h:
+
+/usr/include/c++/11/ext/atomicity.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/encodings.h:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/c++/11/ext/new_allocator.h:
+
+/usr/include/c++/11/bits/char_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h:
+
+/usr/include/c++/11/bits/ranges_uninitialized.h:
+
+/usr/include/x86_64-linux-gnu/bits/semaphore.h:
+
+../dependencies/glm/glm/core/type_half.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+../dependencies/glm/glm/core/type_vec.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/memorystream.h:
+
+../include/imgui_impl_opengl3.h:
+
+/usr/include/c++/11/bits/locale_classes.h:
+
+/usr/include/c++/11/bits/charconv.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/c++/11/bits/exception_ptr.h:
+
+/usr/include/math.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+
+../dependencies/glm/glm/core/func_exponential.inl:
+
+/usr/include/c++/11/bits/algorithmfwd.h:
+
+/usr/include/c++/11/bits/cxxabi_forced.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
+
+/usr/include/c++/11/ext/concurrence.h:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/c++/11/backward/auto_ptr.h:
+
+/usr/include/x86_64-linux-gnu/curl/multi.h:
+
+/usr/include/c++/11/bits/stream_iterator.h:
+
+/usr/include/c++/11/bits/uses_allocator_args.h:
+
+/usr/include/c++/11/pstl/glue_memory_defs.h:
+
+/usr/include/c++/11/mutex:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h:
+
+../src/class/GglDynamicIndexBuffer.cpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h:
+
+/usr/include/c++/11/bits/shared_ptr_base.h:
+
+../include/GglDynamicIndexBuffer.h:
+
+/usr/include/GL/glew.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h:
+
+/usr/include/c++/11/cstddef:
+
+/usr/include/c++/11/bits/stl_vector.h:
+
+/usr/include/GL/glu.h:
+
+../src/class/GglDynamicVertexBuffer.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+../include/GglDynamicVertexBuffer.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h:
+
+/usr/include/syscall.h:
+
+/usr/include/x86_64-linux-gnu/curl/curl.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/vaesintrin.h:
+
+../include/GglRenderer.h:
+
+/usr/include/x86_64-linux-gnu/curl/curlver.h:
+
+/usr/include/c++/11/tr1/modified_bessel_func.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket.h:
+
+/usr/local/include/GLFW/glfw3.h:
+
+/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
+
+/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/c++/11/bits/fstream.tcc:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2vlintrin.h:
+
+/usr/include/c++/11/bits/predefined_ops.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
+
+/usr/include/x86_64-linux-gnu/curl/easy.h:
+
+/usr/include/x86_64-linux-gnu/curl/urlapi.h:
+
+../dependencies/glm/glm/core/func_geometric.hpp:
+
+../include/GglPreBuild.h:
+
+/usr/include/c++/11/bits/atomic_wait.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h:
+
+/usr/include/strings.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+../include/imgui.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+../include/imconfig.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/rapidjson.h:
+
+../dependencies/glm/glm/core/func_packing.hpp:
+
+/usr/include/inttypes.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/stream.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h:
+
+/usr/include/stdio.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/internal/meta.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/internal/stack.h:
+
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/11/bits/streambuf.tcc:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/internal/swap.h:
+
+../include/imgui_internal.h:
+
+../dependencies/glm/glm/core/type_mat.hpp:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/error/error.h:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/internal/strfunc.h:
+
+../include/GglVertexArray.h:
+
+/usr/include/c++/11/vector:
+
+../dependencies/rapidjson-1.1.0/include/rapidjson/allocators.h:
+
+/usr/include/c++/11/bits/vector.tcc:
+
+../include/VertexBufferLayout.h:
+
+../dependencies/glm/glm/core/type_mat2x3.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h:
+
+../include/GglShader.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+../include/GglNote.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/c++/11/unordered_map:
+
+/usr/include/c++/11/bits/hashtable.h:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h:
+
+../dependencies/glm/glm/glm.hpp:
+
+../dependencies/glm/glm/core/_fixes.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/c++/11/bits/ranges_algobase.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+../dependencies/glm/glm/core/func_trigonometric.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2intrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/c++/11/bits/specfun.h:
+
+/usr/include/c++/11/tr1/special_function_util.h:
+
+/usr/include/c++/11/tr1/bessel_function.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+
+/usr/include/c++/11/tr1/ell_integral.tcc:
+
+/usr/include/c++/11/tr1/exp_integral.tcc:
+
+/usr/include/c++/11/tr1/hypergeometric.tcc:
+
+/usr/include/c++/11/tr1/poly_hermite.tcc:
+
+/usr/include/c++/11/tr1/riemann_zeta.tcc:
+
+../dependencies/glm/glm/core/type_vec3.inl:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h:
+
+/usr/include/c++/11/stdlib.h:
+
+../dependencies/glm/glm/core/_detail.hpp:
+
+/usr/include/c++/11/fstream:
+
+../dependencies/glm/glm/core/type_float.hpp:
+
+../dependencies/glm/glm/core/type_int.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
+../dependencies/glm/glm/core/type_gentype.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+../dependencies/glm/glm/core/type_size.hpp:
+
+../dependencies/glm/glm/core/_swizzle.hpp:
+
+../dependencies/glm/glm/core/type_vec2.hpp:
+
+../dependencies/glm/glm/core/type_vec2.inl:
+
+../dependencies/glm/glm/core/type_vec4.hpp:
+
+../dependencies/glm/glm/gtc/matrix_transform.inl:
+
+../dependencies/glm/glm/core/type_mat2x2.hpp:
+
+../src/class/GglNote.cpp:
+
+../dependencies/glm/glm/core/type_half.inl:
+
+../dependencies/glm/glm/core/type_mat2x2.inl:
+
+../dependencies/glm/glm/core/type_mat2x4.inl:
+
+../dependencies/glm/glm/core/type_mat3x2.hpp:
+
+../dependencies/glm/glm/gtc/matrix_transform.hpp:
+
+../dependencies/glm/glm/core/type_mat3x3.inl:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h:
+
+../dependencies/glm/glm/core/type_mat3x4.inl:
+
+../dependencies/glm/glm/core/type_mat4x2.inl:
+
+../dependencies/glm/glm/core/_vectorize.hpp:
+
+../dependencies/glm/glm/core/type_mat4x3.inl:
+
+/usr/include/c++/11/bits/range_access.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+../dependencies/glm/glm/core/type_mat4x4.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512cdintrin.h:
+
+../dependencies/glm/glm/core/type_mat4x4.inl:
+
+../dependencies/glm/glm/core/func_integer.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h:
+
+../dependencies/glm/glm/core/func_common.inl:
+
+../dependencies/glm/glm/core/func_matrix.hpp:
+
+../dependencies/glm/glm/core/func_matrix.inl:
+
+../src/class/GglRenderer.cpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h:
+
+../dependencies/glm/glm/core/func_vector_relational.hpp:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/include/asm-generic/sockios.h:
+
+../dependencies/glm/glm/core/func_vector_relational.inl:
+
+/usr/include/c++/11/bits/ostream.tcc:
+
+../dependencies/glm/glm/core/func_noise.hpp:
+
+../dependencies/glm/glm/core/func_noise.inl:
+
+../dependencies/glm/glm/core/func_trigonometric.inl:
+
+../dependencies/glm/glm/core/type.hpp:
+
+../include/GglTexture.h:
+
+../include/GglVertexBuffer.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h:
+
+../dependencies/glm/glm/core/type_mat4x2.hpp:
+
+/usr/include/c++/11/cassert:
+
+../src/class/GglVertexArray.cpp:
+
+../src/class/GglVertexBuffer.cpp:
+
+../src/class/VertexBufferLayout.cpp:
+
+/usr/include/c++/11/bits/sstream.tcc:
+
+../include/App.h:
+
+../include/imgui_impl_glfw.h:
+
+/usr/include/c++/11/math.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h:
+
+/usr/include/x86_64-linux-gnu/curl/options.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h:
+
+/usr/include/c++/11/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket_type.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/popcntintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h:
+
+../dependencies/glm/glm/core/_swizzle_func.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/serializeintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/sgxintrin.h:
+
+../include/stb_image.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/tbmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/wbnoinvdintrin.h:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512pfintrin.h:
+
+/usr/include/c++/11/bits/stringfwd.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsavecintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/wmmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avxintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/fmaintrin.h:
+
+/usr/include/c++/11/cwchar:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512erintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h:
+
+/usr/include/assert.h:
+
+/usr/include/c++/11/bits/allocated_ptr.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512dqintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vldqintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124vnniwintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectintrin.h:
+
+/usr/include/c++/11/bits/streambuf_iterator.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectvlintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/f16cintrin.h:

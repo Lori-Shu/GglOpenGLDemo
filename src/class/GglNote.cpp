@@ -2,12 +2,18 @@
 
 namespace mystd{
     using namespace std;
-GglNote::GglNote(){
+GglNote::GglNote(GglHttpSender *s){
     renderFlag=false;
     currentpage=0;
     allPage=0;
     targetPage=-1;
     editorPtr=make_unique<GglNoteEditor>();
+    httpSender=s;
+    SelectPagePostData data;
+    data.keyWord="";
+    data.targetPage=1;
+    postForNoteDetailPage(&data);
+    
 }
 void GglNote::show(){
     renderFlag=true;
@@ -28,11 +34,11 @@ void GglNote::render(){
         ImGui::Text("deleteButton");
         
         ImGui::Separator();
-        for(int index=0;index<10;){
+        for(int index=0;index<notePageSize;){
           ImGui::NextColumn();
-          ImGui::Text("1");
+          ImGui::Text(noteArray[index].title.c_str());
           ImGui::NextColumn();
-          ImGui::Text("2");
+          ImGui::Text(noteArray[index].content.c_str());
           ImGui::NextColumn();
           ImGui::PushID(string("edit").append(to_string(index)).c_str());
           if(ImGui::Button("edit")){
@@ -88,5 +94,51 @@ void GglNoteEditor::show(){
 }
 void GglNoteEditor::hide(){
     renderFlag=false;
+}
+std::string SelectPagePostData:: toJsonStr(){
+    char buffer[1024];
+    sprintf(buffer,"{\"keyWord\":\"%s\",\"targetPage\":%d}",keyWord,targetPage);
+    return buffer;
+}
+void GglNote::postForNoteDetailPage(SelectPagePostData * d){
+    // std::string res= httpSender->postForJsonStr(selectNotePpageUrl, d->toJsonStr());
+    std::string res="{\"title\":\"this is title\",\"content\":\"this is content\",\"createTime\":\"\",\"updateTime\":\"\"}";
+    rapidjson::Document document;
+    document.Parse(res.c_str());
+    if(document.IsArray()){
+        auto ay= document.GetArray();
+        for(int32_t index=0;index<notePageSize;){
+            if(index>=document.Size()){
+                noteArray[index]={"","","",""};
+                ++index;
+                continue;
+            }
+            NoteDetail detail;
+            rapidjson::Value& v = ay[index];
+            detail.title=v["title"].GetString();
+            detail.content = v["content"].GetString();
+            detail.createTime = v["createTime"].GetString();
+            detail.updateTime = v["updateTime"].GetString();
+            noteArray[index]=detail;
+            ++index;
+        }
+    }else if(document.IsObject()){
+        auto obj = document.GetObject();
+        for (int32_t index = 0; index < notePageSize;) {
+            if (index ==0) {
+                NoteDetail detail;
+                detail.title = obj["title"].GetString();
+                detail.content = obj["content"].GetString();
+                detail.createTime = obj["createTime"].GetString();
+                detail.updateTime = obj["updateTime"].GetString();
+                noteArray[index] = detail;
+                ++index;
+                continue;
+            }
+            noteArray[index] = {"", "", "", ""};
+            ++index;
+        }
+    }
+
 }
 }

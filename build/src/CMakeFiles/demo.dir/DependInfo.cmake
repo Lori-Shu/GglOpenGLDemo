@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglBackground.cpp" "src/CMakeFiles/demo.dir/class/GglBackground.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglBackground.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglDynamicIndexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglDynamicIndexBuffer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglDynamicIndexBuffer.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglDynamicVertexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglDynamicVertexBuffer.cpp.o.d"
+  "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglHttpSender.cpp" "src/CMakeFiles/demo.dir/class/GglHttpSender.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglHttpSender.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglIndexBuffer.cpp" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglIndexBuffer.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglMainWindowManager.cpp" "src/CMakeFiles/demo.dir/class/GglMainWindowManager.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglMainWindowManager.cpp.o.d"
   "/home/lori/CppProjects/GglOpenGLDemo/src/class/GglNote.cpp" "src/CMakeFiles/demo.dir/class/GglNote.cpp.o" "gcc" "src/CMakeFiles/demo.dir/class/GglNote.cpp.o.d"

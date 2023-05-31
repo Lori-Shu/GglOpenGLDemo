@@ -5,6 +5,8 @@
 #include<memory>
 #include<cstdlib>
 #include<cstring>
+#include<assert.h>
+#include<array>
 #define Linux
 static void getProgramDir(std::string &path) {
   char proDir[1024];

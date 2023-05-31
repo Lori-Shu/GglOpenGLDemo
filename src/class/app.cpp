@@ -132,7 +132,7 @@ int32_t App::initEnvironment() {
       ImGuiConfigFlags_NavEnableKeyboard;  // Enable Keyboard Controls
   ImGui::StyleColorsLight();
   io.Fonts->AddFontFromFileTTF("/home/lori/fonts/LXGWWenKaiMono-Regular.ttf", 14.0f,
-                               nullptr, io.Fonts->GetGlyphRangesChineseFull());
+                               nullptr, io.Fonts->GetGlyphRangesChineseSimplifiedCommon());
   // Setup Platform/Renderer backends
   ImGui_ImplGlfw_InitForOpenGL(windowPtr, true);
   ImGui_ImplOpenGL3_Init("#version 130");
@@ -204,7 +204,8 @@ int32_t App::initEnvironment() {
   // testVt.push_back(&txt0);
   //   mystd::GglBKColorTest bkCTest{gglShaderPtr.get()};
   //   testVt.push_back(&bkCTest);
-  notePtr=make_unique<GglNote>();
+  httpSenderPtr = make_unique<mystd::GglHttpSender>();
+  notePtr=make_unique<GglNote>(httpSenderPtr.get());
     windowManagerPtr=make_unique<GglMainWindowManager>(notePtr.get());
 
   return 0;
