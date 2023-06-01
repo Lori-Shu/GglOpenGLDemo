@@ -26,21 +26,22 @@ void GglAudioPlayTask ::playTask(GglAudioPlayer* player) {
       // if (lastVideoFramePtr == vTask.getCurrentFramePtr()) {
       //   continue;
       // }
-      if (cacheFrameQueue.size() < 1) {
-        this_thread::sleep_for(chrono::milliseconds(1));
+      this_thread::sleep_for(chrono::milliseconds(1));
+      if (cacheFrameQueue.size() > 0) {
+        
         //   this_thread::sleep_for(chrono::milliseconds(20));
-        continue;
-      }
+        
+      
         
         AVFrame* destFramePtr = av_frame_alloc();
         gglResample.resampleAndLoadPCMData(destFramePtr);
         currentFramePtr = destFramePtr;
+        
+        player->playAudioFrame();
 
-          player->playAudioFrame();
-
-          av_frame_free(&currentFramePtr);
+        av_frame_free(&currentFramePtr);
       }
-
+    }
 }
 
 }  // namespace mystd

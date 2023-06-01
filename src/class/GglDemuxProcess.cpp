@@ -64,6 +64,12 @@ int32_t GglDemuxProcess::initDemux(std::string filePath) {
         cout << msgBuffer << endl;
         return -1;
     }
+    cout<<"stream time base den==="<<formatContextPtr->streams[0]->time_base.den<<endl;
+    cout<<"stream time base num==="<<formatContextPtr->streams[0]->time_base.num<<endl;
+    cout << "stream time base den==="
+         << formatContextPtr->streams[1]->time_base.den << endl;
+    cout << "stream time base num==="
+         << formatContextPtr->streams[1]->time_base.num << endl;
     //                                                                 传入-1表示自动查找
     audioIndex= av_find_best_stream(formatContextPtr,AVMEDIA_TYPE_AUDIO,-1,-1,nullptr,0);
     videoIndex= av_find_best_stream(formatContextPtr, AVMEDIA_TYPE_VIDEO, -1, -1, nullptr,
@@ -92,14 +98,14 @@ void GglDemuxProcess::demux() {
           throw runtime_error(msgBuffer);
           return;
         }
-        for(;(videoQuePtr->size()>1000)&&(!threadStopFlag);){
-            cout<<"full v pts"<<videoQuePtr->front()->pts<<endl;
-            cout << "full a pts" << audioQuePtr->front()->pts << endl;
-            this_thread::sleep_for(chrono::milliseconds(10));
+        for(;(videoQuePtr->size()>100)&&(!threadStopFlag);){
+            this_thread::sleep_for(chrono::milliseconds(1));
         }
         if(pt->stream_index==audioIndex){
+            pt->time_base = formatContextPtr->streams[audioIndex]->time_base;
             audioQuePtr->push(pt);
         }else if(pt->stream_index==videoIndex){
+            pt->time_base = formatContextPtr->streams[videoIndex]->time_base;
             videoQuePtr->push(pt);
         }
     }

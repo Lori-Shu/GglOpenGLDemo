@@ -27,9 +27,11 @@ namespace mystd{
             throw std::runtime_error(" queue is empty can not pop ! ");
          }
          T front(){
+            std::unique_lock<std::mutex> lock{queMtx};
             if(rawQueue.size()>0){
             return rawQueue.front();
             }
+            std::cout<<"queue size=="<<rawQueue.size()<<std::endl;
             throw std::runtime_error("no item in this queue!");
          }
          int32_t size(){

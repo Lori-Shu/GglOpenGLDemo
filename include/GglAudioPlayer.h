@@ -12,7 +12,7 @@ namespace mystd{
         void pause();
         void stop();
         void play();
-        void pauseIfBufferNotReady();
+        void setPlaySec(int32_t sec);
 
        private:
         int32_t initOpenAL();
@@ -24,5 +24,6 @@ namespace mystd{
          std::vector<uint32_t> bufIds;
          int32_t usedBufSize;
          int32_t freq;
+         int32_t playSec;
     };
 }

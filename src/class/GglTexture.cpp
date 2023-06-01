@@ -14,7 +14,7 @@ namespace mystd{
         glBindTexture(GL_TEXTURE_2D, textureId);
         // glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 1280, 720, GL_RGBA,
         //                 GL_UNSIGNED_BYTE, vT.getCurrentFramePtr()->data[0]);
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1280, 720, 0, GL_RGBA,
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1920, 1080, 0, GL_RGBA,
                      GL_UNSIGNED_BYTE, currentFramePtr->data[0]);
     }
     void GglTexture::createTexture() {

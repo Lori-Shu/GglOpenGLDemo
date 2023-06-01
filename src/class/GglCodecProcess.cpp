@@ -26,13 +26,13 @@ void GglCodecProcess::codec(GglAVPacketQueue* packetQuePtr) {
     for(;!codecThreadStopFlag;){
         
       for (;cacheQueuePtr->size()>10 && !codecThreadStopFlag;) {
-        this_thread::sleep_for(chrono::milliseconds(10));
+        this_thread::sleep_for(chrono::milliseconds(1));
       }
         if(codecThreadStopFlag){
             return;
         }
         if(packetQuePtr->size()<1){
-            this_thread::sleep_for(chrono::milliseconds(10));
+            this_thread::sleep_for(chrono::milliseconds(1));
             continue;
         }
         tempPacketPtr=packetQuePtr->front();
@@ -46,7 +46,9 @@ void GglCodecProcess::codec(GglAVPacketQueue* packetQuePtr) {
         }
         
         // av_packet_unref(tempPacketPtr);
-        av_packet_free(&tempPacketPtr);
+        // if (tempPacketPtr->time_base.num != 0) {
+        //     throw std::runtime_error("er");
+        // }
         for (;!codecThreadStopFlag;){
             framePtr = av_frame_alloc();
             res = avcodec_receive_frame(codecContextPtr, framePtr);
@@ -58,10 +60,11 @@ void GglCodecProcess::codec(GglAVPacketQueue* packetQuePtr) {
               throw runtime_error(errBuffer);
               return;
             }
+            framePtr->time_base=tempPacketPtr->time_base;
             cacheQueuePtr->push(framePtr);
         }
-        
-    }
+        av_packet_free(&tempPacketPtr);
+        }
 }
 void GglCodecProcess::createCodecContext() {
     codecContextPtr=avcodec_alloc_context3(nullptr);

@@ -16,8 +16,8 @@ namespace mystd{
             
         currentFramePtr = frameQueuePtr->front();
         frameQueuePtr->pop();
-        destFramePtr->width = 1280;
-        destFramePtr->height = 720;
+        destFramePtr->width = parPtr->width;
+        destFramePtr->height = parPtr->height;
         destFramePtr->format = AV_PIX_FMT_RGBA;
         destFramePtr->pts = currentFramePtr->pts;
         destFramePtr->time_base=currentFramePtr->time_base;
@@ -35,7 +35,7 @@ namespace mystd{
         swsContextPtr =
             sws_getContext(parPtr->width, parPtr->height, AV_PIX_FMT_YUV420P,
                            parPtr->width, parPtr->height, AV_PIX_FMT_RGBA,
-                           SWS_BICUBIC, nullptr, nullptr, nullptr);
+                           SWS_FAST_BILINEAR, nullptr, nullptr, nullptr);
         cout << "frame width==" << parPtr->width << endl;
         cout << "frame height==" << parPtr->height << endl;
         cout << "frame format==" << parPtr->format << endl;
