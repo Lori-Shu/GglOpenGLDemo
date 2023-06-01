@@ -120,9 +120,9 @@ int32_t App::initEnvironment() {
   glfwMakeContextCurrent(windowPtr);
   glfwSwapInterval(1);
 
-  // init glew
-  GLenum em = glewInit();
-  if (em != GLEW_OK) cout << "init glew err" << endl;
+  // init glad
+  GLenum em = gladInit();
+  if (em != GLAD_OK) cout << "init glad err" << endl;
   setDebugMessageCallBack();
   // Setup Dear ImGui context
   IMGUI_CHECKVERSION();

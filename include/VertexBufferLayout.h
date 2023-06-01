@@ -1,7 +1,7 @@
 #pragma once
 #include<vector>
 #include<cstdint>
-#include<GL/glew.h>
+#include <glad/glad.h>
 #include<cassert>
 namespace mystd{
 struct VertexBufferLayoutElement{
