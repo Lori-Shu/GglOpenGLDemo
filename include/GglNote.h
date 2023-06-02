@@ -25,6 +25,7 @@ class GglNoteEditor {
   void render();
   void show();
   void hide();
+  void setBuffer(std::string tBuffer,std::string mainCBuffer);
 
  private:
   bool renderFlag;

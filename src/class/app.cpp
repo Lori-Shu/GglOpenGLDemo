@@ -26,6 +26,9 @@ void App::setDebugMessageCallBack() {
   glDebugMessageCallback(
       [](GLenum source, GLenum type, uint32_t id, GLenum severity,
          int32_t length, const char* message, const void* userParam) {
+            if(severity==GL_DEBUG_SEVERITY_NOTIFICATION){
+                return;
+            }
         cout << "err---------" << endl;
         cout << "message==" << message << endl;
         cout << "source==" << source << endl;
@@ -121,8 +124,11 @@ int32_t App::initEnvironment() {
   glfwSwapInterval(1);
 
   // init glad
-  GLenum em = gladInit();
-  if (em != GLAD_OK) cout << "init glad err" << endl;
+  if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+        // 初始化失败，输出错误信息
+        printf("Failed to initialize GLAD\n");
+        return -1;
+    }
   setDebugMessageCallBack();
   // Setup Dear ImGui context
   IMGUI_CHECKVERSION();
@@ -131,8 +137,10 @@ int32_t App::initEnvironment() {
   io.ConfigFlags |=
       ImGuiConfigFlags_NavEnableKeyboard;  // Enable Keyboard Controls
   ImGui::StyleColorsLight();
-  io.Fonts->AddFontFromFileTTF("/home/lori/fonts/LXGWWenKaiMono-Regular.ttf", 14.0f,
-                               nullptr, io.Fonts->GetGlyphRangesChineseSimplifiedCommon());
+  getProgramDir(programPath);
+  io.Fonts->AddFontFromFileTTF(
+      programPath.append("/font/LXGWWenKaiMono-Regular.ttf").c_str(), 20.0f, nullptr,
+      io.Fonts->GetGlyphRangesChineseSimplifiedCommon());
   // Setup Platform/Renderer backends
   ImGui_ImplGlfw_InitForOpenGL(windowPtr, true);
   ImGui_ImplOpenGL3_Init("#version 130");
@@ -177,7 +185,7 @@ int32_t App::initEnvironment() {
   gglShaderPtr->useProgram();
 
   gglShaderPtr->setUniform4f("uColor", 0.5f, 0.0f, 0.2f, 1.0f);
-  getProgramDir(programPath);
+  
   textureVector.push_back(
       make_unique<mystd::GglTexture>(programPath + string("image/image3.jpg")));
   textureVector.push_back(

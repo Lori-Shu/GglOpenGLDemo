@@ -23,7 +23,10 @@ void GglNote::hide(){
 }
 void GglNote::render(){
     if(renderFlag){
-        
+        if(ImGui::Button("add note")){
+            editorPtr->setBuffer("","");
+            editorPtr->show();
+        }
         ImGui::Columns(4,"note intro",true);
         ImGui::Text("title");
         ImGui::NextColumn();
@@ -73,6 +76,8 @@ void GglNote::render(){
 }
 GglNoteEditor::GglNoteEditor(){
     renderFlag=false;
+    memset(titleBuf,0,256*sizeof(char));
+    memset(mainContentBuf, 0, 10*1024 * sizeof(char));
 }
 GglNoteEditor::~GglNoteEditor(){}
 void GglNoteEditor::render(){
@@ -142,3 +147,4 @@ void GglNote::postForNoteDetailPage(SelectPagePostData * d){
 
 }
 }
+
