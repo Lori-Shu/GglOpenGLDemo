@@ -2,6 +2,12 @@
 #include<curl/curl.h>
 #include"GglPreBuild.h"
 namespace mystd{
+    struct GglServerUrls{
+      static constexpr char SELECT_NOTE_PAGE_URL[] =
+          "http:://192.168.56.100:8989/note/selectNotePage";
+      static constexpr char ADD_NOTE_URL[] =
+          "http:://192.168.56.100:8536/note/addNote";
+    };
     /**
      * a httpsender using libcurl
     */

@@ -7,7 +7,7 @@ GglNote::GglNote(GglHttpSender *s){
     currentpage=0;
     allPage=0;
     targetPage=-1;
-    editorPtr=make_unique<GglNoteEditor>();
+    editorPtr=make_unique<GglNoteEditor>(s);
     httpSender=s;
     SelectPagePostData data;
     data.keyWord="";
@@ -24,7 +24,7 @@ void GglNote::hide(){
 void GglNote::render(){
     if(renderFlag){
         if(ImGui::Button("add note")){
-            editorPtr->setBuffer("","");
+            editorPtr->setCurreentDetail({"","","",""});
             editorPtr->show();
         }
         ImGui::Columns(4,"note intro",true);
@@ -74,8 +74,9 @@ void GglNote::render(){
         editorPtr->render();
         }
 }
-GglNoteEditor::GglNoteEditor(){
+GglNoteEditor::GglNoteEditor(GglHttpSender * s){
     renderFlag=false;
+    httpSender=s;
     memset(titleBuf,0,256*sizeof(char));
     memset(mainContentBuf, 0, 10*1024 * sizeof(char));
 }
@@ -89,6 +90,7 @@ void GglNoteEditor::render(){
         ImGui::InputText("title 最长100",titleBuf,256);
         ImGui::InputTextMultiline("main content", mainContentBuf, 1024*10);
         if (ImGui::Button("submit change")) {
+            persistNote();
             
         }
         ImGui::End();
@@ -100,42 +102,64 @@ void GglNoteEditor::show(){
 void GglNoteEditor::hide(){
     renderFlag=false;
 }
+void GglNoteEditor::setCurreentDetail(NoteDetail d){
+    currentDetail=d;
+    memcpy(titleBuf,d.title.data(),d.title.length()+1);
+    memcpy(mainContentBuf, d.content.data(), d.content.length() + 1);
+}
+void GglNoteEditor::persistNote() {
+    AddNotePostData pd;
+    pd.title = titleBuf;
+    pd.content = mainContentBuf;
+    pd.userId = "helloImgui!";
+    string res =
+        httpSender->postForJsonStr(GglServerUrls::ADD_NOTE_URL, pd.toJsonStr());
+    cout << "post res===" << res << endl;
+}
 std::string SelectPagePostData:: toJsonStr(){
     char buffer[1024];
     sprintf(buffer,"{\"keyWord\":\"%s\",\"targetPage\":%d}",keyWord,targetPage);
     return buffer;
 }
+std::string AddNotePostData::toJsonStr(){
+    char buffer[1024];
+    sprintf(buffer, "{\"userId\":\"%s\",\"title\":\"%s\",\"content\":\"%s\"}", userId,
+            title,content);
+    return buffer;
+}
 void GglNote::postForNoteDetailPage(SelectPagePostData * d){
     // std::string res= httpSender->postForJsonStr(selectNotePpageUrl, d->toJsonStr());
     std::string res="{\"title\":\"this is title\",\"content\":\"this is content\",\"createTime\":\"\",\"updateTime\":\"\"}";
-    rapidjson::Document document;
-    document.Parse(res.c_str());
-    if(document.IsArray()){
-        auto ay= document.GetArray();
+    JSON_Value* rootValuePtr=json_parse_string(res.c_str());
+    if(json_value_get_type(rootValuePtr)==JSONArray){
+        JSON_Array* ayPtr=json_value_get_array(rootValuePtr);
         for(int32_t index=0;index<notePageSize;){
-            if(index>=document.Size()){
+            if(index>=json_array_get_count(ayPtr)){
                 noteArray[index]={"","","",""};
                 ++index;
                 continue;
             }
             NoteDetail detail;
-            rapidjson::Value& v = ay[index];
-            detail.title=v["title"].GetString();
-            detail.content = v["content"].GetString();
-            detail.createTime = v["createTime"].GetString();
-            detail.updateTime = v["updateTime"].GetString();
+            JSON_Object* objPtr= json_array_get_object(ayPtr,index);
+            detail.title=json_object_get_string(objPtr, "title");
+            detail.content = json_object_get_string(objPtr, "content");
+            detail.createTime = json_object_get_string(objPtr, "createTime");
+            detail.updateTime = json_object_get_string(objPtr, "updateTime");
             noteArray[index]=detail;
             ++index;
         }
-    }else if(document.IsObject()){
-        auto obj = document.GetObject();
+    } else if (json_value_get_type(rootValuePtr) == JSONObject) {
+
+        JSON_Object* objPtr=json_value_get_object(rootValuePtr);
         for (int32_t index = 0; index < notePageSize;) {
             if (index ==0) {
                 NoteDetail detail;
-                detail.title = obj["title"].GetString();
-                detail.content = obj["content"].GetString();
-                detail.createTime = obj["createTime"].GetString();
-                detail.updateTime = obj["updateTime"].GetString();
+                detail.title = json_object_get_string(objPtr, "title");
+                detail.content = json_object_get_string(objPtr, "content");
+                detail.createTime =
+                    json_object_get_string(objPtr, "createTime");
+                detail.updateTime =
+                    json_object_get_string(objPtr, "updateTime");
                 noteArray[index] = detail;
                 ++index;
                 continue;
@@ -144,7 +168,5 @@ void GglNote::postForNoteDetailPage(SelectPagePostData * d){
             ++index;
         }
     }
-
 }
 }
-

@@ -1,4 +1,5 @@
 #pragma once
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <imgui.h>
@@ -7,8 +8,6 @@
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-#include <iostream>
-#include<array>
 
 #include "GglBackground.h"
 #include "GglIndexBuffer.h"
@@ -24,6 +23,29 @@
 #include"GglNote.h"
 #include"GglMainWindowManager.h"
 #include"GglHttpSender.h"
+#ifdef Windows
+#include <Windows.h>
+#endif
+void getProgramDir(std::string &path) {
+  char proDir[1024];
+//   只在Linux环境有效
+#ifdef Linux
+  int32_t size = readlink("/proc/self/exe", proDir, 1024);
+  std::string tp = std::string(proDir);
+
+  int32_t lastIndex = tp.find_last_of('/');
+  path = tp.substr(0, lastIndex + 1 - 0);
+  std::cout << "proDir==" << path << std::endl;
+#endif
+#ifdef Windows
+  GetModuleFileName(NULL, proDir, 1024);
+  std::string tp = std::string(proDir);
+  int32_t lastIndex = tp.find_last_of('\\');
+  path = tp.substr(0, lastIndex + 1 - 0);
+  std::cout << "proDir==" << path << std::endl;
+#endif
+}
+
 namespace mystd{
     struct GglVertex{
         glm::vec3 position;

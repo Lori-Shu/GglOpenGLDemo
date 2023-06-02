@@ -1,7 +1,6 @@
 #pragma once
 #include <imgui.h>
-#include <rapidjson/document.h>
-#include <rapidjson/rapidjson.h>
+#include<parson.h>
 #include "GglHttpSender.h"
 #include "GglPreBuild.h"
 
@@ -18,19 +17,29 @@ namespace mystd{
         char* keyWord;
         int32_t targetPage;
     };
+    class AddNotePostData {
+      public:
+        std::string toJsonStr();
+        char* userId;
+        char* title;
+        char* content;
+    };
 class GglNoteEditor {
  public:
-  GglNoteEditor();
-  ~GglNoteEditor();
-  void render();
-  void show();
-  void hide();
-  void setBuffer(std::string tBuffer,std::string mainCBuffer);
+   GglNoteEditor(GglHttpSender *s);
+   ~GglNoteEditor();
+   void render();
+   void show();
+   void hide();
+   void setCurreentDetail(NoteDetail d);
 
  private:
-  bool renderFlag;
-  char titleBuf[256];
-  char mainContentBuf[1024 * 10];
+   void persistNote();
+   GglHttpSender *httpSender;
+   NoteDetail currentDetail;
+   bool renderFlag;
+   char titleBuf[256];
+   char mainContentBuf[1024 * 10];
   
 };
     class GglNote{
@@ -49,8 +58,8 @@ class GglNoteEditor {
         GglHttpSender * httpSender;
          std::unique_ptr<GglNoteEditor> editorPtr;
          static const int32_t notePageSize=10;
-         std::array<NoteDetail,notePageSize> noteArray;
-         static constexpr char* selectNotePpageUrl="http:://192.168.56.100:8989/note/selectNotePage";
+         std::array<NoteDetail, notePageSize> noteArray;
+         
     };
     
 }
