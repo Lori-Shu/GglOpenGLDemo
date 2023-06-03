@@ -76,7 +76,7 @@ void GglNote::render(){
 }
 GglNoteEditor::GglNoteEditor(GglHttpSender * s){
     renderFlag=false;
-    httpSender=s;
+    httpSenderPtr=s;
     memset(titleBuf,0,256*sizeof(char));
     memset(mainContentBuf, 0, 10*1024 * sizeof(char));
 }
@@ -91,7 +91,6 @@ void GglNoteEditor::render(){
         ImGui::InputTextMultiline("main content", mainContentBuf, 1024*10);
         if (ImGui::Button("submit change")) {
             persistNote();
-            
         }
         ImGui::End();
     }
@@ -113,8 +112,11 @@ void GglNoteEditor::persistNote() {
     pd.content = mainContentBuf;
     pd.userId = "helloImgui!";
     string res =
-        httpSender->postForJsonStr(GglServerUrls::ADD_NOTE_URL, pd.toJsonStr());
-    cout << "post res===" << res << endl;
+        httpSenderPtr->postForJsonStr(GglServerUrls::ADD_NOTE_URL, pd.toJsonStr());
+    GglTip *tipPtr= GglTip::getInstance();
+    tipPtr->setMsg(res);
+    tipPtr->show();
+    
 }
 std::string SelectPagePostData:: toJsonStr(){
     char buffer[1024];

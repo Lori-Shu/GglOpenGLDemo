@@ -60,6 +60,7 @@
         "bitset": "cpp",
         "codecvt": "cpp",
         "map": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "stddef.h": "c"
     }
 }

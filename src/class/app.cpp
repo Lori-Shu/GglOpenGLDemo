@@ -164,7 +164,7 @@ int32_t App::initEnvironment() {
   glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
   // 使用vertex array 可以在切换绑定时自动绑定vertexbuffer
 
-  vaPtr = make_unique<mystd::GglVertexArray>();
+//   vaPtr = make_unique<mystd::GglVertexArray>();
   //   vbPtr =make_unique <mystd::GglVertexBuffer>(positions, 6 * 8 *
   //   sizeof(float)); ibPtr=make_unique<mystd::GglIndexBuffer>(indices, 12);
   //   mystd::VertexBufferLayout layout;
@@ -173,31 +173,31 @@ int32_t App::initEnvironment() {
   //   layout.push<float>(1);
   //   vaPtr->addVertexBuffer(*vbPtr, layout);
 
-  gglShaderPtr = make_unique<mystd::GglShader>();
-  dynamicVbPtr = make_unique<GglDynamicVertexBuffer>();
-  dynamicIbPtr = make_unique<GglDynamicIndexBuffer>();
-  projectionPerspective =
-      glm::perspective(glm::radians(45.0f), 1280.0f / 720.0f, 0.1f, 100.0f);
+//   gglShaderPtr = make_unique<mystd::GglShader>();
+//   dynamicVbPtr = make_unique<GglDynamicVertexBuffer>();
+//   dynamicIbPtr = make_unique<GglDynamicIndexBuffer>();
+//   projectionPerspective =
+    //   glm::perspective(glm::radians(45.0f), 1280.0f / 720.0f, 0.1f, 100.0f);
   //   projectionOrth = glm::ortho(0.0f, 100.0f, 0.0f, 100.0f, 0.0f, 100.0f);
-  view = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f));
-  model = glm::translate(glm::mat4{1.0f}, glm::vec3{0.0f, 0.0f, 0.0f});
-  mvp = projectionPerspective * view * model;
-  gglShaderPtr->useProgram();
+//   view = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f));
+//   model = glm::translate(glm::mat4{1.0f}, glm::vec3{0.0f, 0.0f, 0.0f});
+//   mvp = projectionPerspective * view * model;
+//   gglShaderPtr->useProgram();
 
-  gglShaderPtr->setUniform4f("uColor", 0.5f, 0.0f, 0.2f, 1.0f);
+//   gglShaderPtr->setUniform4f("uColor", 0.5f, 0.0f, 0.2f, 1.0f);
   
-  textureVector.push_back(
-      make_unique<mystd::GglTexture>(programPath + string("image/image3.jpg")));
-  textureVector.push_back(
-      make_unique<mystd::GglTexture>(programPath + string("image/image1.png")));
+//   textureVector.push_back(
+//       make_unique<mystd::GglTexture>(programPath + string("image/image3.jpg")));
+//   textureVector.push_back(
+//       make_unique<mystd::GglTexture>(programPath + string("image/image1.png")));
   // tx.bind(0);
   // gglShader.setUniform1i("uTexture", 0);
   // tx1.bind(1);
   // gglShader.setUniform1i("uTexture", 1);
-  gglShaderPtr->bindUniformTextureUnit(vector<uint32_t>{
-      textureVector[0]->getTextureId(), textureVector[1]->getTextureId()});
-  gglShaderPtr->setUniformSamplerArray("uTexture", 2);
-  rdererPtr = make_unique<mystd::GglRenderer>(*vaPtr, *ibPtr, *gglShaderPtr);
+//   gglShaderPtr->bindUniformTextureUnit(vector<uint32_t>{
+//       textureVector[0]->getTextureId(), textureVector[1]->getTextureId()});
+//   gglShaderPtr->setUniformSamplerArray("uTexture", 2);
+//   rdererPtr = make_unique<mystd::GglRenderer>(*vaPtr, *ibPtr, *gglShaderPtr);
 
 //   bkPtr = make_unique<mystd::GglBackground>(windowPtr);
   //   cout<<"xyz z=="<<*(imageTranslateXYZ+2)<<endl;
@@ -251,6 +251,7 @@ void App::runMainLoop() {
     }
     ImGui::EndTabBar();
     notePtr->render();
+    GglTip::getInstance()->render();
     ImGui::End();
     ImGui::Begin("test window");
     // bool

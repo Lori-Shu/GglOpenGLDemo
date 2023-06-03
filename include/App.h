@@ -23,6 +23,7 @@
 #include"GglNote.h"
 #include"GglMainWindowManager.h"
 #include"GglHttpSender.h"
+#include"GglTip.h"
 #ifdef Windows
 #include <Windows.h>
 #endif

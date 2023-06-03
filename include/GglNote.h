@@ -3,6 +3,7 @@
 #include<parson.h>
 #include "GglHttpSender.h"
 #include "GglPreBuild.h"
+#include"GglTip.h"
 
 namespace mystd{
     struct NoteDetail{
@@ -35,7 +36,7 @@ class GglNoteEditor {
 
  private:
    void persistNote();
-   GglHttpSender *httpSender;
+   GglHttpSender *httpSenderPtr;
    NoteDetail currentDetail;
    bool renderFlag;
    char titleBuf[256];

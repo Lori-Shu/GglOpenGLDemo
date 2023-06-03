@@ -4,19 +4,18 @@ ${PROJECT_SOURCE_DIR}/dependencies/glfwbin/include ${PROJECT_SOURCE_DIR}/depende
 
 
 file(GLOB cppFiles 
-
 ${PROJECT_SOURCE_DIR}/src/*.cpp 
-${PROJECT_SOURCE_DIR}/src/*.c 
+${PROJECT_SOURCE_DIR}/src/glad.c 
 ${PROJECT_SOURCE_DIR}/src/class/*.cpp
 ${PROJECT_SOURCE_DIR}/src/imgui/*.cpp)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
-link_directories(${PROJECT_SOURCE_DIR}/dependencies/glfwbin/lib ${PROJECT_SOURCE_DIR}/dependencies/curl-mingw/lib)
+link_directories(${PROJECT_SOURCE_DIR}/dependencies/glfwbin/lib ${PROJECT_SOURCE_DIR}/dependencies/curl-mingw/lib
+${PROJECT_SOURCE_DIR}/dependencies/parson)
 
 add_executable(demo ${cppFiles})
 
-target_link_libraries(demo  glfw3 curl)
-
+target_link_libraries(demo  glfw3 curl parson)
 
 exec_program(xcopy ${PROJECT_SOURCE_DIR}/src/shader ${PROJECT_SOURCE_DIR}/bin)
