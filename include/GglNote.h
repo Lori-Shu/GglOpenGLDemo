@@ -7,6 +7,8 @@
 
 namespace mystd{
     struct NoteDetail{
+        std::string toJsonStr();
+        std::string id;
         std::string title;
         std::string content;
         std::string createTime;
@@ -15,15 +17,16 @@ namespace mystd{
     class SelectPagePostData{
         public:
         std::string toJsonStr();
-        char* keyWord;
+        std::string keyword;
         int32_t targetPage;
+        std::string userId;
     };
     class AddNotePostData {
       public:
         std::string toJsonStr();
-        char* userId;
-        char* title;
-        char* content;
+        const char* userId;
+        const char* title;
+        const char* content;
     };
 class GglNoteEditor {
  public:
@@ -49,14 +52,15 @@ class GglNoteEditor {
          void render();
          void show();
          void hide();
-
-        private:
          void postForNoteDetailPage(SelectPagePostData *d);
+         void postToDeleteNoteDetail(NoteDetail* d);
+       private:
+         
          bool renderFlag;
          int32_t currentpage;
-         int32_t allPage;
+         int32_t allPages;
          int32_t targetPage;
-        GglHttpSender * httpSender;
+        GglHttpSender * httpSenderPtr;
          std::unique_ptr<GglNoteEditor> editorPtr;
          static const int32_t notePageSize=10;
          std::array<NoteDetail, notePageSize> noteArray;

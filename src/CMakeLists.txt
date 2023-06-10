@@ -16,6 +16,8 @@ ${PROJECT_SOURCE_DIR}/dependencies/parson)
 
 add_executable(demo ${cppFiles})
 
+
 target_link_libraries(demo  glfw3 curl parson)
+
 
 exec_program(xcopy ${PROJECT_SOURCE_DIR}/src/shader ${PROJECT_SOURCE_DIR}/bin)

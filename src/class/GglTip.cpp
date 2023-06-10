@@ -27,11 +27,9 @@ namespace mystd{
         showFlag=false;
     }
     GglTip *GglTip::getInstance() {
-        cout<<"instance position==="<<&tipInstance<<endl;
-        cout << "flag===" << tipInstance.showFlag << endl;
         return &tipInstance;
     }
     void GglTip::setMsg(std::string msg) {
-        memcpy(tipWords,msg.data(),msg.length()+1);
+        memcpy(tipWords,msg.c_str(),msg.length()+1);
     }
 }

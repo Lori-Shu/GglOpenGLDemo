@@ -11,3 +11,11 @@
 #include<array>
 #include<mutex>
 void getProgramDir(std::string &path);
+
+namespace mystd{
+struct UserDetail {
+  std::string id;
+  std::string username;
+};
+extern UserDetail currentUserDetail;
+}

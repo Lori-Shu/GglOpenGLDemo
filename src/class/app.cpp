@@ -6,6 +6,7 @@ static void glfw_error_callback(int error, const char* description) {
   fprintf(stderr, "GLFW Error %d: %s\n", error, description);
 }
 namespace mystd {
+UserDetail currentUserDetail;
 App::App() {
   if (initEnvironment() != 0) {
     cout << "environment err" << endl;
@@ -212,10 +213,11 @@ int32_t App::initEnvironment() {
   // testVt.push_back(&txt0);
   //   mystd::GglBKColorTest bkCTest{gglShaderPtr.get()};
   //   testVt.push_back(&bkCTest);
-  httpSenderPtr = make_unique<mystd::GglHttpSender>();
-  notePtr=make_unique<GglNote>(httpSenderPtr.get());
+    httpSenderPtr = make_unique<mystd::GglHttpSender>();
+    notePtr=make_unique<GglNote>(httpSenderPtr.get());
     windowManagerPtr=make_unique<GglMainWindowManager>(notePtr.get());
-
+    isLogin=false;
+    welcomePtr=make_unique<Welcome>(&isLogin,httpSenderPtr.get(),notePtr.get());
   return 0;
 }
 void App::runMainLoop() {
@@ -236,12 +238,11 @@ void App::runMainLoop() {
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplGlfw_NewFrame();
     ImGui::NewFrame();
-
+    GglTip::getInstance()->render();
     // imgui demo window
     ImGui::Begin("hello world");
-    ImGui::SliderFloat("==imageX", imageTranslateXYZ, -0.5f, 0.5f);
-    ImGui::SliderFloat("==imageY", imageTranslateXYZ + 1, -0.5f, 0.5f);
-
+    welcomePtr->render();
+    if(isLogin){
     ImGui::BeginTabBar("function switch");
     if(ImGui::TabItemButton("note")){
         windowManagerPtr->switchToNote();
@@ -251,7 +252,7 @@ void App::runMainLoop() {
     }
     ImGui::EndTabBar();
     notePtr->render();
-    GglTip::getInstance()->render();
+    
     ImGui::End();
     ImGui::Begin("test window");
     // bool
@@ -278,7 +279,9 @@ void App::runMainLoop() {
     ImGui::PopStyleVar();
     ImGui::EndChild();
     // ImGui::EndTable();
+    }
     ImGui::End();
+    
     // Rendering
     ImGui::Render();
     // int display_w, display_h;

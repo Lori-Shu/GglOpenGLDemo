@@ -24,6 +24,7 @@
 #include"GglMainWindowManager.h"
 #include"GglHttpSender.h"
 #include"GglTip.h"
+#include"Welcome.h"
 #ifdef Windows
 #include <Windows.h>
 #endif
@@ -88,5 +89,7 @@ namespace mystd{
         std::unique_ptr<mystd::GglNote> notePtr;
         std::unique_ptr<mystd::GglMainWindowManager> windowManagerPtr;
         std::unique_ptr<mystd::GglHttpSender> httpSenderPtr;
+        bool isLogin;
+        std::unique_ptr<mystd::Welcome> welcomePtr;
     };
 }
