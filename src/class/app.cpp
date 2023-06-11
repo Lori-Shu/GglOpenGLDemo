@@ -141,7 +141,7 @@ int32_t App::initEnvironment() {
   getProgramDir(programPath);
   io.Fonts->AddFontFromFileTTF(
       programPath.append("/font/LXGWWenKaiMono-Regular.ttf").c_str(), 20.0f, nullptr,
-      io.Fonts->GetGlyphRangesChineseSimplifiedCommon());
+      io.Fonts->GetGlyphRangesChineseFull());
   // Setup Platform/Renderer backends
   ImGui_ImplGlfw_InitForOpenGL(windowPtr, true);
   ImGui_ImplOpenGL3_Init("#version 130");

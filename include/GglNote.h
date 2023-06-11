@@ -21,12 +21,16 @@ namespace mystd{
         int32_t targetPage;
         std::string userId;
     };
-    class AddNotePostData {
+    /**
+     * if id ="" is add id!="" is edit(update)
+    */
+    class AddOrEditNotePostData {
       public:
         std::string toJsonStr();
-        const char* userId;
-        const char* title;
-        const char* content;
+        std::string userId;
+        std::string title;
+        std::string content;
+        std::string id;
     };
 class GglNoteEditor {
  public:

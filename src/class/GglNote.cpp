@@ -61,13 +61,39 @@ void GglNote::render() {
                     .append("/")
                     .append(to_string(allPages))
                     .c_str());
-    ImGui::Button("<previous page");
+    
+    if(ImGui::Button("<previous page")){
+        if(currentpage>1){
+        SelectPagePostData spd;
+        spd.keyword="";
+        spd.targetPage=currentpage-1;
+        spd.userId=currentUserDetail.id;
+        postForNoteDetailPage(&spd);
+        }
+    }
     ImGui::SameLine();
-    ImGui::Button("next page>");
+    if (ImGui::Button("next page>")){
+        if (currentpage <allPages) {
+        SelectPagePostData spd;
+        spd.keyword = "";
+        spd.targetPage = currentpage + 1;
+        spd.userId = currentUserDetail.id;
+        postForNoteDetailPage(&spd);
+        }
+    }
+
     ImGui::SameLine();
     ImGui::InputInt("target page", &targetPage);
     ImGui::SameLine();
-    ImGui::Button("jump");
+    if(ImGui::Button("jump")){
+        if (targetPage <= allPages&&targetPage>0) {
+        SelectPagePostData spd;
+        spd.keyword = "";
+        spd.targetPage = targetPage;
+        spd.userId = currentUserDetail.id;
+        postForNoteDetailPage(&spd);
+        }
+    }
     ImGui::Separator();
     editorPtr->render();
   }
@@ -83,7 +109,7 @@ static int inputEnterCallback(ImGuiInputTextCallbackData *data) {
   if (data->EventKey == ImGuiKey_Enter) {
     // 在缓冲区中添加\r\n
     data->EventChar=0;
-    data->InsertChars(data->CursorPos,"\n" );
+    data->InsertChars(data->CursorPos,"\r\n" );
 
     // 将光标移动到下一行
     data->CursorPos += 1;
@@ -125,8 +151,13 @@ void GglNoteEditor::persistNote() {
     tipPtr->show();
     return;
   }
-  AddNotePostData pd;
-  pd.title = titleBuf;
+  AddOrEditNotePostData pd;
+  if(currentDetail.id.length()>0){
+    pd.id=currentDetail.id;
+  } else if (currentDetail.id.length()<=0){
+    pd.id="";
+  }
+    pd.title = titleBuf;
   pd.content = mainContentBuf;
   pd.userId = currentUserDetail.id.c_str();
   string res = httpSenderPtr->postForJsonStr(GglServerUrls::ADD_NOTE_URL,
@@ -156,10 +187,10 @@ std::string SelectPagePostData::toJsonStr() {
           keyword.c_str(), targetPage, userId.c_str());
   return buffer;
 }
-std::string AddNotePostData::toJsonStr() {
+std::string AddOrEditNotePostData::toJsonStr() {
   char buffer[1024];
-  sprintf(buffer, "{\"userId\":\"%s\",\"title\":\"%s\",\"content\":\"%s\"}",
-          userId, title, content);
+  sprintf(buffer, "{\"id\":\"%s\",\"userId\":\"%s\",\"title\":\"%s\",\"content\":\"%s\"}",
+          id.c_str(),userId.c_str(), title.c_str(), content.c_str());
   return buffer;
 }
 void GglNote::postForNoteDetailPage(SelectPagePostData *d) {

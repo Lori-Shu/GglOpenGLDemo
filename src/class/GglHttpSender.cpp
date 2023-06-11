@@ -16,11 +16,14 @@ std::string GglHttpSender::postForJsonStr(std::string url,
 
   cout << "post url===" << url << endl;
   cout << "json data===" << jsonData << endl;
+  char contentLengthStr[1024];
+  sprintf(contentLengthStr,"Content-Length:%d",jsonData.length());
   curl_easy_setopt(curlPtr, CURLOPT_VERBOSE, true);
   curl_slist *headers = nullptr;
   headers = curl_slist_append(headers, "Accept:application/json");
   headers = curl_slist_append(headers, "Content-Type:application/json");
   headers = curl_slist_append(headers, "Charset:UTF-8");
+  headers = curl_slist_append(headers, contentLengthStr);
   curl_easy_setopt(curlPtr, CURLOPT_HTTPHEADER, headers);
   curl_easy_setopt(curlPtr, CURLOPT_URL, url.c_str());
   curl_easy_setopt(curlPtr, CURLOPT_POSTFIELDS, jsonData.c_str());
@@ -34,8 +37,9 @@ std::string GglHttpSender::postForJsonStr(std::string url,
   assert(res == CURLE_OK && curl_easy_strerror(res));
   int32_t resLen = 0;
   curl_easy_getinfo(curlPtr, CURLINFO_CONTENT_LENGTH_DOWNLOAD_T, &resLen);
-  cout << "res len" << resLen << endl;
-  return string(resBuffer, resLen);
+  string resMsg=string(resBuffer, resLen);
+  cout << "res msg" << resMsg << endl;
+  return resMsg;
 }
 uint64_t getResStr(void *data, size_t size, size_t nmemb, void *res) {
   size_t buffer_size = size * nmemb;
