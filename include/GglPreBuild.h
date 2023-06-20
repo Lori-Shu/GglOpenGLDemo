@@ -10,6 +10,8 @@
 #include<cassert>
 #include<array>
 #include<mutex>
+#include<vector>
+#include<unordered_map>
 void getProgramDir(std::string &path);
 
 namespace mystd{

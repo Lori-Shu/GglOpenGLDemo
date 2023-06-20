@@ -13,6 +13,10 @@ namespace mystd{
       static constexpr char LOGIN_URL[] =
           "http://192.168.56.100:8536/login";
       static constexpr char DELETE_NOTE_URL[] = "http://192.168.56.100:8536/note/delete";
+      static constexpr char SEND_CHAT_MESSAGE_URL[] =
+          "http://192.168.56.100:8536/chat/sendMessage";
+      static constexpr char SELECT_USER_URL[] =
+          "http://192.168.56.100:8536/user/selectAll";
     };
     uint64_t getResStr(void *data, size_t size, size_t nmemb, void *res);
     /**
